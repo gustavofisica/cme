@@ -70,6 +70,7 @@ header {
 	display: inline-flex;
 	align-items: center;
 	transition: 500ms;
+	border-bottom-left-radius: 100px;
 }
 
 /******Estilo do Header quando a página for rolada para baixo******/
@@ -82,6 +83,7 @@ header {
 	box-shadow: 0 2px 7px rgba(0,0,0,0.2);
 	border-bottom: none;
 	transition: 500ms;
+	border-bottom-left-radius: 0px;
 }
 
 header img {
