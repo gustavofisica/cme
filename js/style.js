@@ -31,20 +31,3 @@ function init(){
 
 window.addEventListener('load',init);
 
-//Habilita do Alto Contraste da Barra Brasil
-var body = document.querySelector('body');
-var altoContraste = document.querySelector('#contrast')
-	
-function verificaBody(){
-	// Verifica se a classe do body é contraste
-	if(body.classList != "contraste"){
-		// Se não for contraste, incluí a classe contraste
-		body.classList.add("contraste");
-
-	} else{
-		//Se o contraste estiver definido, retira a classe
-		body.classList.remove("contraste");
-	}
-}
-
-altoContraste.addEventListener('click', verificaBody);
