@@ -4,6 +4,9 @@ body {
 	background: lightgray;
 }
 
+a {
+	text-decoration: none;
+}
 /******Estilo dos Elementos do Cabeçalho******/
 /******Barra de Acessibilidade******/
 .barra-acessibilidade {
