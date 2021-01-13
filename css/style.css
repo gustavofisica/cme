@@ -56,7 +56,7 @@ a {
 	display: inline-block;
 	position: relative;
 	top: 35%;
-	height: 15px;
+	height: 16px;
 	float: right;
 	clear: none;
 	margin-left: 5px;
@@ -72,7 +72,7 @@ header {
 	display: inline-flex;
 	align-items: center;
 	transition: 500ms;
-	border-bottom-left-radius: 100px;
+	border-bottom-left-radius: 0px;
 }
 
 /******Estilo do Header quando a página for rolada para baixo******/
