@@ -1,0 +1,40 @@
+/******Estilo do Header******/
+
+header{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.barra-acessibilidade{
+	text-align: center;
+	background: #FFFFFF;
+	height: 100px;
+	margin: 50 0;
+}
+
+.barra-acessibilidade ul{
+	display: inline-block;
+	border: thin #FF0004 solid;
+	
+}
+
+.barra-acessibilidade ul:first-child{
+	float: left;
+}
+
+.barra-acessibilidade ul:nth-child(3){
+	float: right;
+}
+
+.barra-acessibilidade li{
+	display: inline;
+	margin: 5px;
+}
+
+.barra-acessibilidade span{
+	background: black;
+}
+
+.barra-acessibilidade img{
+	width: 16px;
+}
