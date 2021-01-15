@@ -4,6 +4,7 @@ body {
 	background: lightgray;
 }
 
+<<<<<<< HEAD
 a {
 	text-decoration: none;
 }
@@ -217,145 +218,9 @@ ul.menu {
 .submenu-1 {
 	background: #999;
 }
+=======
+>>>>>>> GitHub/master
 
-.submenu-1 a {
-	color: #fff;
-}
+/******Estilo de Texto******/
 
-.submenu-1 li:hover>a {
-	background: #666;
-}
 
-/*nivel 3*/
-.submenu-2 {
-	background: #666;
-}
-
-.submenu-2 a {
-	color: #fff;
-}
-
-.submenu-2 li:hover>a {
-	background: #333;
-}
-
-/*nivel 3*/
-.submenu-3 {
-	background: #333;
-}
-
-.submenu-3 a {
-	color: #fff;
-}
-
-.submenu-3 li:hover>a {
-	background: #000;
-}
-
-main {
-	
-}
-
-/******Estilo dos Elementos do Rodapé******/
-
-footer {
-	
-}
-
-.rodape-links {
-	text-align: center;
-	background: url("../img/rodape_ufpr.png") no-repeat center top fixed;
-	background-size: 100%;
-}
-
-.sessao-links {
-	display: inline-block;
-	width: 20%;
-	margin: 20px;
-	text-align: left;
-	vertical-align: top;
-	
-}
-
-.sessao-links h2{
-	font-weight: bold;
-	border-bottom: black solid 0.08em;
-}
-
-.sessao-links ul {
-	margin: 0.66em 0;
-}
-
-.sessao-links ul li{
-	margin: 0.3em 0;
-}
-
-.rodape-social {
-	padding: 20px;
-	background: linear-gradient(#001B49, #0042b1 90%);
-}
-
-.icones-redes-sociais {
-	float: left;
-}
-
-.icones-redes-sociais h3 {
-	position: relative;
-	font-weight: bold;
-	color: #FFF;
-	font-size: 1.5em;
-}
-
-.icones-redes-sociais img {
-	position: relative;
-	width: 45px;
-}
-
-.caracteristica-departamento {
-	display: block;
-	width: 100%;
-	text-align: right;
-}
-
-.caracteristica-departamento p {
-	color: #FFF;
-}
-
-.caracteristica-departamento p:first-child {
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.caracteristica-departamento p:nth-child(2) {
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
-.caracteristica-departamento p:nth-child(3) {
-	font-weight: bold;
-	font-size: 1em;
-	margin: 0 0 10px 0;
-}
-
-.caracteristica-departamento img {
-	max-width: 170px;
-	display: inline-block;
-	margin: 10px 0 0 0;
-}
-
-.copyright {
-	text-align: center;
-	color: #FFF;
-}
-
-#footer-brasil {
-   background: none repeat scroll 0% 0% #0042b1;
-   padding: 1em 0px;
-   max-width: 100%;
-}
-
-/******Estilo dos Elementos Responsivos******/
-
-@media screen and (max-width: 480px){
-	
-}

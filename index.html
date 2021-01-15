@@ -4,12 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!--Configuração da Unidade Organizacional do CME da Barra Brasil-->
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241245">
+	<!--Estilos da Página-->
+	<!--Formata todos os estilos originais dos Browsers-->
 	<link href="css/reset.css" rel="stylesheet">
+	<!--Estilos básicos da página-->
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="">
-
-	
+	<!--Estilo dos conteúdos do header-->
+	<link href="css/header.css" rel="stylesheet">
+	<!--Estilo dos conteúdos do main-->
+	<link href="css/main.css" rel="stylesheet">
+	<!--Estilo dos conteúdos do footer-->
+	<link href="css/footer.css" rel="stylesheet">
+	<!--Inclusão do ícone do CME na aba do Browser-->
+	<link rel="shortcut icon" href="img/favicon.png">
+	<!--Título da Página na aba do Browser-->
 	<title>Centro de Microscopia Eletrônica</title>
 </head>
 <body class="">
@@ -27,13 +37,13 @@
 		<!--Início da Lista de Atalhos da Página-->
 		<ul>
 			<!--Atalho do Conteúdo Principal da Página-->
-			<li><a accesskey="1" title="Ir para o conteúdo" href="main">Ir para o conteúdo<span>1</span></a></li>
+			<li><a accesskey="1" title="Ir para o conteúdo" href="#main">Ir para o conteúdo<span>1</span></a></li>
 			<!--Atalho do Menu da Página-->
-			<li><a accesskey="2" title="Ir para o menu" href="nav">Ir para o menu<span>2</span></a></li>
+			<li><a accesskey="2" title="Ir para o menu" href="#nav">Ir para o menu<span>2</span></a></li>
 			<!--Atalho de Busca-->
 			<li><a accesskey="3" title="Ir para a busca" href="#search">Ir para a busca<span>3</span></a></li>
 			<!--Atalho do Rodapé-->
-			<li><a accesskey="4" title="Ir para o rodapé" href="footer">Ir para o rodapé<span>4</span></a></li>  
+			<li><a accesskey="4" title="Ir para o rodapé" href="#footer">Ir para o rodapé<span>4</span></a></li>  
 		</ul>
 		<!--Final da Lista de Atalhos da Página-->
 		<!--Início da Lista de Acessibilidade-->
@@ -47,16 +57,34 @@
 		</ul>
 		<!--Final da Lista de Acessibilidade-->
 		<!--Link para Tradução da Página em Francês-->
-		<a href="" title="CME em Francês"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/frances.png" alt="French"></a>
+		<a href="" title="CME em Francês"><img src="img/france.png" alt="French"></a>
 		<!--Link para Tradução da Página em Inglês-->
-		<a href="" title="CME em Inglês"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/flag_uk.png" alt="English"></a>
+		<a href="" title="CME em Inglês"><img src="img/united-states-of-america.png" alt="English"></a>
 		<!--Link para Tradução da Página em Espanhol-->
-		<a href="" title="CME em Espanhol"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/espanhol.png" alt="Spanish"></a>
+		<a href="" title="CME em Espanhol"><img src="img/spain.png" alt="Spanish"></a>
 	</div>
 	<!--Início do Cabeçalho da Página-->
 	<header class="">
 		<!--Logo do Centro de Microscopia Eletrônica-->
-		<img src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná." class="logotipo" align="left">
+		<img src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
+		<!--Início do Menu da UFPR-->
+		<nav>
+			<ul>
+				<li><a href="http://www.ufpr.br" title="UFPR">UFPR</a></li>
+				<li><a href="http://www.intranet.ufpr.br/" target="_blank">Intranet</a></li>
+				<li><a href="http://correio.ufpr.br/" target="_blank">Webmail</a></li>
+				<li><a href="http://www.portaldoaluno.ufpr.br" target="_blank">Portal do Aluno</a></li>
+				<li><a href="http://www.portaldoprofessor.ufpr.br" target="_blank">Portal do Professor</a></li>
+			</ul>
+		</nav>
+		<!--Final do Menu da UFPR-->
+		<!--Formulário de Pesquisa de Notícias no Site-->
+		<div id="barra_pesquisa">
+			<form action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
+				<label for="gsearch">Pesquisar</label>
+				<input type="search" id="search" name="search">
+			</form>
+		</div>
 		<!--Início do Menu de Navegação-->
 		<nav>
 			<!--Início da Lista de Links do Menu-->
@@ -98,7 +126,138 @@
 	<div class="cabecalho-espaco"></div>
 	<!--Início do Conteúdo Principal-->
 	<main>
-		Incluir conteúdo principal
+		<!--Início da Sessão de Apresentação-->
+		<section class="apresentacao">
+			<!--Título da Apresentação-->
+			<h1>Apresentação</h1>
+			<!--Texto de Apresentação-->
+			<p>
+				O Centro de Microscopia Eletrônica (CME) da Universidade Federal do Paraná (UFPR) é o mais abrangente Laboratório de apoio à pesquisa científica em regime de funcionamento multiusuário da UFPR desde 1968. Atualmente, o CME disponibiliza aos usuários equipamentos em microscopia eletrônica para a caracterização morfológica que possuem resoluções de 0,5 a 3 nm. Outras técnicas acessórias a estes equipamentos se destacam ampliando a capacidade analítica, tais como: a difração de elétrons, análise química de raios-X, a espectroscopia de emissão por catodo luminescência, estereoscopia em microscopia eletrônica de varredura (MEV) (imagem com perspectiva e informação 3D) e microtomografia de raio-X em MEV. Além das capacidades de visualização, espectroscópicas e microestruturais, os microscópios eletrônicos contam com estágios e porta-amostras com controle de temperatura na faixa de -180 a 110°C e na faixa de -25 a 1000°C, o que permite o acesso a observação e registro de alguns fenômenos durante as análises. No campo das microscopias ópticas há um equipamento com resolução de 200 nm acoplado com espectroscopia Raman. Completando o acervo de equipamentos, o microscópio de força atômica (AFM) adquire informações tridimensionais de alta resolução.
+			</p>
+		</section>
+		<!--Final da Sessão de Apresentação-->
+		<!--Início da Sessão de Botões de Atalho-->
+		<section class="atalhos">
+			<!--Primeiro Botão de Atalho-->
+			<div>
+				<!--Imagem do Primeiro Botão de Atalho-->
+				<img src="img/Icone-formularios.png" alt="Formulários">
+				<!--Título do Primeiro Botão de Atalho-->
+				<h1>Solicitação de Serviço</h1>
+				<!--Detalhamento do Primeiro Botão de Atalho-->
+				<p>Descrição</p>
+			</div>
+			<!--Segundo Botão de Atalho-->
+			<div>
+				<!--Imagem do Segundo Botão de Atalho-->
+				<img src="img/Icone-Servicos.png" alt="Serviços">
+				<!--Título do Segundo Botão de Atalho-->
+				<h1>Tabela de Preços e Serviços</h1>
+				<!--Detalhamento do Segundo Botão de Atalho-->
+				<p>Descrição</p>
+			</div>
+			<!--Terceiro Botão de Atalho-->
+			<div>
+				<!--Imagem do Terceiro Botão de Atalho-->
+				<img src="img/Icone-Normas.png" alt="Normas">
+				<!--Título do Terceiro Botão de Atalho-->
+				<h1>Normas</h1>
+				<!--Detalhamento do Terceiro Botão de Atalho-->
+				<p>Descrição</p>
+			</div>
+		</section>
+		<!--Final da Sessão de Botões de Atalho-->
+		<!--Início da Sessão de Notícias e Estatísticas-->
+		<section>
+			<div class="row">
+				<!--Início da Divisão de Notícias-->
+				<div class="col-md-6 col-sm-12">
+					<!--Título da Divisão de Notícias-->
+					<h2>Notícias</h2>
+					<!--Início da Estrutura de Notícia-->
+					<article>
+						<!--Título da Notícia-->
+						<h4>Título da Notícia</h4>
+						<!--Data da Notícia-->
+						<div class="col-6">
+							<h5 class="text-right"><span aria-hidden="true"></span>Data</h5>
+						</div>
+						<!--Texto da Notícia-->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+					</article>
+					<!--Final da Estrutura de Notícia-->
+				</div>
+				<!--Final da Divisão de Notícias-->
+				<!--Início da Divisão de Estatísticas-->
+				<div class="col-md-6 col-sm-12">
+					<!--Título da Divisão de Estatísticas-->
+					<h2>Estatísticas</h2>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+							Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							Microscópio Eletrônico de Varredura JEOL JSM 6360-LV
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+							Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							Microscópio Eletrônico de Varredura FEI Quanta 450 FEG
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+							Microscópio Raman Confocal Witec alpha 300R
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+							Microscópio de Força Atômica Shimadzu SPM 9500 J3
+						</div>
+					</div>
+					<div class="progress mt-4">
+						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+							Microscópio Eletrônico de Varredura de Bancada FEI Phenom
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Final da Sessão de Notícias e Estatísticas-->
+		<!--Início da Sessão do Formulário de Contato-->
+		<section>
+			<!--Título Formulário de Contato-->
+			<h2>Contato</h2>
+			<form>
+				<div class="form-group">
+					<label for="name">Nome</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+				</div>
+				<div class="form-group">
+					<label for="email">E-Mail</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Endereço de E-Mail" aria-describedby="emailHelp">
+					<span id="emailHelp" class="form-text text-muted" style="display: none;">Por favor, entre com um E-Mail válido</span>
+				</div>
+				<div class="form-group">
+					<label for="message">Mensagem</label>
+					<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Escreva sua mensagem aqui" aria-describedby="messageHelp"></textarea>
+					<span id="messageHelp" class="form-text text-muted" style="display: none;">Por favor, entre com a sua mensagem</span>
+				</div>
+				<div class="text-center">
+					<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+				</div>
+			</form>
+		</section>
+		<!--Final da Sessão do Formulário de Contato-->
 	</main>
 	<!--Final do Conteúdo Principal-->
 	<!--Início do Rodapé-->
@@ -336,7 +495,7 @@
 	</footer>
 	<!--Final do Rodapé-->
 	<!--Código JavaScript dos Elementos da Barra Brasil-->
-	<script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+	<script defer="defer" src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 	<!--Funções do Estilo da Página-->
     <script src="js/style.js"></script>
 	<!--Funções de Adaptação de Acessibilidade PCD-->

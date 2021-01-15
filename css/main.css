@@ -1,0 +1,21 @@
+/******Estilo dos Elementos do Rodapé******/
+main {
+	
+}
+
+.atalhos{
+	display: inline;
+}
+
+.atalhos img{
+	margin: 100px;
+	width: 200px;
+	display: inline-block;
+	transition: 1s;
+	border-radius: 100%;
+}
+
+.atalhos img:hover{
+	width: 205px;
+	border-radius: 20%;
+}
