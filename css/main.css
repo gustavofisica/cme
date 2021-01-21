@@ -65,3 +65,63 @@ main {
 	border: thin #FF0004 solid;
 	vertical-align: top;
 }
+
+.noticias article div{
+	display: block;
+	border: thin #FF0004 solid;
+}
+
+.noticias article h4{
+	float: left;
+	border: thin #FF0004 solid;
+}
+
+.noticias article h5{
+	border: thin #FF0004 solid;
+	float: right;
+}
+
+.noticias article p{
+	display: block;
+	text-align: justify;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}

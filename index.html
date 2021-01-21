@@ -195,12 +195,14 @@
 				<h2>Notícias</h2>
 				<!--Início da Estrutura de Notícia-->
 				<article>
+					<!--Início da Divisão de Cabeçalho da Notícia-->
+					<div>
 					<!--Título da Notícia-->
 					<h4>Título da Notícia</h4>
 					<!--Data da Notícia-->
-					<div>
-						<h5>Data</h5>
+					<h5>Data</h5>
 					</div>
+					<!--Final da Divisão de Cabeçalho da Notícia-->
 					<!--Texto da Notícia-->
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -256,23 +258,39 @@
 			<!--Título Formulário de Contato-->
 			<h2>Contato</h2>
 			<form>
-				<div class="form-group">
-					<label for="name">Nome</label>
-					<input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-				</div>
-				<div class="form-group">
-					<label for="email">E-Mail</label>
-					<input type="email" class="form-control" id="email" name="email" placeholder="Endereço de E-Mail" aria-describedby="emailHelp">
-					<span id="emailHelp" class="form-text text-muted" style="display: none;">Por favor, entre com um E-Mail válido</span>
-				</div>
-				<div class="form-group">
-					<label for="message">Mensagem</label>
-					<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Escreva sua mensagem aqui" aria-describedby="messageHelp"></textarea>
-					<span id="messageHelp" class="form-text text-muted" style="display: none;">Por favor, entre com a sua mensagem</span>
-				</div>
-				<div class="text-center">
-					<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-				</div>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
 			</form>
 		</section>
 		<!--Final da Sessão do Formulário de Contato-->
