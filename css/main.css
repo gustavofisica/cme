@@ -2,6 +2,7 @@
 main {
 	width: 1200px;
 	margin: 0 auto;
+	background: white;
 }
 
 .apresentacao{
@@ -49,4 +50,18 @@ main {
 .atalhos img:hover{
 	border-radius: 100%;
 	width: 205px;
+}
+
+.noticias-estatisticas{
+	display: block;
+	text-align: center;
+}
+
+.noticias,
+.estatisticas{
+	display: inline-block;
+	width: 40%;
+	margin: 10px;
+	border: thin #FF0004 solid;
+	vertical-align: top;
 }

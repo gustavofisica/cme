@@ -76,3 +76,18 @@ header{
 	padding: 0 1px 0 0;
 	background: rgba(255,255,255,0.51);
 }
+
+.menu{
+	display: block;
+	border: thin #FF0004 solid;
+	height: 30px;
+	background: #0042b1;
+}
+
+.menu li{
+	display: inline;
+}
+
+.submenu-1{
+	display: none;
+}
