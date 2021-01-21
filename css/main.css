@@ -4,13 +4,31 @@ main {
 	margin: 0 auto;
 }
 
+.apresentacao{
+	text-align: center;
+}
+
+.apresentacao h2{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 15px auto;
+}
+
+.apresentacao p{
+	width: 600px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
 .atalhos{
 	display: block;
 	text-align: center;
+	
 }
 
 .atalhos div{
 	display: inline-block;
+	margin: 50px;
 }
 
 .atalhos h2{

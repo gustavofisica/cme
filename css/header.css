@@ -13,12 +13,20 @@ header{
 
 .barra-acessibilidade ul{
 	display: inline-block;
-	border: thin #FF0004 solid;
 	
 }
 
 .barra-acessibilidade ul:first-child{
 	float: left;
+}
+
+.barra-acessibilidade ul:nth-child(2){
+	text-transform: uppercase;
+	
+}
+
+.barra-acessibilidade ul:nth-child(2) li{
+	text-decoration: underline dotted;
 }
 
 .barra-acessibilidade ul:nth-child(3){
@@ -36,4 +44,10 @@ header{
 
 .barra-acessibilidade img{
 	width: 16px;
+}
+
+.logo{
+	display: inline-block;
+	height: 100px;
+	border: thin #FF0004 solid;
 }
