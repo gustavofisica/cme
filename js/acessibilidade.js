@@ -1,6 +1,9 @@
 ﻿//Habilita do Alto Contraste da Barra Brasil
 var body = document.querySelector('body');
-var altoContraste = document.querySelector('#alto-contraste')
+var main = document.querySelector('main');
+var footer = document.querySelector('footer');
+var sessaoRodape = document.querySelector('#sessao-rodape');
+var altoContraste = document.querySelector('#alto-contraste');
 	
 function verificaBody(){
 	// Verifica se a classe do body não é "contraste"
@@ -11,11 +14,20 @@ function verificaBody(){
 		if(retorno == true){
 			// Inclusão da classe "contraste" no body do HTML
 			body.classList.add("contraste");
+			// Inclusão da classe "contraste" no main do HTML
+			main.classList.add("contraste");
+			// Retira da sessão de rodapé a imagem fixa de fundo para que possa ser inserido o novo fundo
+			sessaoRodape.classList.remove("rodape-links");
+			// Inclusão da classe "contraste" no footer do HTML
+			footer.classList.add("contraste");
 		}
 	// Se o "contraste" estiver definido na classe do body
 	} else{
-		// Retira a classe o valor da classe do html
+		// Reverte os valores atribuídos de classe do HTML
 		body.classList.remove("contraste");
+		main.classList.remove("contraste");
+		footer.classList.remove("contraste");
+		sessaoRodape.classList.add("rodape-links");
 	}
 }
 
