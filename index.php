@@ -522,7 +522,7 @@
 			<!--Final da Divisão de Característica do Departamento--> 
 			<!--Início da Divisão de Copyright--> 
 			<div class="copyright">
-				<p>©2021 - Universidade Federal do Paraná - Setor de Ciências Biológicas - Centro de Microscopia Eletrônica</p>
+				<p>©<?php echo date("Y");?> - Universidade Federal do Paraná - Setor de Ciências Biológicas - Centro de Microscopia Eletrônica</p>
 				<p>Desenvolvido por Luis Gustavo de Matos dos Santos e hospedado pela AGTIC - Agência de Tecnologia da Informação e Comunicação da UFPR</p>
 			</div>
 			<!--Final da Divisão de Copyright-->
