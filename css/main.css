@@ -2,6 +2,7 @@
 main {
 	width: 1200px;
 	margin: 0 auto;
+	padding: 50px 0;
 	background: white;
 }
 
@@ -48,8 +49,9 @@ main {
 }
 
 .atalhos img:hover{
-	border-radius: 100%;
-	width: 205px;
+	border-radius: 0;
+	transform: scale(1.1);
+	background: rgba(163,160,160,1.00);
 }
 
 .noticias-estatisticas{

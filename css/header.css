@@ -64,6 +64,14 @@ header{
 	padding: 10px;
 }
 
+#barra_pesquisa label{
+	display: inline;
+}
+
+#barra_pesquisa form{
+	display: inline;
+}
+
 .menu-ufpr{
 	display: inline-block;
 	border: thin #FF0004 solid;
