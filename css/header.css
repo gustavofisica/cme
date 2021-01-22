@@ -24,8 +24,7 @@ header{
 }
 
 .barra-acessibilidade ul:nth-child(2){
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
 
 .barra-acessibilidade ul:nth-child(2) li{
@@ -56,7 +55,7 @@ header{
 	margin: 10px;
 }
 
-#barra_pesquisa{
+#barra-pesquisa{
 	display: block;
 	border: thin #FF0004 solid;
 	text-align: right;
@@ -74,14 +73,18 @@ header{
 
 .menu-ufpr{
 	display: inline-block;
-	border: thin #FF0004 solid;
 	float: right;
 	margin: 10px;
 }
 
+.menu-ufpr ul{
+	display: inline-block;	
+}
+
 .menu-ufpr ul li{
 	display: inline;
-	padding: 0 1px 0 0;
+	margin: 0 0.1em 0 0;
+	padding: 5px;
 	background: rgba(255,255,255,0.51);
 }
 
@@ -90,6 +93,10 @@ header{
 	border: thin #FF0004 solid;
 	height: 30px;
 	background: #0042b1;
+}
+
+.menu a{
+	color: white;
 }
 
 .menu li{

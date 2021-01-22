@@ -87,7 +87,7 @@
 		</nav>
 		<!--Final do Menu da UFPR-->
 		<!--Formulário de Pesquisa de Notícias no Site-->
-		<div id="barra_pesquisa">
+		<div id="barra-pesquisa">
 			<form action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
 				<label for="gsearch">Pesquisar</label>
 				<input type="search" id="search" name="search">
@@ -151,7 +151,7 @@
 			<!--Primeiro Botão de Atalho-->
 			<div>
 				<!--Imagem do Primeiro Botão de Atalho-->
-				<a href="login.html"><img src="img/Icone-formularios.png" alt="Formulários"></a>
+				<a href="login.php"><img src="img/Icone-formularios.png" alt="Formulários"></a>
 				<!--Título do Primeiro Botão de Atalho-->
 				<h2>Solicitação de Serviço</h2>
 				<!--Detalhamento do Primeiro Botão de Atalho-->
