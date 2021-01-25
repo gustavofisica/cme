@@ -1,8 +1,7 @@
 /******Estilo do Header******/
 
 header{
-	width: 1200px;
-	margin: 0 auto;
+	background: url("../img/header/MEV_Espiculas_Bio.png") center;
 }
 
 .barra-acessibilidade{
@@ -85,24 +84,25 @@ header{
 	display: inline;
 	margin: 0 0.1em 0 0;
 	padding: 5px;
-	background: rgba(255,255,255,0.51);
+	background: rgba(163,163,163,0.40);
 }
 
 .menu{
 	display: block;
 	border: thin #FF0004 solid;
-	height: 30px;
+	height: 100px;
 	background: #0042b1;
-}
-
-.menu a{
-	color: white;
 }
 
 .menu li{
 	display: inline;
+	margin: 0 15px 0 0;
 }
 
-.submenu-1{
-	display: none;
+.menu a{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
 }
+

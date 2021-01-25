@@ -1,20 +1,18 @@
 /******Estilo dos Elementos do Rodapé******/
 
-footer {
-	width: 1200px;
-	margin: 0 auto;	
+footer {	
 }
 
 .rodape-links {
 	text-align: center;
-	background: url("../img/rodape_ufpr.png") no-repeat center top fixed;
+	background: url("../img/rodape_ufpr.png") no-repeat center top ;
 	background-size: 100%;
 }
 
 .sessao-links {
 	display: inline-block;
 	width: 20%;
-	margin: 20px;
+	margin: 20px 0 0 20px;
 	text-align: left;
 	vertical-align: top;
 	
@@ -40,7 +38,6 @@ footer {
 	margin-right: 10px;
 	width: 0; 
 	height: 0; 
-
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
 	border-left: 5px solid black;
