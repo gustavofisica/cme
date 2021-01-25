@@ -18,6 +18,8 @@
 	<link href="css/main.css" rel="stylesheet">
 	<!--Estilo dos conteúdos do footer-->
 	<link href="css/footer.css" rel="stylesheet">
+	<!--Estilo dos conteúdos do footer-->
+	<link href="css/mobile.css" rel="stylesheet">
 	<!--Inclusão do ícone do CME na aba do Browser-->
 	<link rel="shortcut icon" href="img/favicon.png">
 	<!--Título da Página na aba do Browser-->
