@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!--Configuração de Escalonamento para Device Mobile-->
+	<meta name="viewport" content="width=device-width">
 	<!--Configuração da Unidade Organizacional do CME da Barra Brasil-->
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241245">
 	<!--Estilos da Página-->
