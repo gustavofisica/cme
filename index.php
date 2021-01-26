@@ -54,11 +54,11 @@
 				<!--Início da Lista de Acessibilidade-->
 				<ul>
 					<!--Informações de Acessibilidade-->
-					<li><a accesskey="5" href="https://www.ufpr.br/portalufpr/acessibilidade/" title="Acessibilidade">Acessibilidade</a></li>
+					<li><a accesskey="5" href="https://www.ufpr.br/portalufpr/acessibilidade/" title="Acessibilidade">Acessibilidade<span>5</span></a></li>
 					<!--Ativação do Alto Contraste-->
-					<li><a accesskey="6" href="#" id="alto-contraste" title="Alto Contraste">Alto Contraste</a></li>
+					<li><a accesskey="6" href="#" id="alto-contraste" title="Alto Contraste">Alto Contraste<span>6</span></a></li>
 					<!--Mapa de Acesso da Página-->
-					<li><a accesskey="7" href="https://www.ufpr.br/portalufpr/mapa-do-site/" title="Mapa do Site">Mapa do Site</a></li>
+					<li><a accesskey="7" href="https://www.ufpr.br/portalufpr/mapa-do-site/" title="Mapa do Site">Mapa do Site<span>7</span></a></li>
 				</ul>
 				<!--Final da Lista de Acessibilidade-->
 				<!--Início da Lista de Tradução-->
@@ -92,21 +92,20 @@
 			<!--Final do Menu da UFPR-->
 			<!--Início da Divisão de Título e Formulário de Pesquisa no Site-->
 			<div id="barra-pesquisa">
-				<div>
-					<h1>Centro de Microscopia Eletrônica</h1>
-				</div>
-				<form action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
-					<label for="gsearch">Pesquisar</label>
+				<h1>Centro de Microscopia Eletrônica</h1>
+				<form id= action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
+					<label for="search">Pesquisar</label>
 					<input type="search" id="search" name="search">
+					<button>Pesquisar</button>
 				</form>
 			</div>
 			<!--Final da Divisão de Título e Formulário de Pesquisa no Site-->
 			<!--Início do Menu de Navegação-->
-			<nav>
+			<nav class="menu">
 				<!--Link de direcionamento da barra de acessibilidade para menu-->
 				<a name="nav" id="nav"></a>
 				<!--Início da Lista de Links do Menu-->
-				<ul class="menu">
+				<ul>
 					<!-- Esse é o 1 nivel ou o nivel principal -->
 					<li><a href="#">Página Inicial</a></li>
 					<li><a href="#">CME</a>

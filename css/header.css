@@ -41,6 +41,10 @@ header{
 
 .barra-acessibilidade span{
 	background: black;
+    color: white;
+    opacity: 0.7;
+    padding: 0 0.3em;
+    margin-left: 0.25em;
 }
 
 .barra-acessibilidade img{
@@ -50,30 +54,13 @@ header{
 .logo{
 	display: inline-block;
 	height: 100px;
-	border: thin #FF0004 solid;
 	margin: 10px;
-}
-
-#barra-pesquisa{
-	display: block;
-	border: thin #FF0004 solid;
-	text-align: right;
-	background: rgba(255,255,255,0.51);
-	padding: 10px;
-}
-
-#barra_pesquisa label{
-	display: inline;
-}
-
-#barra_pesquisa form{
-	display: inline;
 }
 
 .menu-ufpr{
 	display: inline-block;
 	float: right;
-	margin: 10px;
+	margin: 15px;
 }
 
 .menu-ufpr ul{
@@ -82,21 +69,44 @@ header{
 
 .menu-ufpr ul li{
 	display: inline;
-	margin: 0 0.1em 0 0;
 	padding: 5px;
 	background: rgba(163,163,163,0.40);
 }
 
-.menu{
+#barra-pesquisa{
 	display: block;
-	border: thin #FF0004 solid;
-	height: 100px;
-	background: #0042b1;
+	background: rgba(255,255,255,0.51);
+	text-align: right;
+	height: 50px;
 }
 
-.menu li{
-	display: inline;
-	margin: 0 15px 0 0;
+#barra-pesquisa h1{
+	float: left;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+#barra-pesquisa form{
+	
+}
+
+#barra-pesquisa form label{
+	display: none;
+}
+
+#barra-pesquisa form button{
+	
+}
+
+.menu{
+	display: block;
+	border: thin #447B90 solid;
+	height: 100px;
+	background: #447B90;
+}
+
+.menu ul li{
+	display: inline-block;
 }
 
 .menu a{
