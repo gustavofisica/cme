@@ -109,7 +109,7 @@
 					<!-- Esse é o 1 nivel ou o nivel principal -->
 					<li><a href="#">Página Inicial</a></li>
 					<li><a href="#">CME</a>
-						<ul class="submenu-1">
+						<ul>
 							<!-- Esse é o 2 nivel ou o primeiro Drop Down -->
 							<li><a href="#">Direção</a></li>
 							<li><a href="#">Conselho</a></li>
@@ -124,14 +124,14 @@
 					</li>
 					<li><a href="#">Produção Científica</a></li>
 					<li><a href="#">Usuários</a>
-						<ul class="submenu-1">
+						<ul>
 							<li><a href="#">Normas</a></li>
 							<li><a href="#">Solicitação de Serviço</a></li>
 							<li><a href="#">Perguntas Frequentes</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Infraestrutura</a>
-						<ul class="submenu-1">
+						<ul>
 							<li><a href="#">Equipamentos</a></li>
 							<li><a href="#">Laboratórios</a></li>
 							<li><a href="#">Tabelas de Preços e Serviços</a></li>
