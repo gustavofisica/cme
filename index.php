@@ -48,7 +48,7 @@
 					<!--Atalho de Busca-->
 					<li><a accesskey="3" title="Ir para a busca" href="#search">Ir para a busca<span>3</span></a></li>
 					<!--Atalho do Rodapé-->
-					<li><a accesskey="4" title="Ir para o rodapé" href="#footer">Ir para o rodapé<span>4</span></a></li>  
+					<li><a accesskey="4" title="Ir para o rodapé" href="#footer">Ir para o rodapé Teste Git<span>4</span></a></li>  
 				</ul>
 				<!--Final da Lista de Atalhos da Página-->
 				<!--Início da Lista de Acessibilidade-->
