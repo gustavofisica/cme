@@ -2,40 +2,27 @@
 
 header{
 	background: url("../img/header/MEV_Espiculas_Bio.png") center;
+    height: 232px;
 }
 
 .barra-acessibilidade{
-	text-align: center;
-	background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
 	height: 30px;
-	padding: 0 15px;
 }
 
 .barra-acessibilidade ul{
-	display: inline-block;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%); 	
-}
-
-.barra-acessibilidade ul:first-child{
-	float: left;
+	display: flex;
 }
 
 .barra-acessibilidade ul:nth-child(2){
-	text-transform: uppercase;	
-}
-
-.barra-acessibilidade ul:nth-child(2) li{
-	text-decoration: underline dotted;
-}
-
-.barra-acessibilidade ul:nth-child(3){
-	float: right;
+	text-transform: uppercase;
+    text-decoration: underline dotted;
 }
 
 .barra-acessibilidade li{
-	display: inline;
 	margin: 5px;
 }
 
@@ -51,43 +38,71 @@ header{
 	width: 16px;
 }
 
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .logo{
-	display: inline-block;
 	height: 100px;
-	margin: 10px;
+    filter: drop-shadow(5px 5px 5px #FFFFFF);
+    -webkit-filter: drop-shadow(1px 1px 1px #939393);
 }
 
 .menu-ufpr{
-	display: inline-block;
-	float: right;
-	margin: 15px;
+	display: flex;
 }
 
 .menu-ufpr ul{
-	display: inline-block;	
+    display: flex;
 }
 
-.menu-ufpr ul li{
-	display: inline;
-	padding: 5px;
-	background: rgba(163,163,163,0.40);
+.menu-ufpr ul li a{
+	background: rgba(62,116,137,1.00);
+    margin: 0 1px 0 0;
+    padding: 4px;
+}
+
+.menu-ufpr ul li a:hover{
+    background: rgba(62,116,137,0.70);
 }
 
 #barra-pesquisa{
-	display: block;
-	background: rgba(255,255,255,0.51);
-	text-align: right;
-	height: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	background: rgba(255,255,255,0.40);
+	height: 40px;
 }
 
 #barra-pesquisa h1{
-	float: left;
 	color: white;
 	text-shadow: 1px 1px black;
+    font-size: 30px;
 }
 
 #barra-pesquisa form{
-	
+}
+
+#barra-pesquisa form input{
+    border: none;
+    height: 25px;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+#barra-pesquisa form button{
+    border: none;
+	background: url("../img/Icone-Pesquisa.png") center;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+    top:3px;
+    right: 30px;
 }
 
 #barra-pesquisa form label{

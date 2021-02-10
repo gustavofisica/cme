@@ -29,9 +29,7 @@
 </head>
 <body class="">
 	<div class="caixa">
-		<!--Início do Cabeçalho da Página-->
-		<header class="">
-			<!--Incorporação da Barra Brasil de acordo com a documentação contida em https://barra.brasil.gov.br/-->
+        <!--Incorporação da Barra Brasil de acordo com a documentação contida em https://barra.brasil.gov.br/-->
 			<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
 			  <ul id="menu-barra-temp" style="list-style:none;">
 				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
@@ -39,6 +37,8 @@
 				</li>
 			  </ul>
 			</div>
+		<!--Início do Cabeçalho da Página-->
+		<header class="">
 			<!--Incorporação da Barra de Acessibilidade indicadas para Web-->
 			<div class="barra-acessibilidade">
 				<!--Início da Lista de Atalhos da Página-->
@@ -74,31 +74,34 @@
 				</ul>
 				<!--Final da Lista de Tradução-->
 			</div>
-			<!--Logo do Centro de Microscopia Eletrônica-->
-			<img class="logo" src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
-			<!--Início do Menu da UFPR-->
-			<nav class="menu-ufpr">
-				<!--Início da Lista do Menu da UFPR-->
-				<ul>
-					<!--Link do Portal da UFPR-->
-					<li><a href="http://www.ufpr.br/portalufpr" aria-current="page">Portal UFPR</a></li>
-					<!--Link da Intranet da UFPR-->
-					<li><a href="https://intranet.ufpr.br/">Intranet</a></li>
-					<!--Link do Office 365 para UFPR-->
-					<li><a href="http://www.office.com">Office 365</a></li>
-					<!--Link do Sistema de Comunicação da UFPR-->
-					<li><a href="https://www.ufpr.br/portalufpr/saci-sistema-de-apoio-a-comunicacao-integrada/">Comunicação</a></li>
-				</ul>
-				<!--Final da Lista do Menu da UFPR-->
-			</nav>
-			<!--Final do Menu da UFPR-->
+            <div class="content">
+                <!--Logo do Centro de Microscopia Eletrônica-->
+                <img class="logo" src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
+                <!--Início do Menu da UFPR-->
+                <nav class="menu-ufpr">
+                    <!--Início da Lista do Menu da UFPR-->
+                    <ul>
+                        <!--Link do Portal da UFPR-->
+                        <li><a href="http://www.ufpr.br/portalufpr" aria-current="page">Portal UFPR</a></li>
+                        <!--Link da Intranet da UFPR-->
+                        <li><a href="https://intranet.ufpr.br/">Intranet</a></li>
+                        <!--Link do Office 365 para UFPR-->
+                        <li><a href="http://www.office.com">Office 365</a></li>
+                        <!--Link do Sistema de Comunicação da UFPR-->
+                        <li><a href="https://www.ufpr.br/portalufpr/saci-sistema-de-apoio-a-comunicacao-integrada/">Comunicação</a></li>
+                    </ul>
+                    <!--Final da Lista do Menu da UFPR-->
+                </nav>
+                <!--Final do Menu da UFPR-->
+            </div>
+			
 			<!--Início da Divisão de Título e Formulário de Pesquisa no Site-->
 			<div id="barra-pesquisa">
 				<h1>Centro de Microscopia Eletrônica</h1>
 				<form id="" action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
 					<label for="search">Pesquisar</label>
-					<input type="search" id="search" name="search">
-					<button>Pesquisar</button>
+					<input type="search" id="search" name="search" placeholder="Pesquisar...">
+                    <button type="submit"></button>
 				</form>
 			</div>
 			<!--Final da Divisão de Título e Formulário de Pesquisa no Site-->
