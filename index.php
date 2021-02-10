@@ -20,6 +20,8 @@
 	<link href="css/footer.css" rel="stylesheet">
 	<!--Estilo dos conteúdos do footer-->
 	<link href="css/mobile.css" rel="stylesheet">
+    <!--Incorporação da fonte Noto Serif da Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" type="text/css">
 	<!--Inclusão do ícone do CME na aba do Browser-->
 	<link rel="shortcut icon" href="img/favicon.png">
 	<!--Título da Página na aba do Browser-->
@@ -93,7 +95,7 @@
 			<!--Início da Divisão de Título e Formulário de Pesquisa no Site-->
 			<div id="barra-pesquisa">
 				<h1>Centro de Microscopia Eletrônica</h1>
-				<form id= action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
+				<form id="" action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
 					<label for="search">Pesquisar</label>
 					<input type="search" id="search" name="search">
 					<button>Pesquisar</button>
