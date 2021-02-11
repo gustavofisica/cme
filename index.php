@@ -191,12 +191,18 @@
 			<!--Final da Sessão de Botões de Atalho-->
 			<!--Início da Sessão de Apresentação-->
 			<section class="apresentacao">
-				<!--Título da Apresentação-->
-				<h2>Apresentação</h2>
-				<!--Texto de Apresentação-->
-				<p>
-					O Centro de Microscopia Eletrônica (CME) da Universidade Federal do Paraná (UFPR) é o mais abrangente Laboratório de apoio à pesquisa científica em regime de funcionamento multiusuário da UFPR desde 1968. Atualmente, o CME disponibiliza aos usuários equipamentos em microscopia eletrônica para a caracterização morfológica que possuem resoluções de 0,5 a 3 nm. Outras técnicas acessórias a estes equipamentos se destacam ampliando a capacidade analítica, tais como: a difração de elétrons, análise química de raios-X, a espectroscopia de emissão por catodo luminescência, estereoscopia em microscopia eletrônica de varredura (MEV) (imagem com perspectiva e informação 3D) e microtomografia de raio-X em MEV. Além das capacidades de visualização, espectroscópicas e microestruturais, os microscópios eletrônicos contam com estágios e porta-amostras com controle de temperatura na faixa de -180 a 110°C e na faixa de -25 a 1000°C, o que permite o acesso a observação e registro de alguns fenômenos durante as análises. No campo das microscopias ópticas há um equipamento com resolução de 200 nm acoplado com espectroscopia Raman. Completando o acervo de equipamentos, o microscópio de força atômica (AFM) adquire informações tridimensionais de alta resolução.
-				</p>
+                <!--Vídeo de Apresentação do Departamento-->
+		        <iframe width="50%" height="300" src="https://www.youtube.com/embed/p9KQesK7f78"></iframe>
+                <!--Início da Divisão de Apresentação-->
+                <div>
+                    <!--Título da Apresentação-->
+                    <h2>Apresentação</h2>
+                    <!--Texto de Apresentação-->
+                    <p>
+                        O Centro de Microscopia Eletrônica (CME) da Universidade Federal do Paraná (UFPR) é o mais abrangente Laboratório de apoio à pesquisa científica em regime de funcionamento multiusuário da UFPR desde 1968. Atualmente, o CME disponibiliza aos usuários equipamentos em microscopia eletrônica para a caracterização morfológica que possuem resoluções de 0,5 a 3 nm. Outras técnicas acessórias a estes equipamentos se destacam ampliando a capacidade analítica, tais como: a difração de elétrons, análise química de raios-X, a espectroscopia de emissão por catodo luminescência, estereoscopia em microscopia eletrônica de varredura (MEV) (imagem com perspectiva e informação 3D) e microtomografia de raio-X em MEV. Além das capacidades de visualização, espectroscópicas e microestruturais, os microscópios eletrônicos contam com estágios e porta-amostras com controle de temperatura na faixa de -180 a 110°C e na faixa de -25 a 1000°C, o que permite o acesso a observação e registro de alguns fenômenos durante as análises. No campo das microscopias ópticas há um equipamento com resolução de 200 nm acoplado com espectroscopia Raman. Completando o acervo de equipamentos, o microscópio de força atômica (AFM) adquire informações tridimensionais de alta resolução.
+                    </p>
+                </div>
+				<!--Final da Divisão de Apresentação-->
 			</section>
 			<!--Final da Sessão de Apresentação-->
 			<!--Início da Sessão de Notícias e Estatísticas-->
