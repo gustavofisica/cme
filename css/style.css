@@ -20,6 +20,10 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+    color: #4B4B4B;
+}
+
 
 /******Estilo de Texto******/
 

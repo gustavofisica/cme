@@ -507,17 +507,17 @@
 					<!--Título da Divisão-->
 					<h3>Redes Sociais</h3>
 					<!--Ícone e Link da UFPR no Facebook-->
-					<a href="https://www.facebook.com/UFPRoficial" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/facebook.png" title="UFPR no Facebook" alt="UFPR no Facebook"></a>
+					<a href="https://www.facebook.com/UFPRoficial" target="_blank"><img src="img/Icone-Facebook.png" title="UFPR no Facebook" alt="UFPR no Facebook"></a>
 					<!--Ícone e Link da UFPR no Twitter-->
-					<a href="https://twitter.com/ufpr" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/twitter.png" title="UFPR no Twitter" alt="UFPR no Twitter"></a>
+					<a href="https://twitter.com/ufpr" target="_blank"><img src="img/Icone-Twitter.png" title="UFPR no Twitter" alt="UFPR no Twitter"></a>
 					<!--Ícone e Link da UFPR no Flickr-->
-					<a href="https://www.flickr.com/ufpr" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/flickr.png" title="UFPR no Flickr" alt="UFPR no Flickr"></a>
+					<a href="https://www.flickr.com/ufpr" target="_blank"><img src="img/Icone-Flickr.png" title="UFPR no Flickr" alt="UFPR no Flickr"></a>
 					<!--Ícone e Link RSS UFPR-->
-					<a href="https://www.ufpr.br/portalufpr/lista-de-feeds-da-ufpr" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/rss.png" title="RSS UFPR" alt="RSS UFPR"></a>
+					<a href="https://www.ufpr.br/portalufpr/lista-de-feeds-da-ufpr" target="_blank"><img src="img/Icone-RSS.png" title="RSS UFPR" alt="RSS UFPR"></a>
 					<!--Ícone e Link da UFPR no Youtube-->
-					<a href="https://www.youtube.com/user/TVUFPR" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/youtube.png" title="UFPR no Youtube" alt="UFPR no Youtube"></a>
+					<a href="https://www.youtube.com/user/TVUFPR" target="_blank"><img src="img/Icone-Youtube.png" title="UFPR no Youtube" alt="UFPR no Youtube"></a>
 					<!--Ícone e Link da UFPR no Instagram-->
-					<a href="https://www.instagram.com/ufpr_oficial" target="_blank"><img src="https://www.ufpr.br/portalufpr/wp-content/themes/wpufpr_zurb6_portalufpr/images/instagram.png" title="UFPR no Instagram" alt="UFPR no Instagram"></a>
+					<a href="https://www.instagram.com/ufpr_oficial" target="_blank"><img src="img/Icone-Instagram.png" title="UFPR no Instagram" alt="UFPR no Instagram"></a>
 				</div>
 				<!--Final da Divisão dos Ícones das Redes Sociais da UFPR-->			
 				<!--Início da Divisão de Característica do Departamento--> 
