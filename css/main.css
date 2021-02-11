@@ -3,6 +3,41 @@ main {
 	background: white;
 }
 
+.atalhos{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.atalhos div{
+    display: flex;
+    flex-flow: column;
+    align-items: center
+}
+
+.atalhos h2{
+	
+}
+
+.atalhos p{
+	
+}
+
+.atalhos img{
+	width: 150px;
+	transition: 0.5s;
+	border-radius: 100%;
+	background: #FFFFFF;
+}
+
+.atalhos img:hover{
+	border-radius: 0;
+	transform: scale(1.1);
+	background: rgba(163,160,160,1.00);
+}
+
 .apresentacao{
 	text-align: center;
 }
@@ -17,38 +52,6 @@ main {
 	width: 600px;
 	margin: 0 auto;
 	text-align: justify;
-}
-
-.atalhos{
-	display: block;
-	text-align: center;
-	
-}
-
-.atalhos div{
-	display: inline-block;
-	margin: 50px;
-}
-
-.atalhos h2{
-	
-}
-
-.atalhos p{
-	
-}
-
-.atalhos img{
-	width: 200px;
-	transition: 0.5s;
-	border-radius: 100%;
-	background: #FFFFFF;
-}
-
-.atalhos img:hover{
-	border-radius: 0;
-	transform: scale(1.1);
-	background: rgba(163,160,160,1.00);
 }
 
 .noticias-estatisticas{
