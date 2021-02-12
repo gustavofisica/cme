@@ -1,7 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--Configuração de Codificação de Caracteres-->
 	<meta charset="utf-8">
+    <!--Configuração de Compatibilidade de Browsers-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--Configuração de Escalonamento para Device Mobile-->
 	<meta name="viewport" content="width=device-width">
@@ -28,15 +30,16 @@
 	<title>Centro de Microscopia Eletrônica</title>
 </head>
 <body class="">
+    <!--Início da Divisão que Envolve o Conteúdo da Página-->
 	<div class="caixa">
         <!--Incorporação da Barra Brasil de acordo com a documentação contida em https://barra.brasil.gov.br/-->
-			<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
-			  <ul id="menu-barra-temp" style="list-style:none;">
-				<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
-					<a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
-				</li>
-			  </ul>
-			</div>
+        <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+          <ul id="menu-barra-temp" style="list-style:none;">
+            <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+            </li>
+          </ul>
+        </div>
 		<!--Início do Cabeçalho da Página-->
 		<header class="">
 			<!--Incorporação da Barra de Acessibilidade indicadas para Web-->
@@ -74,6 +77,8 @@
 				</ul>
 				<!--Final da Lista de Tradução-->
 			</div>
+            <!--Final Incorporação da Barra de Acessibilidade indicadas para Web-->
+            <!--Início da Divisão da Logo e Menu UFPR-->
             <div class="content">
                 <!--Logo do Centro de Microscopia Eletrônica-->
                 <img class="logo" src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
@@ -83,6 +88,8 @@
                     <ul>
                         <!--Link do Portal da UFPR-->
                         <li><a href="http://www.ufpr.br/portalufpr" aria-current="page">Portal UFPR</a></li>
+                        <!--Link do Portal do Setor de Ciências Biológicas da UFPR-->
+                        <li><a href="http://www.bio.ufpr.br/portal/" aria-current="page">Ciências Biológicas</a></li>
                         <!--Link da Intranet da UFPR-->
                         <li><a href="https://intranet.ufpr.br/">Intranet</a></li>
                         <!--Link do Office 365 para UFPR-->
@@ -94,58 +101,90 @@
                 </nav>
                 <!--Final do Menu da UFPR-->
             </div>
-			
+			<!--Final da Divisão da Logo e Menu UFPR-->
 			<!--Início da Divisão de Título e Formulário de Pesquisa no Site-->
 			<div id="barra-pesquisa">
+                <!--Título do Departamento-->
 				<h1>Centro de Microscopia Eletrônica</h1>
+                <!--Início do Formulário de Pesquisa do Site-->
 				<form id="" action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
+                    <!--Título do Ítem do Formulário-->
 					<label for="search">Pesquisar</label>
+                    <!--Campo de Digitação para Pesquisa-->
 					<input type="search" id="search" name="search" placeholder="Pesquisar...">
+                    <!--Botão de Pesquisar-->
                     <button type="submit"></button>
 				</form>
+                <!--Final do Formulário de Pesquisa do Site-->
 			</div>
 			<!--Final da Divisão de Título e Formulário de Pesquisa no Site-->
 			<!--Início do Menu de Navegação-->
 			<nav class="menu">
 				<!--Link de direcionamento da barra de acessibilidade para menu-->
 				<a name="nav" id="nav"></a>
-				<!--Início da Lista de Links do Menu-->
+				<!--Início da Lista de Links do Menu de 1° Nível-->
 				<ul>
-					<!-- Esse é o 1 nivel ou o nivel principal -->
+					<!--Link para Página Incial-->
 					<li><a href="#">Página Inicial</a></li>
+                    <!--Link para Páginas da Organização do Centro de Microscopia Eletrônica-->
 					<li><a href="#">CME</a>
+                        <!--Início da Lista de Links do Menu de 2° Nível-->
 						<ul>
-							<!-- Esse é o 2 nivel ou o primeiro Drop Down -->
-							<li><a href="#">Direção</a></li>
+							<!--Link para Página da Chefia do Centro de Microscopia Eletrônica-->
+							<li><a href="#">Chefia</a></li>
+                            <!--Link para Página do Corpo de Conselheiros do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Conselho</a></li>
+                            <!--Link para Página da Equipe Técnica do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Equipe Técnica</a></li>
+                            <!--Link para Página do Regimento Interno do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Regimento</a></li>
+                            <!--Link para Página da Descrição do Funcionamento do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Funcionamento</a></li>
+                            <!--Link para Página da História do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Histórico</a></li>
+                            <!--Link para Página de Descrição da Missão e Visão do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Missão e Visão</a></li>
+                            <!--Link para Página de Disponibilização do Logtipo do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Logotipo</a></li>
+                            <!--Link para Página do Planejamento Estratégico do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Planejamento Estratégico</a></li>
 						</ul>
+                        <!--Final da Lista de Links do Menu de 2° Nível-->
 					</li>
+                    <!--Link para Página de Trabalhos Desenvolvidos com Auxílio do Centro de Microscopia Eletrônica-->
 					<li><a href="#">Produção Científica</a></li>
-					<li><a href="#">Usuários</a>
+                    <!--Link para Página de Orientações aos Usuários-->
+					<li><a href="#">Orientações aos Usuários</a>
+                        <!--Início da Lista de Links do Menu de 2° Nível-->
 						<ul>
+                            <!--Link para Página de Normas para Usuários do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Normas</a></li>
-							<li><a href="#">Solicitação de Serviço</a></li>
+                            <!--Link Alternativo para Página do Sistema Interno de Gerenciamento do Centro de Microscopia Eletrônica-->
+							<li><a href="#">Sistema de Gerenciamento</a></li>
+                            <!--Link para Página de Perguntas Frequêntes do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Perguntas Frequentes</a></li>
 						</ul>
+                        <!--Final da Lista de Links do Menu de 2° Nível-->
 					</li>
+                    <!--Link para Página da Infraestrutura do Centro de Microscopia Eletrônica-->
 					<li><a href="#">Infraestrutura</a>
+                        <!--Início da Lista de Links do Menu de 2° Nível-->
 						<ul>
+                            <!--Link para Página dos Equipamentos do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Equipamentos</a></li>
+                            <!--Link para Página dos Laboratórios do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Laboratórios</a></li>
-							<li><a href="#">Tabelas de Preços e Serviços</a></li>
+                            <!--Link para Página dos Equipamentos do Centro de Microscopia Eletrônica-->
+							<li><a href="#">Tabelas de Serviços e Preços</a></li>
 						</ul>
+                        <!--Final da Lista de Links do Menu de 2° Nível-->
 					</li>
+                    <!--Link para Galeria de Imagens-->
 					<li><a href="#">Galeria</a></li>
+                    <!--Link para Mapa Google de Localização-->
 					<li><a href="#">Localização</a></li>
-					<li><a href="#">Contato</a></li>
-					<li><a href="#">Links</a></li>
+                    <!--Link para Softwares Úteis para Microscopia-->
+					<li><a href="#">Softwares Úteis</a></li>
 				</ul>
 				<!--Final da Lista de Links do Menu-->
 			</nav>
@@ -174,7 +213,7 @@
 					<!--Imagem do Segundo Botão de Atalho-->
 					<img src="img/Icone-Servicos.png" alt="Serviços">
 					<!--Título do Segundo Botão de Atalho-->
-					<h2>Tabela de Preços e Serviços</h2>
+					<h2>Tabelas de Serviços e Preços</h2>
 					<!--Detalhamento do Segundo Botão de Atalho-->
 					<p>Descrição</p>
 				</div>
@@ -214,11 +253,11 @@
 					<!--Início da Estrutura de Notícia-->
 					<article>
 						<!--Início da Divisão de Cabeçalho da Notícia-->
-						<div>
-						<!--Título da Notícia-->
-						<h4>Título da Notícia</h4>
-						<!--Data da Notícia-->
-						<h5>Data</h5>
+						<div class="cabecalho-noticias">
+                            <!--Título da Notícia-->
+                            <h4>Título da Notícia</h4>
+                            <!--Data da Notícia-->
+                            <h4>Data</h4>
 						</div>
 						<!--Final da Divisão de Cabeçalho da Notícia-->
 						<!--Texto da Notícia-->
@@ -271,46 +310,70 @@
 				</div>
 			</section>
 			<!--Final da Sessão de Notícias e Estatísticas-->
+            <!--Início da Sessão de Portifólio-->
+            <section >
+                <h2>Portifólio</h2>
+                <div class="portifolio">
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                    <div class="imagem-portifolio">Imagem</div>
+                </div>
+            </section>
+            <!--Final da Sessão de Portifólio-->
 			<!--Início da Sessão do Formulário de Contato-->
-			<section>
-				<!--Título Formulário de Contato-->
-				<h2>Contato</h2>
-				<form>
-					<label for="nomesobrenome">Nome e sobrenome</label>
-					<input type="text" id="nomesobrenome" class="input-padrao" required>
+			<section class="secaoContato">
+                <div class="container">
+                    <h2>Contato</h2>
 
-					<label for="email">Email</label>
-					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <form class="secaoContato-form">
+                        <fieldset>
+                            <legend class="secaoContato-form-legend">
+                            Oi, tudo bem? Fale com a gente!
+                            Preencha seus dados e sua mensagem:
+                            </legend>
 
-					<label for="telefone">Telefone</label>
-					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                            <div class="contatoCampo contatoCampo--sucesso">
+                                <label for="nome">Nome: </label>
+                                <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required value="Natan Souza">
+                            </div>  
 
-					<label for="mensagem">Mensagem</label>
-					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                            <div class="contatoCampo">
+                                <label for="email">Email: </label>
+                                <input type="email" id="email" placeholder="Email.." required value="contato@gnail.com">
+                                <span id="sugestao" class="contatoCampo-msg contatoCampo-msg--erro"></span>
+                            </div>
 
-					<fieldset>
-						<legend>Como prefere o nosso contato?</legend>
-						<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                            <div class="contatoCampo contatoCampo--erro">
+                                <label for="telefone">Telefone: </label>
+                                <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751" id="telefone">
+                                <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
+                            </div>     
 
-						<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                            <div class="contatoCampo">
+                                <label for="mensagem">Mensagem: </label>
+                                <textarea id="mensagem" name="" cols="30" rows="10" required>lorem ipsum</textarea>
+                            </div>
 
-						<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-					</fieldset>
+                            <div class="contatoCampo">
+                                <input type="checkbox" checked value="receberDestaques" class="contatoCampo-checkbox" id="receberEmail">
+                                <label class="contatoCampo-label" for="receberEmail">Receber destaques por email</label>
+                            </div>
 
-					<fieldset>
-						<legend>Qual horário prefere ser atendido?</legend>
-						<select>
-							<option>Manhã</option>
-							<option>Tarde</option>
-							<option>Noite</option>
-						</select>
-					</fieldset>
-
-					<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-
-					<input type="submit" value="Enviar formulário" class="enviar">
-				</form>
-			</section>
+                            <div class="contatoCampo">
+                                <button class="secaoContato-form-cta btnPadrao" type="submit">Enviar mensagem</button>
+                                <span class="contatoCampo-msg contatoCampo-msg--erro secaoContatoForm-validacao">Verifique os erros acima</span>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div> <!--fim .container da .secaoContato-->
+            </section>
 			<!--Final da Sessão do Formulário de Contato-->
 		</main>
 		<!--Final do Conteúdo Principal-->
@@ -323,7 +386,7 @@
 				<!--Início do Primeiro Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Serviços</h2>
+					<h3>Serviços</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link do Agendamento do Anfiteatro 10-->
@@ -345,7 +408,7 @@
 				<!--Início do Segundo Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Serviços de Apoio</h2>
+					<h3>Serviços de Apoio</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link da Administração Predial da Biológicas-->
@@ -363,7 +426,7 @@
 				<!--Início do Terceiro Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Comissões e Comitês</h2>
+					<h3>Comissões e Comitês</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link da Comissão de Ética no Uso de Animais-->
@@ -379,7 +442,7 @@
 				<!--Início do Quarto Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Órgãos Suplementares</h2>
+					<h3>Órgãos Suplementares</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link da ASPEC-->
@@ -397,7 +460,7 @@
 				<!--Início do Quinto Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Sítios de Interesse</h2>
+					<h3>Sítios de Interesse</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link do Ministério da Educação-->
@@ -421,7 +484,7 @@
 				<!--Início do Sexto Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Pró-Reitorias da UFPR</h2>
+					<h3>Pró-Reitorias da UFPR</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link da Pró-Reitoria de Administração da UFPR-->
@@ -445,7 +508,7 @@
 				<!--Início do Sétimo Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Sítios da UFPR</h2>
+					<h3>Sítios da UFPR</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link da Secretaria dos Órgãos Colegiados-->
@@ -467,7 +530,7 @@
 				<!--Início do Oitavo Bloco de Links-->
 				<div class="sessao-links">
 					<!--Título da Sessão-->
-					<h2>Setores da UFPR</h2>
+					<h3>Setores da UFPR</h3>
 					<!--Início da Lista de Links-->
 					<ul>
 						<!--Link do Setor de Artes, Comunicação e Design da UFPR-->
@@ -551,12 +614,19 @@
 		</footer>
 		<!--Final do Rodapé-->
 	</div>
+    <!--Final da Divisão que Envolve o Conteúdo da Página-->
 	<!--Código JavaScript dos Elementos da Barra Brasil-->
 	<script defer="defer" src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 	<!--Funções do Estilo da Página
     <script src="js/style.js"></script>-->
 	<!--Funções de Adaptação de Acessibilidade PCD-->
     <script src="js/acessibilidade.js"></script>
+    <!--Funções de Validação de CEP-->
+    <script src="js/validacao-cep.js"></script>
+    <!--Funções de Checagem de E-mail-->
+    <script src="js/mailcheck.js"></script>
+    <!--Configuração de Checagem de E-mail-->
+    <script src="js/mailcheck-config.js"></script>
 </body>
 </html>
 
