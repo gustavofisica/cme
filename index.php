@@ -202,7 +202,8 @@
 				<!--Primeiro Botão de Atalho-->
 				<div>
 					<!--Imagem do Primeiro Botão de Atalho-->
-					<a href="login.php"><img src="img/Icone-formularios.png" alt="Formulários"></a>
+                    <!--Link para Modal de Login do Sistema-->
+					<a id="abreDialog"><img src="img/Icone-formularios.png" alt="Formulários"></a>
 					<!--Título do Primeiro Botão de Atalho-->
 					<h2>Solicitação de Serviço</h2>
 					<!--Detalhamento do Primeiro Botão de Atalho-->
@@ -272,38 +273,38 @@
 				<div class="estatisticas">
 					<!--Título da Divisão de Estatísticas-->
 					<h2>Estatísticas</h2>
-					<div>
-						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
 							Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 							Microscópio Eletrônico de Varredura JEOL JSM 6360-LV
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
 							Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
 							Microscópio Eletrônico de Varredura FEI Quanta 450 FEG
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
 							Microscópio Raman Confocal Witec alpha 300R
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
 							Microscópio de Força Atômica Shimadzu SPM 9500 J3
 						</div>
 					</div>
-					<div class="progress mt-4">
-						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+					<div class="barra-progresso">
+						<div class="porcentagem-progresso" style="width: 70%">
 							Microscópio Eletrônico de Varredura de Bancada FEI Phenom
 						</div>
 					</div>
@@ -613,20 +614,36 @@
 			<div id="footer-brasil"></div>
 		</footer>
 		<!--Final do Rodapé-->
+        <div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="tituloDialog">
+            <div class="dialogNewsletter-body">
+                <img src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
+                <h2 class="dialogNewsletter-titulo" id="tituloDialog">Contato</h2>
+                <h3 class="dialogNewsletter-texto">
+                Assine nossa newsletter para receber notícias técnicas sem spam!
+                </h3>
+                <form class="dialogNewsletter-form">
+                    <label class="dialogNewsletter-label" for="login">Login</label>
+                    <input type="login" class="dialogNewsletter-campo" id="login" name="login" placeholder="Login">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Senha">
+                    <button class="dialogNewsletter-btn" type="submit">Entrar</button>
+                    <button class="dialogNewsletter-fechar" type="button" aria-label="Fechar janela modal">Fechar modal</button>
+                </form>
+            </div>
+        <div class="dialogNewsletter-overlay"></div>
+        </div>
 	</div>
     <!--Final da Divisão que Envolve o Conteúdo da Página-->
 	<!--Código JavaScript dos Elementos da Barra Brasil-->
 	<script defer="defer" src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
-	<!--Funções do Estilo da Página
-    <script src="js/style.js"></script>-->
 	<!--Funções de Adaptação de Acessibilidade PCD-->
     <script src="js/acessibilidade.js"></script>
-    <!--Funções de Validação de CEP-->
-    <script src="js/validacao-cep.js"></script>
     <!--Funções de Checagem de E-mail-->
     <script src="js/mailcheck.js"></script>
     <!--Configuração de Checagem de E-mail-->
     <script src="js/mailcheck-config.js"></script>
+    <!--Funções Frame Modal para Login-->
+    <script src="js/dialog.js"></script>
 </body>
 </html>
 
