@@ -61,20 +61,27 @@ main {
 }
 
 .barra-progresso{
-    height: 25px;
+    height: 30px;
     margin-bottom: 5px;
     background: #CCC;
-    position: relative;
-    font-size: 15px;
     border-radius: 2px;
 }
 
-.barra-progresso .porcentagem-progresso{
-    position: absolute;
-    height: 100%;
+.barra-porcentagem{
+    height: 30px;
     background: #0fd439;
     border-radius: 2px;
-    vertical-align: middle;
+    position: relative;
+    top: -35px;
+}
+
+.barra-porcentagem ul{
+    position: relative;
+    width: 100%;
+}
+
+.barra-porcentagem ul li:last-child a{
+    display: none;
 }
 
 .cabecalho-noticias{
