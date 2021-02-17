@@ -60,30 +60,6 @@ main {
    margin-left: 20px; 
 }
 
-.barra-progresso{
-    height: 30px;
-    margin-bottom: 5px;
-    background: #CCC;
-    border-radius: 2px;
-}
-
-.barra-porcentagem{
-    height: 30px;
-    background: #0fd439;
-    border-radius: 2px;
-    position: relative;
-    top: -35px;
-}
-
-.barra-porcentagem ul{
-    position: relative;
-    width: 100%;
-}
-
-.barra-porcentagem ul li:last-child a{
-    display: none;
-}
-
 .cabecalho-noticias{
     display: flex;
     align-items: center;
