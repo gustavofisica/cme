@@ -29,30 +29,9 @@
 	<!--Título da Página na aba do Browser-->
 	<title>Centro de Microscopia Eletrônica</title>
     <!--Incorporação do Google Charts-->
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--Configuração Local do Google Charts-->
-    <script>
-      google.charts.load('current', {packages: ['corechart']});
-
-      function desenharGrafico(){
-        tabela = new google.visualization.DataTable();
-        tabela.addColumn('string', 'microscópio');
-        tabela.addColumn('number', 'porcentagem');
-        tabela.addRows(
-            [
-                ['Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II', 85],
-                ['Microscópio Eletrônico de Varredura JEOL JSM 6360-LV', 75],
-                ['Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU', 65],
-                ['Microscópio Eletrônico de Varredura FEI Quanta 450 FEG', 55],
-                ['Microscópio Raman Confocal Witec alpha 300R', 45],
-                ['Microscópio de Força Atômica Shimadzu SPM 9500 J3', 35],
-                ['Microscópio Eletrônico de Varredura de Bancada FEI Phenom', 25]
-            ]);
-          var grafico = new google.visualization.PieChart(document.getElementById('grafico'));
-          grafico.draw(tabela);
-      }
-        google.charts.setOnLoadCallback(desenharGrafico);
-    </script>
+    <script src="js/charts.js"></script>
 </head>
 <body class="">
     <!--Início da Divisão que Envolve o Conteúdo da Página-->
@@ -298,59 +277,9 @@
 				<div class="estatisticas">
 					<!--Título da Divisão de Estatísticas-->
 					<h2>Estatísticas</h2>
-                    <div id="grafico">
-                        <!--<ul>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
-                                <ul>
-                                    <li><a href="#">Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                                <ul>
-                                    <li><a href="#">Microscópio Eletrônico de Varredura JEOL JSM 6360-LV</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-                                <ul>
-                                    <li><a href="#">Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-                                <ul>
-                                    <li><a href="#">Microscópio Eletrônico de Varredura FEI Quanta 450 FEG</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                                <ul>
-                                    <li><a href="#">Microscópio Raman Confocal Witec alpha 300R</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                                <ul>
-                                    <li><a href="#">Microscópio de Força Atômica Shimadzu SPM 9500 J3</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                            <li class="barra-progresso"></li>
-                            <li class="barra-porcentagem" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-                                <ul>
-                                    <li><a href="#">Microscópio Eletrônico de Varredura de Bancada FEI Phenom</a></li>
-                                    <li><a href="#">Detalhamento Cursos</a></li>
-                                </ul>
-                            </li>
-                        </ul>-->
-                    </div>
+                    <div id="hidden_div" style="display:none"></div>
+                    <div id="visible_div" style="height:300px"></div>
+                </div>
 			</section>
 			<!--Final da Sessão de Notícias e Estatísticas-->
             <!--Início da Sessão de Portifólio-->
