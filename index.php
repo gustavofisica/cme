@@ -31,7 +31,7 @@
     <!--Incorporação do Google Charts-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--Configuração Local do Google Charts-->
-    <script src="js/charts.js"></script>
+    <script type="text/javascript" src="js/charts.js"></script>
 </head>
 <body class="">
     <!--Início da Divisão que Envolve o Conteúdo da Página-->
@@ -602,15 +602,15 @@
 	</div>
     <!--Final da Divisão que Envolve o Conteúdo da Página-->
 	<!--Código JavaScript dos Elementos da Barra Brasil-->
-	<script defer="defer" src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+	<script type="text/javascript" defer="defer" src="http://barra.brasil.gov.br/barra.js"></script>
 	<!--Funções de Adaptação de Acessibilidade PCD-->
-    <script src="js/acessibilidade.js"></script>
+    <script type="text/javascript" src="js/acessibilidade.js"></script>
     <!--Funções de Checagem de E-mail-->
-    <script src="js/mailcheck.js"></script>
+    <script type="text/javascript" src="js/mailcheck.js"></script>
     <!--Configuração de Checagem de E-mail-->
-    <script src="js/mailcheck-config.js"></script>
+    <script type="text/javascript" src="js/mailcheck-config.js"></script>
     <!--Funções Frame Modal para Login-->
-    <script src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
 </body>
 </html>
 
