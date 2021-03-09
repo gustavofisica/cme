@@ -9,8 +9,6 @@
 	<meta name="viewport" content="width=device-width">
 	<!--Configuração da Unidade Organizacional do CME da Barra Brasil-->
 	<meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241245">
-	<!--Formata todos os estilos originais dos Browsers-->
-	<link href="css/reset.css" rel="stylesheet">
 	<!--Estilos da página-->
 	<link href="css/estilos.css" rel="stylesheet">
     <!--Incorporação da fonte Noto Serif da Google-->
