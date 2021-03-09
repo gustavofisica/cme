@@ -3,13 +3,13 @@ google.charts.setOnLoadCallback(drawTooltipCharts);
 
 // Set up data for visible chart.
 var primaryData = [
-    ['Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II', 22.4],
-    ['Microscópio Eletrônico de Varredura JEOL JSM 6360-LV', 111.3],
-    ['Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU', 19.2],
-    ['Microscópio Eletrônico de Varredura FEI Quanta 450 FEG', 1.9],
-    ['Microscópio Raman Confocal Witec alpha 300R', 6.4],
-    ['Microscópio de Força Atômica Shimadzu SPM 9500 J3', 2.4],
-    ['Microscópio Eletrônico de Varredura de Bancada FEI Phenom', 2.4]
+    ['Microscópio Eletrônico de Transmissão JEOL JEM 1200EX-II',    22.4,   '#934849'],
+    ['Microscópio Eletrônico de Varredura JEOL JSM 6360-LV',        111.3,  '#1B1BBD'],
+    ['Microscópio Eletrônico de Varredura TESCAN VEGA3 LMU',        19.2,   '#258325'],
+    ['Microscópio Eletrônico de Varredura FEI Quanta 450 FEG',      1.9,    '#FF90A3'],
+    ['Microscópio Raman Confocal Witec alpha 300R',                 6.4,    '#E31616'],
+    ['Microscópio de Força Atômica Shimadzu SPM 9500 J3',           2.4,    '#E7E722'],
+    ['Microscópio Eletrônico de Varredura de Bancada FEI Phenom',   2.4,    '#C5A5CF']
 ];
 
 // Set up data for your tooltips.
@@ -52,7 +52,7 @@ function drawTooltipCharts() {
         // Set the view for each event's data
         view.setColumns([0, i + 1]);
 
-        var hiddenDiv = document.getElementById('hidden_div');
+        var hiddenDiv = document.getElementById('hidden-div');
         var tooltipChart = new google.visualization.PieChart(hiddenDiv);
 
         google.visualization.events.addListener(tooltipChart, 'ready', function() {
@@ -72,8 +72,8 @@ function drawTooltipCharts() {
 function drawPrimaryChart() {
 
     var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Event');
-    data.addColumn('number', 'Highest Recent Viewership');
+    data.addColumn('string', 'Microscópio');
+    data.addColumn('number', 'Tempo Utilizado');
 
     // Add a new column for your tooltips.
     data.addColumn({
@@ -86,7 +86,7 @@ function drawPrimaryChart() {
     // Add your data (with the newly added tooltipImg).
     data.addRows(primaryData);
 
-    var visibleDiv = document.getElementById('visible_div');
+    var visibleDiv = document.getElementById('visible-div');
     var primaryChart = new google.visualization.BarChart(visibleDiv);
     primaryChart.draw(data, primaryOptions);
 

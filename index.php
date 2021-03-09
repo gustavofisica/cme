@@ -277,8 +277,8 @@
 				<div class="estatisticas">
 					<!--Título da Divisão de Estatísticas-->
 					<h2>Estatísticas</h2>
-                    <div id="hidden_div" style="display:none"></div>
-                    <div id="visible_div" style="height:300px"></div>
+                    <div id="hidden-div" style="display:none"></div>
+                    <div id="visible-div" style="height:300px"></div>
                 </div>
 			</section>
 			<!--Final da Sessão de Notícias e Estatísticas-->
