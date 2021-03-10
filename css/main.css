@@ -1,135 +1,129 @@
+@charset "UTF-8";
 /******Estilo dos Elementos do Rodapé******/
+/* line 2, layout/main.scss */
 main {
-	background: white;
-}
+  background: white; }
 
-.atalhos{
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-}
+/* line 6, layout/main.scss */
+.atalhos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: auto; }
 
-.atalhos div{
-    display: flex;
-    flex-flow: column;
-    align-items: center
-}
+/* line 14, layout/main.scss */
+.atalhos div {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
 
-.atalhos h2{
-	font-size: 25px;
-	font-weight: bold;
-	text-align: center;
-    margin-bottom: 10px;
-}
+/* line 20, layout/main.scss */
+.atalhos h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px; }
 
-.atalhos p{
-	
-}
+/* line 31, layout/main.scss */
+.atalhos img {
+  width: 150px;
+  transition: 0.5s;
+  border-radius: 100%;
+  background: #FFFFFF; }
 
-.atalhos img{
-	width: 150px;
-	transition: 0.5s;
-	border-radius: 100%;
-	background: #FFFFFF;
-}
+/* line 38, layout/main.scss */
+.atalhos img:hover {
+  border-radius: 0;
+  transform: scale(1.1);
+  background: #a3a0a0; }
 
-.atalhos img:hover{
-	border-radius: 0;
-	transform: scale(1.1);
-	background: rgba(163,160,160,1.00);
-}
-
+/* line 44, layout/main.scss */
 .apresentacao,
-.noticias-estatisticas{
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-}
+.noticias-estatisticas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px; }
 
+/* line 52, layout/main.scss */
 .apresentacao div,
 .apresentacao frame,
 .noticias,
-.estatisticas{
-    width: 50%;
-}
+.estatisticas {
+  width: 50%; }
 
-.estatisticas, .apresentacao div{
-   margin-left: 20px; 
-}
+/* line 59, layout/main.scss */
+.estatisticas, .apresentacao div {
+  margin-left: 20px; }
 
-.cabecalho-noticias{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/* line 63, layout/main.scss */
+.cabecalho-noticias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
-.portifolio{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
+/* line 69, layout/main.scss */
+.portifolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
 
-.imagem-portifolio{
-    border: thin black solid;
-    width: 200px;
-    height: 100px;
-    border-radius: 2px;
-    margin: 10px;
-    text-align: center;
-    background: url("../img/favicon.png") center no-repeat;
-    background-size: 80px;
-    box-shadow: 5px 5px 2px #000000;
-}
+/* line 76, layout/main.scss */
+.imagem-portifolio {
+  border: thin black solid;
+  width: 200px;
+  height: 100px;
+  border-radius: 2px;
+  margin: 10px;
+  text-align: center;
+  background: url("../img/favicon.png") center no-repeat;
+  background-size: 80px;
+  box-shadow: 5px 5px 2px #000000; }
 
-
+/* line 89, layout/main.scss */
 .secaoContato-form-fieldset {
-  border: 0;
-}
+  border: 0; }
 
+/* line 93, layout/main.scss */
 .secaoContato-form-legend {
   max-width: 300px;
   line-height: 1.6;
   text-align: center;
   margin: 0 auto;
-  
   position: relative;
- left: 50%;
-  transform: translateX(-50%)
-}
+  left: 50%;
+  transform: translateX(-50%); }
 
-
+/* line 105, layout/main.scss */
 .secaoContato-form-cta {
   width: 100%;
   margin-top: 1em;
   display: block;
   background: transparent;
   color: #B72E2E;
-  border: 1px solid #B72E2E;
-}
+  border: 1px solid #B72E2E; }
 
+/* line 114, layout/main.scss */
 .secaoContato-form-cta:hover,
 .secaoContato-form-cta:focus {
   color: #fff;
-  background-color: #B72E2E;
-}
+  background-color: #B72E2E; }
 
-
+/* line 121, layout/main.scss */
 .contatoCampo {
   margin: .8em auto;
   max-width: 600px;
-  position: relative;
-}
+  position: relative; }
 
+/* line 127, layout/main.scss */
 .contatoCampo-label {
-  position: relative;
-}
+  position: relative; }
 
+/* line 131, layout/main.scss */
 .contatoCampo-label:before {
-  content:'';
+  content: '';
   vertical-align: middle;
   display: inline-block;
   width: 20px;
@@ -141,22 +135,22 @@ main {
   color: transparent;
   line-height: 1;
   transition: background-color .2s ease-in, color .2s ease-in;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-.contatoCampo-checkbox:hover + .contatoCampo-label:before, 
+/* line 147, layout/main.scss */
+.contatoCampo-checkbox:hover + .contatoCampo-label:before,
 .contatoCampo-checkbox:focus + .contatoCampo-label:before {
-  border: 2px solid #333;
-}
+  border: 2px solid #333; }
 
+/* line 152, layout/main.scss */
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: '';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
   border-color: #015fbe;
-  line-height: .8;
-}
+  line-height: .8; }
 
+/* line 160, layout/main.scss */
 .contatoCampo-checkbox:checked + .contatoCampo-label:after {
   content: '';
   width: 10px;
@@ -168,39 +162,37 @@ main {
   position: absolute;
   z-index: 2;
   left: -3px;
-  top: 5px;
-}
+  top: 5px; }
 
-
-
+/* line 176, layout/main.scss */
 .contatoCampo-checkbox {
-/*  display: none;*/
-/*  visibility: hidden*/
+  /*  display: none;*/
+  /*  visibility: hidden*/
   left: -9999px;
   position: absolute;
-  opacity: 0;
-}
+  opacity: 0; }
 
+/* line 184, layout/main.scss */
 .contatoCampo-icone {
   position: absolute;
   left: -2em;
   top: 2.5em;
-  width: 1.5em;
-}
+  width: 1.5em; }
 
+/* line 191, layout/main.scss */
 .contatoCampo label,
 .contatoCampo input:not([type='checkbox']),
 .contatoCampo textarea {
   display: block;
   width: 100%;
-  text-align: left;
-} 
+  text-align: left; }
 
+/* line 199, layout/main.scss */
 .contatoCampo label {
   margin-bottom: 5px;
-  margin-left: 8px;
-} 
+  margin-left: 8px; }
 
+/* line 204, layout/main.scss */
 .contatoCampo input,
 .contatoCampo textarea {
   font-size: 1em;
@@ -208,40 +200,40 @@ main {
   min-height: 50px;
   border-radius: 8px;
   border: 2px solid #ccc;
-  outline: 0;
-} 
+  outline: 0; }
 
+/* line 214, layout/main.scss */
 .contatoCampo input:focus,
 .contatoCampo textarea:focus {
-  border: 2px solid #222;
-} 
+  border: 2px solid #222; }
 
+/* line 219, layout/main.scss */
 .contatoCampo-campoDesabilitado {
-  background-color: #ddd;
-}
+  background-color: #ddd; }
 
-.contatoCampo-msg, 
+/* line 223, layout/main.scss */
+.contatoCampo-msg,
 .formContato-validacao {
   margin-left: 4px;
   margin-top: 4px;
   font-size: .9em;
   font-weight: bold;
   color: #FD1242;
-  display: none;
-}
+  display: none; }
 
+/* line 233, layout/main.scss */
 .contatoCampo .contatoCampo--validouFoi {
   border: 2px solid #219653;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
+/* line 239, layout/main.scss */
 .contatoCampo .contatoCampo--validouErro {
   border: 2px solid #FF0000;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
+/* line 245, layout/main.scss */
 .contatoCampo--sucesso:before {
   content: '';
   display: inline-block;
@@ -250,10 +242,10 @@ main {
   position: absolute;
   z-index: 1;
   right: .4em;
-  transform: translateY(112%) scale(.65);
-  background-image: url(../img/validacao-sucesso.png);
-}
+  transform: translateY(112%) scale(0.65);
+  background-image: url(../img/validacao-sucesso.png); }
 
+/* line 257, layout/main.scss */
 .contatoCampo--erro:before {
   content: '';
   display: inline-block;
@@ -262,38 +254,38 @@ main {
   position: absolute;
   z-index: 1;
   right: .4em;
-  transform: translateY(112%) scale(.65);
-  background-image: url(../img/validacao-erro.png);
-}
+  transform: translateY(112%) scale(0.65);
+  background-image: url(../img/validacao-erro.png); }
 
+/* line 269, layout/main.scss */
 .dialogNewsletter {
-  display: none;
-}
+  display: none; }
 
+/* line 273, layout/main.scss */
 .dialogNewsletter--aberto {
-  display: block;
-}
+  display: block; }
 
+/* line 277, layout/main.scss */
 .dialogNewsletter-body {
   font-size: 18px;
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #8D8D8D;
   padding: 3em 1.5em 1.5em 1.5em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   display: inline-block;
   top: 45%;
   left: 50%;
-  transform: translate(-50%,-52%);
+  transform: translate(-50%, -52%);
   z-index: 3;
   transition: .3s ease-in;
   color: #222;
   width: 300px;
   max-width: 533px;
-  text-align: left;
-}
+  text-align: left; }
 
+/* line 297, layout/main.scss */
 .dialogNewsletter-overlay {
   position: fixed;
   z-index: 2;
@@ -302,32 +294,32 @@ main {
   top: 0;
   left: 0;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, .4);
-}
+  background-color: rgba(0, 0, 0, 0.4); }
 
+/* line 308, layout/main.scss */
 .overlayDialog + .dialogNewsletter {
   display: block;
-  transform: translate(-50%,-50%);
-}
+  transform: translate(-50%, -50%); }
 
+/* line 313, layout/main.scss */
 .dialogNewsletter-titulo {
   font-size: 1.8em;
-  line-height: 1;
-}
+  line-height: 1; }
 
+/* line 318, layout/main.scss */
 .dialogNewsletter-texto {
   font-size: 1em;
   margin-bottom: 1.5em;
   margin-top: 1em;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
+/* line 325, layout/main.scss */
 .dialogNewsletter-label {
   position: absolute;
   z-index: -1;
-  left: -9999px;
-}
+  left: -9999px; }
 
+/* line 331, layout/main.scss */
 .dialogNewsletter-campo {
   font-size: 1em;
   border-radius: 8px;
@@ -336,9 +328,9 @@ main {
   margin-right: 10px;
   margin-bottom: 10px;
   width: 100%;
-  min-width: 245px;
-}
+  min-width: 245px; }
 
+/* line 342, layout/main.scss */
 .dialogNewsletter-btn {
   vertical-align: top;
   text-indent: -9999px;
@@ -347,17 +339,17 @@ main {
   padding: 8px;
   width: 100%;
   height: 3.1em;
-  background: url(../img/email.png) no-repeat center; 
-  transition: .2s ease-in;
-}
+  background: url(../img/email.png) no-repeat center;
+  transition: .2s ease-in; }
 
+/* line 354, layout/main.scss */
 .dialogNewsletter-btn:hover,
 .dialogNewsletter-btn:focus {
   background-color: #EB5757;
   cursor: pointer;
-  background-image: url(../img/email-hover.png);
-}
+  background-image: url(../img/email-hover.png); }
 
+/* line 361, layout/main.scss */
 .dialogNewsletter-fechar {
   position: absolute;
   background-color: transparent;
@@ -370,9 +362,9 @@ main {
   border: 1px solid;
   overflow: hidden;
   color: transparent;
-  font-size: 0;
-}
+  font-size: 0; }
 
+/* line 376, layout/main.scss */
 .dialogNewsletter-fechar:before {
   content: 'x';
   color: #666;
@@ -384,12 +376,10 @@ main {
   left: 0;
   z-index: 2;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bold; }
 
-}
-
+/* line 391, layout/main.scss */
 .dialogNewsletter-fechar:hover:before,
 .dialogNewsletter-fechar:focus:before {
-  color: #ce3434;  
-  cursor: pointer;
-}
+  color: #ce3434;
+  cursor: pointer; }

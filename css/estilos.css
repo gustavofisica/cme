@@ -1,11 +1,8 @@
 @charset "UTF-8";
-/* CSS Document */
-/* CSS Document */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, base/reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,42 +27,71 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, base/reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 34, base/reset.scss */
 body {
   line-height: 1; }
 
-/* line 37, base/reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 40, base/reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 43, base/reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 48, base/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/******Estilo do Documento******/
+/******Estilo Geral do Corpo do Documento******/
+body {
+  background: lightgray; }
+
+.caixa {
+  width: 1200px;
+  margin: 0 auto; }
+
+.contraste {
+  background: black;
+  color: white; }
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover {
+  color: #4B4B4B; }
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px; }
+
+h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #878787;
+  margin-bottom: 5px; }
+
+p {
+  text-align: justify; }
+
+/******Estilo de Texto******/
 /******Estilo do Header******/
-/* line 3, layout/header.scss */
 header {
   background: url("../img/header/MEV_Espiculas_Bio.png") center no-repeat;
   background-size: 100%;
   height: 270px; }
 
-/* line 9, layout/header.scss */
 .barra-acessibilidade {
   display: flex;
   align-items: center;
@@ -74,20 +100,16 @@ header {
   height: 30px;
   padding: 0 15px; }
 
-/* line 18, layout/header.scss */
 .barra-acessibilidade ul {
   display: flex; }
 
-/* line 22, layout/header.scss */
 .barra-acessibilidade ul:nth-child(2) {
   text-transform: uppercase;
   text-decoration: underline dotted; }
 
-/* line 27, layout/header.scss */
 .barra-acessibilidade li {
   margin: 5px; }
 
-/* line 31, layout/header.scss */
 .barra-acessibilidade span {
   background: black;
   color: white;
@@ -95,38 +117,31 @@ header {
   padding: 0 0.3em;
   margin-left: 0.25em; }
 
-/* line 39, layout/header.scss */
 .barra-acessibilidade img {
   width: 16px; }
 
-/* line 43, layout/header.scss */
 .content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 20px; }
 
-/* line 51, layout/header.scss */
 .logo {
   height: 100px;
   filter: drop-shadow(5px 5px 5px #000000);
   -webkit-filter: drop-shadow(5px 5px 5px #000000); }
 
-/* line 61, layout/header.scss */
 .menu-ufpr ul {
   display: flex; }
 
-/* line 65, layout/header.scss */
 .menu-ufpr ul li a {
   background: #3e7489;
   margin: 0 1px 0 0;
   padding: 4px; }
 
-/* line 71, layout/header.scss */
 .menu-ufpr ul li a:hover {
   background: rgba(62, 116, 137, 0.7); }
 
-/* line 75, layout/header.scss */
 #barra-pesquisa {
   display: flex;
   align-items: center;
@@ -136,24 +151,20 @@ header {
   margin: 10px 0;
   padding: 0 15px; }
 
-/* line 85, layout/header.scss */
 #barra-pesquisa h1 {
   color: white;
   text-shadow: 1px 1px black;
   font-size: 30px; }
 
-/* line 91, layout/header.scss */
 #barra-pesquisa form {
   display: flex; }
 
-/* line 95, layout/header.scss */
 #barra-pesquisa form input {
   border: none;
   height: 25px;
   border-radius: 2px;
   padding: 15px; }
 
-/* line 102, layout/header.scss */
 #barra-pesquisa form button {
   border: none;
   background: url("../img/Icone-Pesquisa.png") center;
@@ -165,28 +176,23 @@ header {
   top: 5px;
   right: 30px; }
 
-/* line 114, layout/header.scss */
 #barra-pesquisa form label {
   display: none; }
 
-/* line 122, layout/header.scss */
 .menu {
   background-color: #3e7489;
   display: flex;
   margin-top: 20px;
   height: 50px; }
 
-/* line 130, layout/header.scss */
 .menu ul {
   list-style: none;
   margin: 0; }
 
-/* line 135, layout/header.scss */
 .menu li {
   float: left;
   position: relative; }
 
-/* line 140, layout/header.scss */
 .menu li a {
   color: black;
   padding: 10px;
@@ -194,33 +200,27 @@ header {
   min-width: 80px;
   display: block; }
 
-/* line 148, layout/header.scss */
 .menu li a:hover {
   color: aqua;
   background: red;
   float: left; }
 
-/* line 154, layout/header.scss */
 .menu li ul {
   display: none;
   position: absolute;
   top: 30px;
   left: 0; }
 
-/* line 161, layout/header.scss */
 .menu li:hover ul {
   display: block; }
 
-/* line 165, layout/header.scss */
 .menu li ul li {
   display: block; }
 
 /******Estilo dos Elementos do Rodapé******/
-/* line 2, layout/main.scss */
 main {
   background: white; }
 
-/* line 6, layout/main.scss */
 .atalhos {
   display: flex;
   justify-content: space-around;
@@ -228,33 +228,28 @@ main {
   width: 70%;
   margin: auto; }
 
-/* line 14, layout/main.scss */
 .atalhos div {
   display: flex;
   flex-flow: column;
   align-items: center; }
 
-/* line 20, layout/main.scss */
 .atalhos h2 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px; }
 
-/* line 31, layout/main.scss */
 .atalhos img {
   width: 150px;
   transition: 0.5s;
   border-radius: 100%;
   background: #FFFFFF; }
 
-/* line 38, layout/main.scss */
 .atalhos img:hover {
   border-radius: 0;
   transform: scale(1.1);
   background: #a3a0a0; }
 
-/* line 44, layout/main.scss */
 .apresentacao,
 .noticias-estatisticas {
   display: flex;
@@ -262,31 +257,26 @@ main {
   align-items: center;
   margin: 20px; }
 
-/* line 52, layout/main.scss */
 .apresentacao div,
 .apresentacao frame,
 .noticias,
 .estatisticas {
   width: 50%; }
 
-/* line 59, layout/main.scss */
 .estatisticas, .apresentacao div {
   margin-left: 20px; }
 
-/* line 63, layout/main.scss */
 .cabecalho-noticias {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-/* line 69, layout/main.scss */
 .portifolio {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center; }
 
-/* line 76, layout/main.scss */
 .imagem-portifolio {
   border: thin black solid;
   width: 200px;
@@ -298,11 +288,9 @@ main {
   background-size: 80px;
   box-shadow: 5px 5px 2px #000000; }
 
-/* line 89, layout/main.scss */
 .secaoContato-form-fieldset {
   border: 0; }
 
-/* line 93, layout/main.scss */
 .secaoContato-form-legend {
   max-width: 300px;
   line-height: 1.6;
@@ -312,7 +300,6 @@ main {
   left: 50%;
   transform: translateX(-50%); }
 
-/* line 105, layout/main.scss */
 .secaoContato-form-cta {
   width: 100%;
   margin-top: 1em;
@@ -321,23 +308,19 @@ main {
   color: #B72E2E;
   border: 1px solid #B72E2E; }
 
-/* line 114, layout/main.scss */
 .secaoContato-form-cta:hover,
 .secaoContato-form-cta:focus {
   color: #fff;
   background-color: #B72E2E; }
 
-/* line 121, layout/main.scss */
 .contatoCampo {
   margin: .8em auto;
   max-width: 600px;
   position: relative; }
 
-/* line 127, layout/main.scss */
 .contatoCampo-label {
   position: relative; }
 
-/* line 131, layout/main.scss */
 .contatoCampo-label:before {
   content: '';
   vertical-align: middle;
@@ -353,12 +336,10 @@ main {
   transition: background-color .2s ease-in, color .2s ease-in;
   box-sizing: border-box; }
 
-/* line 147, layout/main.scss */
 .contatoCampo-checkbox:hover + .contatoCampo-label:before,
 .contatoCampo-checkbox:focus + .contatoCampo-label:before {
   border: 2px solid #333; }
 
-/* line 152, layout/main.scss */
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: '';
   color: #fff;
@@ -366,7 +347,6 @@ main {
   border-color: #015fbe;
   line-height: .8; }
 
-/* line 160, layout/main.scss */
 .contatoCampo-checkbox:checked + .contatoCampo-label:after {
   content: '';
   width: 10px;
@@ -380,7 +360,6 @@ main {
   left: -3px;
   top: 5px; }
 
-/* line 176, layout/main.scss */
 .contatoCampo-checkbox {
   /*  display: none;*/
   /*  visibility: hidden*/
@@ -388,14 +367,12 @@ main {
   position: absolute;
   opacity: 0; }
 
-/* line 184, layout/main.scss */
 .contatoCampo-icone {
   position: absolute;
   left: -2em;
   top: 2.5em;
   width: 1.5em; }
 
-/* line 191, layout/main.scss */
 .contatoCampo label,
 .contatoCampo input:not([type='checkbox']),
 .contatoCampo textarea {
@@ -403,12 +380,10 @@ main {
   width: 100%;
   text-align: left; }
 
-/* line 199, layout/main.scss */
 .contatoCampo label {
   margin-bottom: 5px;
   margin-left: 8px; }
 
-/* line 204, layout/main.scss */
 .contatoCampo input,
 .contatoCampo textarea {
   font-size: 1em;
@@ -418,16 +393,13 @@ main {
   border: 2px solid #ccc;
   outline: 0; }
 
-/* line 214, layout/main.scss */
 .contatoCampo input:focus,
 .contatoCampo textarea:focus {
   border: 2px solid #222; }
 
-/* line 219, layout/main.scss */
 .contatoCampo-campoDesabilitado {
   background-color: #ddd; }
 
-/* line 223, layout/main.scss */
 .contatoCampo-msg,
 .formContato-validacao {
   margin-left: 4px;
@@ -437,19 +409,16 @@ main {
   color: #FD1242;
   display: none; }
 
-/* line 233, layout/main.scss */
 .contatoCampo .contatoCampo--validouFoi {
   border: 2px solid #219653;
   background-color: #fff;
   position: relative; }
 
-/* line 239, layout/main.scss */
 .contatoCampo .contatoCampo--validouErro {
   border: 2px solid #FF0000;
   background-color: #fff;
   position: relative; }
 
-/* line 245, layout/main.scss */
 .contatoCampo--sucesso:before {
   content: '';
   display: inline-block;
@@ -461,7 +430,6 @@ main {
   transform: translateY(112%) scale(0.65);
   background-image: url(../img/validacao-sucesso.png); }
 
-/* line 257, layout/main.scss */
 .contatoCampo--erro:before {
   content: '';
   display: inline-block;
@@ -473,15 +441,12 @@ main {
   transform: translateY(112%) scale(0.65);
   background-image: url(../img/validacao-erro.png); }
 
-/* line 269, layout/main.scss */
 .dialogNewsletter {
   display: none; }
 
-/* line 273, layout/main.scss */
 .dialogNewsletter--aberto {
   display: block; }
 
-/* line 277, layout/main.scss */
 .dialogNewsletter-body {
   font-size: 18px;
   border-radius: 8px;
@@ -501,7 +466,6 @@ main {
   max-width: 533px;
   text-align: left; }
 
-/* line 297, layout/main.scss */
 .dialogNewsletter-overlay {
   position: fixed;
   z-index: 2;
@@ -512,30 +476,25 @@ main {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4); }
 
-/* line 308, layout/main.scss */
 .overlayDialog + .dialogNewsletter {
   display: block;
   transform: translate(-50%, -50%); }
 
-/* line 313, layout/main.scss */
 .dialogNewsletter-titulo {
   font-size: 1.8em;
   line-height: 1; }
 
-/* line 318, layout/main.scss */
 .dialogNewsletter-texto {
   font-size: 1em;
   margin-bottom: 1.5em;
   margin-top: 1em;
   font-weight: normal; }
 
-/* line 325, layout/main.scss */
 .dialogNewsletter-label {
   position: absolute;
   z-index: -1;
   left: -9999px; }
 
-/* line 331, layout/main.scss */
 .dialogNewsletter-campo {
   font-size: 1em;
   border-radius: 8px;
@@ -546,7 +505,6 @@ main {
   width: 100%;
   min-width: 245px; }
 
-/* line 342, layout/main.scss */
 .dialogNewsletter-btn {
   vertical-align: top;
   text-indent: -9999px;
@@ -558,14 +516,12 @@ main {
   background: url(../img/email.png) no-repeat center;
   transition: .2s ease-in; }
 
-/* line 354, layout/main.scss */
 .dialogNewsletter-btn:hover,
 .dialogNewsletter-btn:focus {
   background-color: #EB5757;
   cursor: pointer;
   background-image: url(../img/email-hover.png); }
 
-/* line 361, layout/main.scss */
 .dialogNewsletter-fechar {
   position: absolute;
   background-color: transparent;
@@ -580,7 +536,6 @@ main {
   color: transparent;
   font-size: 0; }
 
-/* line 376, layout/main.scss */
 .dialogNewsletter-fechar:before {
   content: 'x';
   color: #666;
@@ -594,32 +549,12 @@ main {
   font-size: 20px;
   font-weight: bold; }
 
-/* line 391, layout/main.scss */
 .dialogNewsletter-fechar:hover:before,
 .dialogNewsletter-fechar:focus:before {
   color: #ce3434;
   cursor: pointer; }
 
-@media (min-width: 830px) {
-  /* line 399, layout/main.scss */
-  .dialogNewsletter-body {
-    width: 533px; }
-
-  /* line 403, layout/main.scss */
-  .dialogNewsletter-form {
-    display: flex;
-    flex-wrap: nowrap; }
-
-  /* line 408, layout/main.scss */
-  .dialogNewsletter-campo {
-    flex-basis: 80%; }
-
-  /* line 412, layout/main.scss */
-  .dialogNewsletter-btn {
-    flex-basis: 20%;
-    height: 3.1em; } }
 /******Estilo dos Elementos do Rodapé******/
-/* line 6, layout/footer.scss */
 .rodape-links {
   background: url("../img/rodape_ufpr.png") no-repeat center top;
   background-size: 100%;
@@ -627,25 +562,20 @@ main {
   flex-flow: column wrap;
   height: 600px; }
 
-/* line 14, layout/footer.scss */
 .sessao-links {
   width: 20%;
   margin: 20px auto; }
 
-/* line 19, layout/footer.scss */
 .sessao-links h3 {
   font-weight: bold;
   border-bottom: black solid 1px; }
 
-/* line 24, layout/footer.scss */
 .sessao-links ul {
   margin-top: 10px; }
 
-/* line 28, layout/footer.scss */
 .sessao-links ul li {
   margin: 10px 0 0 5px; }
 
-/* line 32, layout/footer.scss */
 .sessao-links ul li:before {
   content: "";
   display: inline-block;
@@ -657,16 +587,13 @@ main {
   border-bottom: 4px solid transparent;
   border-left: 4px solid black; }
 
-/* line 44, layout/footer.scss */
 .rodape-social {
   padding: 20px;
   background: linear-gradient(#3E7489, #0042b1 90%); }
 
-/* line 49, layout/footer.scss */
 .icones-redes-sociais {
   float: left; }
 
-/* line 53, layout/footer.scss */
 .icones-redes-sociais h3 {
   position: relative;
   font-weight: bold;
@@ -674,101 +601,45 @@ main {
   font-size: 1.5em;
   margin-bottom: 10px; }
 
-/* line 61, layout/footer.scss */
 .icones-redes-sociais img {
   position: relative;
   width: 45px;
   filter: drop-shadow(5px 5px 5px #000000);
   -webkit-filter: drop-shadow(5px 5px 5px #000000); }
 
-/* line 68, layout/footer.scss */
 .caracteristica-departamento {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
 
-/* line 74, layout/footer.scss */
 .caracteristica-departamento p,
 .copyright p {
   color: #FFF;
   margin-bottom: 5px;
   text-align: center; }
 
-/* line 81, layout/footer.scss */
 .caracteristica-departamento p:first-child {
   font-weight: bold;
   font-size: 1.5em; }
 
-/* line 86, layout/footer.scss */
 .caracteristica-departamento p:nth-child(2) {
   font-weight: bold;
   font-size: 1.3em; }
 
-/* line 91, layout/footer.scss */
 .caracteristica-departamento p:nth-child(3) {
   font-weight: bold;
   font-size: 1em;
   margin-bottom: 20px; }
 
-/* line 97, layout/footer.scss */
 .caracteristica-departamento img {
   max-width: 170px;
   margin-top: 20px; }
 
-/* line 102, layout/footer.scss */
 .copyright {
   text-align: center;
   margin-top: 30px; }
 
-/* line 107, layout/footer.scss */
 #footer-brasil {
   background: none repeat scroll 0% 0% #0042b1;
   padding: 1em 0px;
   max-width: 100%; }
-
-/******Estilo dos Elementos Responsivos******/
-/******Estilo do Documento******/
-/******Estilo Geral do Corpo do Documento******/
-/* line 3, layout/style.scss */
-body {
-  background: lightgray; }
-
-/* line 7, layout/style.scss */
-.caixa {
-  width: 1200px;
-  margin: 0 auto; }
-
-/* line 13, layout/style.scss */
-.contraste {
-  background: black;
-  color: white; }
-
-/* line 18, layout/style.scss */
-a {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* line 24, layout/style.scss */
-a:hover {
-  color: #4B4B4B; }
-
-/* line 28, layout/style.scss */
-h2 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px; }
-
-/* line 35, layout/style.scss */
-h4 {
-  font-size: 15px;
-  font-weight: bold;
-  color: #878787;
-  margin-bottom: 5px; }
-
-/* line 42, layout/style.scss */
-p {
-  text-align: justify; }
-
-/******Estilo de Texto******/
