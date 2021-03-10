@@ -36,8 +36,10 @@ header{
     margin-left: 0.25em;
 }
 
-.barra-acessibilidade img{
-	width: 16px;
+@include all-icones-traducao-sprites;
+.icones-traducao-france, .icones-traducao-spain, .icones-traducao-united-states-of-america{
+    width: 16px;
+    height: 16px;
 }
 
 .content{

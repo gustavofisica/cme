@@ -8,7 +8,7 @@ footer {
 	background-size: 100%;
     display: flex;
     flex-flow: column wrap;
-    height: 600px;
+    height: 550px;
 }
 
 .sessao-links {
@@ -51,16 +51,27 @@ footer {
 }
 
 .icones-redes-sociais h3 {
-	position: relative;
 	font-weight: bold;
 	color: #FFF;
 	font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.icones-redes-sociais img {
-	position: relative;
-	width: 45px;
+.icones-redes-sociais-container{
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+}
+
+@include all-icones-redes-sociais-sprites;
+.icones-redes-sociais-facebook, 
+.icones-redes-sociais-twitter, 
+.icones-redes-sociais-flickr, 
+.icones-redes-sociais-RSS, 
+.icones-redes-sociais-youtube, 
+.icones-redes-sociais-instagram{
+    width: 48px;
+    height: 48px;
     filter: drop-shadow(5px 5px 5px #000000);
     -webkit-filter: drop-shadow(5px 5px 5px #000000);
 }

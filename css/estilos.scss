@@ -1,3 +1,14 @@
+ // Compass
+@import "compass/css3";
+@import "compass/utilities";
+
+$icones-traducao-spacing: 2px;
+@import "icones-traducao/*.png";
+
+$icones-redes-sociais-spacing: 2px;
+@import "icones-redes-sociais/*.png";
+
+
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 

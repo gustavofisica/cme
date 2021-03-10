@@ -62,11 +62,11 @@
 				<!--Início da Lista de Tradução-->
 				<ul>
 					<!--Link para Tradução da Página em Inglês-->
-					<li><a href="" title="CME em Inglês"><img src="img/united-states-of-america.png" alt="English"></a></li>
+					<li><a href="" title="CME em Inglês"><div class="icones-traducao-united-states-of-america" alt="English"></div></a></li>
 					<!--Link para Tradução da Página em Espanhol-->
-					<li><a href="" title="CME em Espanhol"><img src="img/spain.png" alt="Spanish"></a></li>
+					<li><a href="" title="CME em Espanhol"><div class="icones-traducao-spain" alt="Spanish"></div></a></li>
 					<!--Link para Tradução da Página em Francês-->
-					<li><a href="" title="CME em Francês"><img src="img/france.png" alt="French"></a></li>
+					<li><a href="" title="CME em Francês"><div class="icones-traducao-france" alt="French"></div></a></li>
 				</ul>
 				<!--Final da Lista de Tradução-->
 			</div>
@@ -298,24 +298,24 @@
 
                             <div class="contatoCampo contatoCampo--sucesso">
                                 <label for="nome">Nome: </label>
-                                <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required value="Natan Souza">
+                                <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Insira seu nome">
                             </div>  
 
                             <div class="contatoCampo">
                                 <label for="email">Email: </label>
-                                <input type="email" id="email" placeholder="Email.." required value="contato@gnail.com">
+                                <input type="email" id="email" placeholder="Agora seu e-mail">
                                 <span id="sugestao" class="contatoCampo-msg contatoCampo-msg--erro"></span>
                             </div>
 
                             <div class="contatoCampo contatoCampo--erro">
                                 <label for="telefone">Telefone: </label>
-                                <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751" id="telefone">
+                                <input type="text" class="contatoCampo--validouErro" placeholder="O Telefone nesse formato: (xx) xxxxx-xxxx" id="telefone">
                                 <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
                             </div>     
 
                             <div class="contatoCampo">
                                 <label for="mensagem">Mensagem: </label>
-                                <textarea id="mensagem" name="" cols="30" rows="10" required>lorem ipsum</textarea>
+                                <textarea id="mensagem" name="" cols="30" rows="10" required>Escreva sua mensagem</textarea>
                             </div>
 
                             <div class="contatoCampo">
@@ -532,18 +532,20 @@
 				<div class="icones-redes-sociais">
 					<!--Título da Divisão-->
 					<h3>Redes Sociais</h3>
-					<!--Ícone e Link da UFPR no Facebook-->
-					<a href="https://www.facebook.com/UFPRoficial" target="_blank"><img src="img/Icone-Facebook.png" title="UFPR no Facebook" alt="UFPR no Facebook"></a>
-					<!--Ícone e Link da UFPR no Twitter-->
-					<a href="https://twitter.com/ufpr" target="_blank"><img src="img/Icone-Twitter.png" title="UFPR no Twitter" alt="UFPR no Twitter"></a>
-					<!--Ícone e Link da UFPR no Flickr-->
-					<a href="https://www.flickr.com/ufpr" target="_blank"><img src="img/Icone-Flickr.png" title="UFPR no Flickr" alt="UFPR no Flickr"></a>
-					<!--Ícone e Link RSS UFPR-->
-					<a href="https://www.ufpr.br/portalufpr/lista-de-feeds-da-ufpr" target="_blank"><img src="img/Icone-RSS.png" title="RSS UFPR" alt="RSS UFPR"></a>
-					<!--Ícone e Link da UFPR no Youtube-->
-					<a href="https://www.youtube.com/user/TVUFPR" target="_blank"><img src="img/Icone-Youtube.png" title="UFPR no Youtube" alt="UFPR no Youtube"></a>
-					<!--Ícone e Link da UFPR no Instagram-->
-					<a href="https://www.instagram.com/ufpr_oficial" target="_blank"><img src="img/Icone-Instagram.png" title="UFPR no Instagram" alt="UFPR no Instagram"></a>
+					<div class="icones-redes-sociais-container">
+						<!--Ícone e Link da UFPR no Facebook-->
+						<a href="https://www.facebook.com/UFPRoficial" target="_blank"><div class="icones-redes-sociais-facebook" title="UFPR no Facebook" alt="UFPR no Facebook"></div></a>
+						<!--Ícone e Link da UFPR no Twitter-->
+						<a href="https://twitter.com/ufpr" target="_blank"><div class="icones-redes-sociais-twitter" title="UFPR no Twitter" alt="UFPR no Twitter"></div></a>
+						<!--Ícone e Link da UFPR no Flickr-->
+						<a href="https://www.flickr.com/ufpr" target="_blank"><div class="icones-redes-sociais-flickr" title="UFPR no Flickr" alt="UFPR no Flickr"></div></a>
+						<!--Ícone e Link RSS UFPR-->
+						<a href="https://www.ufpr.br/portalufpr/lista-de-feeds-da-ufpr" target="_blank"><div class="icones-redes-sociais-RSS" title="RSS UFPR" alt="RSS UFPR"></div></a>
+						<!--Ícone e Link da UFPR no Youtube-->
+						<a href="https://www.youtube.com/user/TVUFPR" target="_blank"><div class="icones-redes-sociais-youtube" title="UFPR no Youtube" alt="UFPR no Youtube"></div></a>
+						<!--Ícone e Link da UFPR no Instagram-->
+						<a href="https://www.instagram.com/ufpr_oficial" target="_blank"><div class="icones-redes-sociais-instagram" title="UFPR no Instagram" alt="UFPR no Instagram"></div></a>
+					</div>
 				</div>
 				<!--Final da Divisão dos Ícones das Redes Sociais da UFPR-->			
 				<!--Início da Divisão de Característica do Departamento--> 
