@@ -1,13 +1,11 @@
 /******Estilo dos Elementos do Rodapé******/
 
-footer {	
-}
-
 .rodape-links {
 	background: url("../img/rodape_ufpr.png") no-repeat center top ;
-	background-size: 100%;
-    display: flex;
-    flex-flow: column wrap;
+	@include background-size(100%);
+    @include display-flex;
+	@include flex-direction(column);
+  	@include flex-wrap(wrap);
     height: 550px;
 }
 
@@ -31,7 +29,7 @@ footer {
 
 .sessao-links ul li:before{
 	content: "";
-	display: inline-block;
+	@include inline-block;
 	vertical-align: middle;
 	margin-right: 10px;
 	width: 0; 
@@ -43,7 +41,7 @@ footer {
 
 .rodape-social {
 	padding: 20px;
-	background: linear-gradient(#3E7489, #0042b1 90%);
+	@include background-image(linear-gradient($cor-padrao, #0042b1 90%));
 }
 
 .icones-redes-sociais {
@@ -52,14 +50,14 @@ footer {
 
 .icones-redes-sociais h3 {
 	font-weight: bold;
-	color: #FFF;
+	color: $cor-branca;
 	font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .icones-redes-sociais-container{
-	display: flex;
-	justify-content: space-between;
+	@include display-flex;
+	@include justify-content(space-between);
 	width: 350px;
 }
 
@@ -73,18 +71,19 @@ footer {
     width: 48px;
     height: 48px;
     filter: drop-shadow(5px 5px 5px #000000);
+	-moz-filter: drop-shadow(5px 5px 5px #000000);
     -webkit-filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .caracteristica-departamento {
-	display: flex;
-    flex-direction: column;
-	align-items: flex-end;
+	@include display-flex;
+	@include flex-direction(column);
+    @include align-items(flex-end);
 }
 
 .caracteristica-departamento p,
 .copyright p{
-	color: #FFF;
+	color: $cor-branca;
     margin-bottom: 5px;
     text-align: center;
 }

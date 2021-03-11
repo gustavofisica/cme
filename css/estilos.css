@@ -9,61 +9,56 @@
   background-repeat: no-repeat;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
+  padding: 0;
   border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
 }
 
 body {
   line-height: 1;
+  color: black;
+  background: white;
 }
 
 ol, ul {
   list-style: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
 }
 
 /******Estilo do Documento******/
@@ -79,7 +74,7 @@ body {
 
 .contraste {
   background: black;
-  color: white;
+  color: #FFFFFF;
 }
 
 a {
@@ -110,39 +105,44 @@ p {
   text-align: justify;
 }
 
-/******Estilo de Texto******/
 /******Estilo do Header******/
 header {
   background: url("../img/header/MEV_Espiculas_Bio.png") center no-repeat;
   background-size: 100%;
-  height: 270px;
+  height: 300px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .barra-acessibilidade {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   background: #FFFFFF;
   height: 30px;
   padding: 0 15px;
 }
-
 .barra-acessibilidade ul {
+  display: -webkit-flex;
   display: flex;
 }
-
 .barra-acessibilidade ul:nth-child(2) {
   text-transform: uppercase;
   text-decoration: underline dotted;
 }
-
 .barra-acessibilidade li {
   margin: 5px;
 }
-
 .barra-acessibilidade span {
   background: black;
-  color: white;
+  color: #FFFFFF;
   opacity: 0.7;
   padding: 0 0.3em;
   margin-left: 0.25em;
@@ -166,8 +166,11 @@ header {
 }
 
 .content {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 20px;
 }
@@ -175,51 +178,51 @@ header {
 .logo {
   height: 100px;
   filter: drop-shadow(5px 5px 5px #000000);
+  -moz-filter: drop-shadow(5px 5px 5px #000000);
   -webkit-filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .menu-ufpr ul {
+  display: -webkit-flex;
   display: flex;
 }
-
 .menu-ufpr ul li a {
   background: #3e7489;
   margin: 0 1px 0 0;
   padding: 4px;
 }
-
 .menu-ufpr ul li a:hover {
-  background: rgba(62, 116, 137, 0.7);
+  background: #3e7489;
 }
 
-#barra-pesquisa {
+.barra-pesquisa {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.4);
   height: 40px;
   margin: 10px 0;
   padding: 0 15px;
 }
-
-#barra-pesquisa h1 {
-  color: white;
-  text-shadow: 1px 1px black;
+.barra-pesquisa h1 {
+  color: #FFFFFF;
+  text-shadow: 0px 2px 1px #000000;
   font-size: 30px;
 }
-
-#barra-pesquisa form {
+.barra-pesquisa form {
+  display: -webkit-flex;
   display: flex;
 }
-
-#barra-pesquisa form input {
+.barra-pesquisa form input {
   border: none;
   height: 25px;
   border-radius: 2px;
   padding: 15px;
 }
-
-#barra-pesquisa form button {
+.barra-pesquisa form button {
   border: none;
   background: url("../img/Icone-Pesquisa.png") center;
   background-size: 20px;
@@ -230,74 +233,73 @@ header {
   top: 5px;
   right: 30px;
 }
-
-#barra-pesquisa form label {
+.barra-pesquisa form label {
   display: none;
 }
 
 .menu {
   background-color: #3e7489;
+  display: -webkit-flex;
   display: flex;
-  margin-top: 20px;
-  height: 50px;
+  -webkit-align-items: center;
+  align-items: center;
 }
-
 .menu ul {
   list-style: none;
   margin: 0;
 }
-
 .menu li {
   float: left;
   position: relative;
 }
-
 .menu li a {
-  color: black;
   padding: 10px;
   text-decoration: none;
   min-width: 80px;
   display: block;
 }
-
 .menu li a:hover {
-  color: aqua;
-  background: red;
+  background: rgba(62, 116, 137, 0.815);
   float: left;
 }
-
 .menu li ul {
   display: none;
   position: absolute;
   top: 30px;
   left: 0;
 }
-
-.menu li:hover ul {
+.menu li ul li {
   display: block;
 }
-
-.menu li ul li {
+.menu li:hover ul {
+  background: #3e7489;
   display: block;
 }
 
 /******Estilo dos Elementos do Rodapé******/
 main {
-  background: white;
+  background: #FFFFFF;
+  padding-top: 50px;
 }
 
 .atalhos {
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-around;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   width: 70%;
   margin: auto;
 }
 
 .atalhos div {
+  display: -webkit-flex;
   display: flex;
-  flex-flow: column;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
 .atalhos h2 {
@@ -322,9 +324,12 @@ main {
 
 .apresentacao,
 .noticias-estatisticas {
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -340,15 +345,24 @@ main {
 }
 
 .cabecalho-noticias {
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
 .portifolio {
+  display: -webkit-flex;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -356,12 +370,19 @@ main {
   border: thin black solid;
   width: 200px;
   height: 100px;
-  border-radius: 2px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   margin: 10px;
   text-align: center;
   background: url("../img/favicon.png") center no-repeat;
+  -moz-background-size: 80px;
+  -o-background-size: 80px;
+  -webkit-background-size: 80px;
   background-size: 80px;
-  box-shadow: 5px 5px 2px #000000;
+  -moz-box-shadow: #000000 5px 5px 2px;
+  -webkit-box-shadow: #000000 5px 5px 2px;
+  box-shadow: #000000 5px 5px 2px;
 }
 
 .secaoContato-form-fieldset {
@@ -407,10 +428,14 @@ main {
   content: '';
   vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 20px;
   height: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #FFFFFF;
   transform: translate(-7px, -3px);
   border: 1px solid #7D7D7D;
   color: transparent;
@@ -426,7 +451,7 @@ main {
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: '';
-  color: #fff;
+  color: #FFFFFF;
   background-image: radial-gradient(circle, #2da4e7, #2f80ed);
   border-color: #015fbe;
   line-height: .8;
@@ -437,8 +462,8 @@ main {
   width: 10px;
   height: 5px;
   display: block;
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-bottom: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
   transform: rotate(-45deg);
   position: absolute;
   z-index: 2;
@@ -505,19 +530,23 @@ main {
 
 .contatoCampo .contatoCampo--validouFoi {
   border: 2px solid #219653;
-  background-color: #fff;
+  background-color: #FFFFFF;
   position: relative;
 }
 
 .contatoCampo .contatoCampo--validouErro {
   border: 2px solid #FF0000;
-  background-color: #fff;
+  background-color: #FFFFFF;
   position: relative;
 }
 
 .contatoCampo--sucesso:before {
   content: '';
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -530,6 +559,10 @@ main {
 .contatoCampo--erro:before {
   content: '';
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -550,12 +583,16 @@ main {
 .dialogNewsletter-body {
   font-size: 18px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #FFFFFF;
   border: 1px solid #8D8D8D;
   padding: 3em 1.5em 1.5em 1.5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   position: fixed;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -52%);
@@ -669,9 +706,16 @@ main {
 /******Estilo dos Elementos do Rodapé******/
 .rodape-links {
   background: url("../img/rodape_ufpr.png") no-repeat center top;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
   background-size: 100%;
+  display: -webkit-flex;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 550px;
 }
 
@@ -697,6 +741,10 @@ main {
   content: "";
   display: inline-block;
   vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: middle;
   margin-right: 10px;
   width: 0;
   height: 0;
@@ -707,7 +755,12 @@ main {
 
 .rodape-social {
   padding: 20px;
-  background: linear-gradient(#3e7489, #0042b1 90%);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNlNzQ4OSIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjMDA0MmIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e7489), color-stop(90%, #0042b1));
+  background-image: -moz-linear-gradient(#3e7489, #0042b1 90%);
+  background-image: -webkit-linear-gradient(#3e7489, #0042b1 90%);
+  background-image: linear-gradient(#3e7489, #0042b1 90%);
 }
 
 .icones-redes-sociais {
@@ -716,13 +769,15 @@ main {
 
 .icones-redes-sociais h3 {
   font-weight: bold;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 .icones-redes-sociais-container {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 350px;
 }
@@ -760,18 +815,22 @@ main {
   width: 48px;
   height: 48px;
   filter: drop-shadow(5px 5px 5px #000000);
+  -moz-filter: drop-shadow(5px 5px 5px #000000);
   -webkit-filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .caracteristica-departamento {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-end;
   align-items: flex-end;
 }
 
 .caracteristica-departamento p,
 .copyright p {
-  color: #FFF;
+  color: #FFFFFF;
   margin-bottom: 5px;
   text-align: center;
 }

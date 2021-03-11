@@ -96,11 +96,11 @@
             </div>
 			<!--Final da Divisão da Logo e Menu UFPR-->
 			<!--Início da Divisão de Título e Formulário de Pesquisa no Site-->
-			<div id="barra-pesquisa">
+			<div class="barra-pesquisa">
                 <!--Título do Departamento-->
 				<h1>Centro de Microscopia Eletrônica</h1>
                 <!--Início do Formulário de Pesquisa do Site-->
-				<form id="" action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
+				<form action="http://www.bio.ufpr.br/portal" id="searchform" method="get">
                     <!--Título do Ítem do Formulário-->
 					<label for="search">Pesquisar</label>
                     <!--Campo de Digitação para Pesquisa-->

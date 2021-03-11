@@ -1,38 +1,35 @@
 /******Estilo dos Elementos do Rodapé******/
 main {
-	background: white;
+	background: $cor-branca;
+  padding-top: 50px;
 }
 
 .atalhos{
-	display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    margin: auto;
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(space-around);
+  width: 70%;
+  margin: auto;
 }
 
 .atalhos div{
-    display: flex;
-    flex-flow: column;
-    align-items: center
+  @include display-flex;
+  @include align-items(center);
+  @include flex-direction(column);
 }
 
 .atalhos h2{
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
-    margin-bottom: 10px;
-}
-
-.atalhos p{
-	
+  margin-bottom: 10px;
 }
 
 .atalhos img{
 	width: 150px;
 	transition: 0.5s;
 	border-radius: 100%;
-	background: #FFFFFF;
+	background: $cor-branca;
 }
 
 .atalhos img:hover{
@@ -43,46 +40,47 @@ main {
 
 .apresentacao,
 .noticias-estatisticas{
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(space-between);
+  margin: 20px;
 }
 
 .apresentacao div,
 .apresentacao frame,
 .noticias,
 .estatisticas{
-    width: 50%;
+  width: 50%;
 }
 
 .estatisticas, .apresentacao div{
-   margin-left: 20px; 
+  margin-left: 20px; 
 }
 
 .cabecalho-noticias{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  @include display-flex;
+  @include align-items(center);
+  @include justify-content(space-between);
 }
 
 .portifolio{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+  @include display-flex;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  @include align-items(center);
 }
 
 .imagem-portifolio{
-    border: thin black solid;
-    width: 200px;
-    height: 100px;
-    border-radius: 2px;
-    margin: 10px;
-    text-align: center;
-    background: url("../img/favicon.png") center no-repeat;
-    background-size: 80px;
-    box-shadow: 5px 5px 2px #000000;
+  border: thin black solid;
+  width: 200px;
+  height: 100px;
+  @include border-radius(5px);
+  margin: 10px;
+  text-align: center;
+  background: url("../img/favicon.png") center no-repeat;
+  @include background-size(80px);
+  @include box-shadow(#000000 5px 5px 2px);
 }
 
 
@@ -95,9 +93,8 @@ main {
   line-height: 1.6;
   text-align: center;
   margin: 0 auto;
-  
   position: relative;
- left: 50%;
+  left: 50%;
   transform: translateX(-50%)
 }
 
@@ -131,11 +128,11 @@ main {
 .contatoCampo-label:before {
   content:'';
   vertical-align: middle;
-  display: inline-block;
+  @include inline-block;
   width: 20px;
   height: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: $cor-branca;
   transform: translate(-7px, -3px);
   border: 1px solid #7D7D7D;
   color: transparent;
@@ -151,7 +148,7 @@ main {
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: '';
-  color: #fff;
+  color: $cor-branca;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
   border-color: #015fbe;
   line-height: .8;
@@ -162,16 +159,14 @@ main {
   width: 10px;
   height: 5px;
   display: block;
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-bottom: 2px solid $cor-branca;
+  border-left: 2px solid $cor-branca;
   transform: rotate(-45deg);
   position: absolute;
   z-index: 2;
   left: -3px;
   top: 2px;
 }
-
-
 
 .contatoCampo-checkbox {
 /*  display: none;*/
@@ -232,19 +227,19 @@ main {
 
 .contatoCampo .contatoCampo--validouFoi {
   border: 2px solid #219653;
-  background-color: #fff;
+  background-color: $cor-branca;
   position: relative;
 }
 
 .contatoCampo .contatoCampo--validouErro {
   border: 2px solid #FF0000;
-  background-color: #fff;
+  background-color: $cor-branca;
   position: relative;
 }
 
 .contatoCampo--sucesso:before {
   content: '';
-  display: inline-block;
+  @include inline-block;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -256,7 +251,7 @@ main {
 
 .contatoCampo--erro:before {
   content: '';
-  display: inline-block;
+  @include inline-block;
   width: 33px;
   height: 32px;
   position: absolute;
@@ -277,12 +272,12 @@ main {
 .dialogNewsletter-body {
   font-size: 18px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: $cor-branca;
   border: 1px solid #8D8D8D;
   padding: 3em 1.5em 1.5em 1.5em;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5); 
   position: fixed;
-  display: inline-block;
+  @include inline-block;
   top: 45%;
   left: 50%;
   transform: translate(-50%,-52%);

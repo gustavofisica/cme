@@ -12,7 +12,7 @@ $icones-redes-sociais-spacing: 2px;
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 
-@import 'base/reset';
+@import "compass/reset-legacy";
 @import 'layout/style';
 @import 'layout/header';
 @import 'layout/main';
