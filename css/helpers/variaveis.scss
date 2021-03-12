@@ -1,9 +1,18 @@
+//Paleta de Cores
+$cor-padrao: #467F8C;
+$cor-padrao-auxiliar: #6FB7BF;
+$cor-secundaria: #768C45;
+$cor-secundaria-auxiliar: #8EA638;
+$cor-preta: #000000;
 $cor-branca: #FFFFFF;
-$cor-padrao: #3e7489;
-$cor-padrao-auxiliar: rgba(62, 116, 137, 0.815);
 
 
 $default-text-shadow-color: #000000;
 $default-text-shadow-blur: 1px;
 $default-text-shadow-v-offset: 2px;
+
+$color: rebeccapurple;
+$color-dark: scale-color($color, $lightness: -30%);
+
+$transition: 280ms all 120ms ease-out;
 

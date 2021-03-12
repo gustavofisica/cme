@@ -120,9 +120,9 @@
 					<!--Link para Página Incial-->
 					<li><a href="#">Página Inicial</a></li>
                     <!--Link para Páginas da Organização do Centro de Microscopia Eletrônica-->
-					<li><a href="#">CME</a>
+					<li class="dropdown"><a class="dropdown__title" href="#">CME</a>
                         <!--Início da Lista de Links do Menu de 2° Nível-->
-						<ul>
+						<ul class="dropdown__menu">
 							<!--Link para Página da Chefia do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Chefia</a></li>
                             <!--Link para Página do Corpo de Conselheiros do Centro de Microscopia Eletrônica-->
@@ -147,9 +147,9 @@
                     <!--Link para Página de Trabalhos Desenvolvidos com Auxílio do Centro de Microscopia Eletrônica-->
 					<li><a href="#">Produção Científica</a></li>
                     <!--Link para Página de Orientações aos Usuários-->
-					<li><a href="#">Orientações aos Usuários</a>
+					<li class="dropdown"><a class="dropdown__title" href="#">Orientações aos Usuários</a>
                         <!--Início da Lista de Links do Menu de 2° Nível-->
-						<ul>
+						<ul class="dropdown__menu">
                             <!--Link para Página de Normas para Usuários do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Normas</a></li>
                             <!--Link Alternativo para Página do Sistema Interno de Gerenciamento do Centro de Microscopia Eletrônica-->
@@ -160,9 +160,9 @@
                         <!--Final da Lista de Links do Menu de 2° Nível-->
 					</li>
                     <!--Link para Página da Infraestrutura do Centro de Microscopia Eletrônica-->
-					<li><a href="#">Infraestrutura</a>
+					<li class="dropdown"><a class="dropdown__title" href="#">Infraestrutura</a>
                         <!--Início da Lista de Links do Menu de 2° Nível-->
-						<ul>
+						<ul class="dropdown__menu">
                             <!--Link para Página dos Equipamentos do Centro de Microscopia Eletrônica-->
 							<li><a href="#">Equipamentos</a></li>
                             <!--Link para Página dos Laboratórios do Centro de Microscopia Eletrônica-->
