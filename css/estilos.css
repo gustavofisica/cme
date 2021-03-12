@@ -107,8 +107,9 @@ p {
 
 /******Estilo do Header******/
 header {
-  background: url("../img/header/MEV_Espiculas_Bio.png") center no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 300px;
   display: -webkit-flex;
   display: flex;
@@ -177,9 +178,9 @@ header {
 
 .logo {
   height: 100px;
-  filter: drop-shadow(5px 5px 5px #000000);
-  -moz-filter: drop-shadow(5px 5px 5px #000000);
-  -webkit-filter: drop-shadow(5px 5px 5px #000000);
+  filter: drop-shadow(1px 1px 1px #000000);
+  -moz-filter: drop-shadow(1px 1px 1px #000000);
+  -webkit-filter: drop-shadow(1px 1px 1px #000000);
 }
 
 .menu-ufpr ul {
@@ -329,11 +330,11 @@ header {
   transition: 280ms all 120ms ease-out;
 }
 .dropdown .dropdown__menu a:hover {
-  background-color: rgba(70, 127, 140, 0.15);
+  background-color: rgba(111, 183, 191, 0.15);
 }
 .dropdown .dropdown__menu a:focus {
   outline: none;
-  background-color: rgba(70, 127, 140, 0.25);
+  background-color: rgba(111, 183, 191, 0.25);
 }
 .dropdown:after {
   content: "";

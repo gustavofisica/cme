@@ -1,13 +1,16 @@
 /******Estilo do Header******/
 
 header{
-	background: url("../img/header/MEV_Espiculas_Bio.png") center no-repeat;
-    background-size: 100%;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 300px;
     @include display-flex;
     @include flex-direction(column);
     @include justify-content(space-between);
 }
+
+
 
 .barra-acessibilidade{
     @include display-flex;
@@ -54,9 +57,9 @@ header{
 
 .logo{
 	height: 100px;
-    filter: drop-shadow(5px 5px 5px #000000);
-	-moz-filter: drop-shadow(5px 5px 5px #000000);
-    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(1px 1px 1px $cor-preta);
+	-moz-filter: drop-shadow(1px 1px 1px $cor-preta);
+    -webkit-filter: drop-shadow(1px 1px 1px $cor-preta);
 }
 
 .menu-ufpr{
@@ -212,12 +215,12 @@ header{
             transition: $transition;
 
             &:hover {
-                background-color: rgba($cor-padrao, 0.15);
+                background-color: rgba($cor-padrao-auxiliar, 0.15);
             }
 
             &:focus {
                 outline: none;
-                background-color: rgba($cor-padrao, 0.25);
+                background-color: rgba($cor-padrao-auxiliar, 0.25);
             }
         }
     }

@@ -574,7 +574,7 @@
 		<!--Final do Rodapé-->
         <div class="dialogNewsletter" id="dialogNewsletter" role="dialog" aria-labelledby="tituloDialog">
             <div class="dialogNewsletter-body">
-                <img src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
+                <img class="logo" src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
                 <h2 class="dialogNewsletter-titulo" id="tituloDialog">Contato</h2>
                 <h3 class="dialogNewsletter-texto">
                 Assine nossa newsletter para receber notícias técnicas sem spam!
@@ -602,6 +602,8 @@
     <script type="text/javascript" src="js/mailcheck-config.js"></script>
     <!--Funções Frame Modal para Login-->
     <script type="text/javascript" src="js/dialog.js"></script>
+	<!--Funções de Estilos da Página-->
+    <script type="text/javascript" src="js/style.js"></script>
 </body>
 </html>
 
