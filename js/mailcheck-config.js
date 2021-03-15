@@ -16,7 +16,7 @@ campoEmail.addEventListener('blur', function() {
       sugestao.style.display = 'inline-block';
       sugestao.textContent = 'Você quis dizer: ' + suggestion.full + ' ?';
       sugestao.parentNode.classList.add('contatoCampo--erro');
-      campoEmail.classList.add('contatoCampo--validouErro');
+      campoEmail.classList.add('erro');
       sugestao.setAttribute('tabindex', '0');
       sugestao.setAttribute('role', 'alert');
     }

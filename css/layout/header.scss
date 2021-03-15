@@ -57,9 +57,9 @@ header{
 
 .logo{
 	height: 100px;
-    filter: drop-shadow(1px 1px 1px $cor-preta);
-	-moz-filter: drop-shadow(1px 1px 1px $cor-preta);
-    -webkit-filter: drop-shadow(1px 1px 1px $cor-preta);
+    filter: drop-shadow(2px 1px 1px $cor-preta);
+	-moz-filter: drop-shadow(2px 1px 1px $cor-preta);
+    -webkit-filter: drop-shadow(2px 1px 1px $cor-preta);
 }
 
 .menu-ufpr{
@@ -73,7 +73,8 @@ header{
                 padding: 4px;
 
                 &:hover{
-                    background: $cor-padrao-auxiliar;
+                    background: rgba($cor-padrao, 0.8);
+                    color: $cor-padrao-auxiliar;
                 }
             }
         }
@@ -92,7 +93,7 @@ header{
     h1{
         color: $cor-branca;
         @include single-text-shadow;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     form{
@@ -101,6 +102,7 @@ header{
         input{
             border: none;
             height: 25px;
+            width: 250px;
             border-radius: 2px;
             padding: 15px;
         }
@@ -113,7 +115,7 @@ header{
             height: 20px;
             cursor: pointer;
             position: relative;
-            top:5px;
+            top:14px;
             right: 30px;
         }
 
@@ -136,7 +138,7 @@ header{
         grid-auto-flow: column;
 
         > li {
-            margin: 0 0.5rem;
+            margin: 0 1rem;
 
             a{
                 text-decoration: none;
@@ -151,7 +153,7 @@ header{
             }
 
             > a {
-                padding: 1rem 0.5rem;
+                padding: 0.58rem 0.5rem;
                 border-top: 3px solid transparent;
                 transition: $transition;
 
@@ -179,7 +181,7 @@ header{
 .dropdown {
     position: relative;
 
-    .dropdown__title {
+    .dropdown-title {
         @include display-flex(inline-flex);
         @include align-items(center);
 
@@ -192,7 +194,7 @@ header{
         }
     }
 
-    .dropdown__menu {
+    .dropdown-menu {
         position: absolute;
         min-width: 30ch;
         left: 50%;
@@ -240,11 +242,11 @@ header{
 
     &:hover,
     &:focus-within {
-        .dropdown__title {
+        .dropdown-title {
             border-top-color: $cor-padrao-auxiliar;
         }
 
-        .dropdown__menu {
+        .dropdown-menu {
             @include opacity(1);
             transform: rotateX(0) translateX(-50%);
             visibility: visible;
