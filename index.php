@@ -19,7 +19,7 @@
 	<link rel="shortcut icon" href="img/favicon.png">
 	<!--Título da Página na aba do Browser-->
 	<title>Centro de Microscopia Eletrônica</title>
-	<!--Incorporação do Google Charts-->
+	<!--Carregando as Bibliotecas do Google Charts-->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<!--Configuração Local do Google Charts-->
 	<script type="text/javascript" src="js/charts.js"></script>
@@ -309,8 +309,8 @@
 				<div class="estatisticas">
 					<!--Título da Divisão de Estatísticas-->
 					<h2>Estatísticas</h2>
-					<div id="hidden-div" style="display:none"></div>
-					<div id="visible-div" style="height:300px"></div>
+					<div id="grafico-escondido"></div>
+					<div id="grafico"></div>
 				</div>
 			</section>
 			<!--Final da Sessão de Notícias e Estatísticas-->

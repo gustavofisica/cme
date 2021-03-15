@@ -461,6 +461,13 @@ main {
   margin-left: 20px;
 }
 
+.estatisticas #grafico-escondido {
+  display: none;
+}
+.estatisticas #grafico {
+  height: 500px;
+}
+
 .cabecalho-noticias {
   display: -webkit-flex;
   display: flex;
@@ -570,6 +577,7 @@ main {
   -webkit-flex-direction: column;
   flex-direction: column;
   width: 500px;
+  padding-left: 20px;
 }
 
 form label, form legend {

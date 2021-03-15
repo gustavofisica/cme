@@ -53,6 +53,15 @@ main {
   margin-left: 20px; 
 }
 
+.estatisticas{
+  #grafico-escondido{
+    display: none;
+  }
+  #grafico{
+    height: 500px
+  }
+}
+
 .cabecalho-noticias{
   @include display-flex;
   @include align-items(center);
@@ -141,6 +150,7 @@ main {
   @include display-flex;
   @include flex-direction(column);
   width: 500px;
+  padding-left: 20px;
 }
 
 form {
