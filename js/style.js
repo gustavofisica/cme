@@ -1,7 +1,6 @@
-//Seleciona o Header do HTML
+//Função Seleciona o Header do HTML
 var backgroundImage = document.querySelector('header');
 
-//Array de endereços de imagens
 var images = [
     'img/header/MEV_Espiculas_Bio.png',
     'img/header/MET_NanoTubo_Fis.png',
@@ -13,21 +12,18 @@ var images = [
     'img/header/MEV_Planta_Transv_Bio.png'
 ];
 
-//Carrega imagem randomicamente
 var bg = images[Math.floor(Math.random() * images.length)];
-//Insere a imagem carregada no estilo da página
+
 backgroundImage.style.backgroundImage = "url(" + bg + ")";
 
-
+//Função do Slider
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -36,8 +32,12 @@ function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -47,3 +47,21 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+//Função do Menu Responsivo
+var menuTogle = document.querySelector('.menu-toggle');
+var bar = document.querySelector('.menu-toggle i');
+var menuUl = document.querySelector('.menu ul');
+
+menuTogle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if (menuUl.classList == "") {
+        menuUl.classList.toggle("on");
+        bar.classList.remove("fa-bars");
+        bar.classList.add("fa-times");
+    } else {
+        menuUl.classList.toggle("on");
+        bar.classList.remove("fa-times");
+        bar.classList.add("fa-bars");
+    }
+});

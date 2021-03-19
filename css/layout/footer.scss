@@ -1,91 +1,117 @@
 /******Estilo dos Elementos do Rodapé******/
 
 .rodape-links {
-	background: url("../img/rodape_ufpr.png") no-repeat center top ;
+	background: url("../img/rodape_ufpr.png") no-repeat center top;
 	@include background-size(100%);
-    @include display-flex;
+	@include display-flex;
 	@include flex-direction(column);
-  	@include flex-wrap(wrap);
-    height: 550px;
+	@include flex-wrap(wrap);
+	height: 550px;
+
+	@media only screen and (max-width: $responsivo) {
+		display: none;
+	}
 }
 
 .sessao-links {
-    width: 20%;
-    margin: 20px auto;
-}
+	width: 20%;
+	margin: 20px auto;
 
-.sessao-links h3{
-	font-weight: bold;
-	border-bottom: black solid 1px;
-}
+	@media only screen and (max-width: $responsivo) {
+		display: none;
+	}
 
-.sessao-links ul {
-    margin-top: 10px;	
-}
+	h5 {
+		font-weight: bold;
+		border-bottom: black solid 1px;
+	}
 
-.sessao-links ul li{
-    margin: 10px 0 0 5px;
-}
+	ul {
+		margin-top: 10px;
 
-.sessao-links ul li:before{
-	content: "";
-	@include inline-block;
-	vertical-align: middle;
-	margin-right: 10px;
-	width: 0; 
-	height: 0; 
-	border-top: 4px solid transparent;
-	border-bottom: 4px solid transparent;
-	border-left: 4px solid black;
+		li {
+			margin: 10px 0 0 5px;
+
+			&:before {
+				content: "";
+				@include inline-block;
+				vertical-align: middle;
+				margin-right: 10px;
+				width: 0;
+				height: 0;
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-left: 4px solid black;
+			}
+		}
+	}
 }
 
 .rodape-social {
 	padding: 20px;
 	@include background-image(linear-gradient($cor-padrao, #0042b1 90%));
+
+	@media only screen and (max-width: $responsivo) {
+		padding: 10px;
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(center);
+		@include flex-wrap(wrap);
+	}
 }
 
 .icones-redes-sociais {
 	float: left;
+
+	@media only screen and (max-width: $responsivo) {
+		text-align: center;
+	}
+
+	h3 {
+		font-weight: bold;
+		color: $cor-branca;
+		font-size: 1.5em;
+		margin-bottom: 10px;
+	}
 }
 
-.icones-redes-sociais h3 {
-	font-weight: bold;
-	color: $cor-branca;
-	font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.icones-redes-sociais-container{
+.icones-redes-sociais-container {
 	@include display-flex;
 	@include justify-content(space-between);
 	width: 350px;
 }
 
 @include all-icones-redes-sociais-sprites;
-.icones-redes-sociais-facebook, 
-.icones-redes-sociais-twitter, 
-.icones-redes-sociais-flickr, 
-.icones-redes-sociais-RSS, 
-.icones-redes-sociais-youtube, 
-.icones-redes-sociais-instagram{
-    width: 48px;
-    height: 48px;
-    filter: drop-shadow(5px 5px 5px #000000);
+
+.icones-redes-sociais-facebook,
+.icones-redes-sociais-twitter,
+.icones-redes-sociais-flickr,
+.icones-redes-sociais-RSS,
+.icones-redes-sociais-youtube,
+.icones-redes-sociais-instagram {
+	width: 48px;
+	height: 48px;
+	filter: drop-shadow(5px 5px 5px #000000);
 	-moz-filter: drop-shadow(5px 5px 5px #000000);
-    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+	-webkit-filter: drop-shadow(5px 5px 5px #000000);
 }
 
 .caracteristica-departamento {
 	@include display-flex;
 	@include flex-direction(column);
-    @include align-items(flex-end);
+	@include align-items(flex-end);
+
+	@media only screen and (max-width: $responsivo) {
+		@include align-items(center);
+		margin-top: 20px;
+	}
 }
 
 .caracteristica-departamento p,
-.copyright p{
+.copyright p {
 	color: $cor-branca;
-    margin-bottom: 5px;
-    text-align: center;
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 .caracteristica-departamento p:first-child {
@@ -106,17 +132,16 @@
 
 .caracteristica-departamento img {
 	max-width: 170px;
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .copyright {
 	text-align: center;
-    margin-top: 30px;
+	margin-top: 30px;
 }
 
 #footer-brasil {
-   background: none repeat scroll 0% 0% #0042b1;
-   padding: 1em 0px;
-   max-width: 100%;
+	background: none repeat scroll 0% 0% #0042b1;
+	padding: 1em 0px;
+	max-width: 100%;
 }
-

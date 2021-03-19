@@ -4,41 +4,169 @@ body {
 	background: lightgray;
 }
 
-.caixa{
-	width: 1200px;
+.caixa {
+	max-width: 1200px;
 	margin: 0 auto;
+
+	@media only screen and (max-width: $responsivo) {
+		width: 100%;
+	}
 }
 
 
-.contraste{
-	background: black;
-	color: $cor-branca;
+.contraste {
+
+	nav,
+	div,
+	li,
+	ol,
+	header,
+	footer,
+	section,
+	main,
+	aside,
+	article {
+		background: black !important;
+		color: white !important;
+	}
+
+	h1,
+	h2,
+	h4,
+	h5,
+	h6,
+	p,
+	label,
+	strong,
+	em,
+	cite,
+	q,
+	i,
+	b,
+	u,
+	span {
+		color: white !important;
+	}
+
+	h3 {
+		color: black !important;
+	}
+
+	a {
+		color: yellow !important;
+	}
+
+	button,
+	input[type=button],
+	input[type=reset],
+	input[type=submit] {
+		background: black !important;
+		color: yellow i !important;
+		border: none !important;
+	}
+
+	input[type=text],
+	input[type=password],
+	input[type=url],
+	input[type=search],
+	input[type=email],
+	input[type=tel],
+	input[type=date],
+	input[type=month],
+	input[type=week],
+	input[type=datetime],
+	input[type=datetime-local],
+	textarea,
+	input[type=number] {
+		background: black !important;
+		border: 1px solid white !important;
+		color: white !important;
+	}
 }
 
-a{
+a {
 	color: black;
 	text-decoration: none;
-    cursor: pointer;
+	cursor: pointer;
 }
 
-a:hover{
-    color: #4B4B4B;
+a:hover {
+	color: #4B4B4B;
 }
 
-h2{
-    font-size: 25px;
+h2 {
+	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-h4{
-    font-size: 15px;
+h4 {
+	font-size: 15px;
 	font-weight: bold;
-    color: #878787;
-    margin-bottom: 5px;
+	color: #878787;
+	margin-bottom: 5px;
 }
 
-p{
-    text-align: justify;
+p {
+	text-align: justify;
+}
+
+form {
+	@include display-flex;
+	@include align-items(center);
+	@include flex-direction(column);
+
+	label,
+	legend {
+		font-size: 20px;
+	}
+
+	input,
+	textarea {
+		width: 450px;
+		height: 40px;
+		margin: 10px 0;
+		@include border-radius(4px);
+		border: 1px solid $cor-preta;
+
+		@media only screen and (max-width: $responsivo) {
+			width: 100%;
+		}
+	}
+
+	textarea {
+		height: 200px;
+	}
+
+	button {
+		width: 450px;
+		padding: 15px 0;
+		margin: 10px 0;
+		background: $cor-padrao;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		border: none;
+		border-radius: 5px;
+		transition: 1s all;
+		cursor: pointer;
+
+		&:hover {
+			background: $cor-padrao-auxiliar;
+			transform: scale(1.1);
+		}
+
+		@media only screen and (max-width: $responsivo) {
+			width: 90%;
+		}
+	}
+
+	.erro {
+		border: 2px solid red;
+	}
+
+	.valido {
+		border: 2px solid green;
+	}
 }

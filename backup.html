@@ -1,0 +1,372 @@
+.menu {
+    background-color: $cor-padrao;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    display: grid;
+    place-items: center;
+
+    @media only screen and (max-width: $responsivo) {
+        padding: 0;
+        position: absolute;
+        top: 311px;
+        display: none;
+        width: 100%;
+    }
+
+    >ul {
+        grid-auto-flow: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+
+        @media only screen and (max-width: $responsivo) {
+            grid-auto-flow: row;
+            width: 100%;
+        }
+
+        >li {
+            margin: 0 1rem;
+            padding: 0;
+
+            @media only screen and (max-width: $responsivo) {
+                margin: 0;
+                padding: 0;
+                border-bottom: 1px solid $cor-padrao-auxiliar;
+                width: 100%;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                text-align: center;
+                @include inline-block;
+                color: $cor-preta;
+                font-size: 1.125rem;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            >a {
+                padding: 0.58rem 0.5rem;
+                border-top: 3px solid transparent;
+                transition: $transition;
+
+                @media only screen and (max-width: $responsivo) {
+                    border-top: 0;
+                }
+
+                &:hover,
+                &:focus {
+                    border-top-color: $cor-padrao-auxiliar;
+                    color: $cor-padrao-auxiliar;
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+
+    .dropdown-title {
+        @include display-flex(inline-flex);
+        @include align-items(center);
+
+        &:after {
+            content: "";
+            border: 0.35rem solid transparent;
+            border-top-color: rgba($cor-branca, 0.8);
+            margin-left: 0.50em;
+            transform: translateY(50%);
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        min-width: 30ch;
+        left: 50%;
+        top: calc(100% - 0.25rem);
+        transition: $transition;
+        transform: rotateX(-90deg) translateX(-50%);
+        transform-origin: top center;
+        visibility: hidden;
+        @include opacity(0.3);
+        padding: 0.5em 0;
+        background-color: $cor-branca;
+        @include border-radius(4px);
+        @include box-shadow(rgba($cor-preta, 0.25) 0 0.15em 0.25em);
+
+        a {
+            color: $cor-padrao;
+            display: block;
+            padding: 0.5em;
+            @include opacity(0);
+            transition: $transition;
+
+            &:hover {
+                background-color: rgba($cor-padrao-auxiliar, 0.15);
+            }
+
+            &:focus {
+                outline: none;
+                background-color: rgba($cor-padrao-auxiliar, 0.25);
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        border: 0.5rem solid transparent;
+        border-bottom-color: $cor-branca;
+        position: absolute;
+        top: calc(100% - 1.25rem);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: $transition;
+        @include opacity(0);
+        will-change: opacity;
+
+        @media only screen and (max-width: $responsivo) {
+            
+            top: 34px;
+        }
+    }
+
+    &:hover,
+    &:focus-within {
+        .dropdown-title {
+            border-top-color: $cor-padrao-auxiliar;
+        }
+
+        .dropdown-menu {
+            @include opacity(1);
+            transform: rotateX(0) translateX(-50%);
+            visibility: visible;
+
+            @media only screen and (max-width: $responsivo) {
+                position: relative;
+                top: 10px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                @include opacity(1);
+            }
+        }
+
+        &:after {
+            @include opacity(1);
+        }
+    }
+}
+
+.menu-toggle {
+    color: $cor-branca;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    background-color: $cor-padrao;
+
+    i {
+        margin-left: 20px;
+    }
+
+    @media only screen and (max-width: $responsivo) {
+        display: block;
+        width: 100%;
+
+    }
+}
+
+.on {
+    display: grid;
+}
+
+
+
+<!--Início do Menu de Navegação-->
+<nav class="menu">
+    <!--Link de direcionamento da barra de acessibilidade para menu-->
+    <a name="nav" id="nav"></a>
+    <!--Início da Lista de Links do Menu de 1° Nível-->
+    <ul id="menu-lista">
+        <!--Link para Página Incial-->
+        <li><a href="index.php">Página Inicial</a></li>
+        <!--Link para Páginas da Organização do Centro de Microscopia Eletrônica-->
+        <li class="dropdown"><a class="dropdown-title" href="#">CME</a>
+            <!--Início da Lista de Links do Menu de 2° Nível-->
+            <ul class="dropdown-menu">
+                <!--Link para Página da Chefia do Centro de Microscopia Eletrônica-->
+                <li><a href="direcao.php">Chefia</a></li>
+                <!--Link para Página do Corpo de Conselheiros do Centro de Microscopia Eletrônica-->
+                <li><a href="conselho.php">Conselho</a></li>
+                <!--Link para Página da Equipe Técnica do Centro de Microscopia Eletrônica-->
+                <li><a href="equipe_tecnica.php">Equipe Técnica</a></li>
+                <!--Link para Página do Regimento Interno do Centro de Microscopia Eletrônica-->
+                <li><a href="regimento.php">Regimento</a></li>
+                <!--Link para Página da Descrição do Funcionamento do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Funcionamento</a></li>
+                <!--Link para Página da História do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Histórico</a></li>
+                <!--Link para Página de Descrição da Missão e Visão do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Missão e Visão</a></li>
+                <!--Link para Página de Disponibilização do Logtipo do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Logotipo</a></li>
+                <!--Link para Página do Planejamento Estratégico do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Planejamento Estratégico</a></li>
+            </ul>
+            <!--Final da Lista de Links do Menu de 2° Nível-->
+        </li>
+        <!--Link para Página de Trabalhos Desenvolvidos com Auxílio do Centro de Microscopia Eletrônica-->
+        <li><a href="#">Produção Científica</a></li>
+        <!--Link para Página de Orientações aos Usuários-->
+        <li class="dropdown"><a class="dropdown-title" href="#">Orientações aos Usuários</a>
+            <!--Início da Lista de Links do Menu de 2° Nível-->
+            <ul class="dropdown-menu">
+                <!--Link para Página de Normas para Usuários do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Normas</a></li>
+                <!--Link Alternativo para Página do Sistema Interno de Gerenciamento do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Sistema de Gerenciamento</a></li>
+                <!--Link para Página de Perguntas Frequêntes do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Perguntas Frequentes</a></li>
+            </ul>
+            <!--Final da Lista de Links do Menu de 2° Nível-->
+        </li>
+        <!--Link para Página da Infraestrutura do Centro de Microscopia Eletrônica-->
+        <li class="dropdown"><a class="dropdown-title" href="#">Infraestrutura</a>
+            <!--Início da Lista de Links do Menu de 2° Nível-->
+            <ul class="dropdown-menu">
+                <!--Link para Página dos Equipamentos do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Equipamentos</a></li>
+                <!--Link para Página dos Laboratórios do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Laboratórios</a></li>
+                <!--Link para Página dos Equipamentos do Centro de Microscopia Eletrônica-->
+                <li><a href="#">Tabelas de Serviços e Preços</a></li>
+            </ul>
+            <!--Final da Lista de Links do Menu de 2° Nível-->
+        </li>
+        <!--Link para Galeria de Imagens-->
+        <li><a href="#">Galeria</a></li>
+        <!--Link para Softwares Úteis para Microscopia-->
+        <li><a href="#">Softwares Úteis</a></li>
+    </ul>
+    <!--Final da Lista de Links do Menu-->
+</nav>
+<!--Final do Menu de Navegação-->
+
+
+.menu {
+    background-color: $cor-padrao;
+    float: right;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            list-style: none;
+            position: relative;
+
+            a {
+                height: 50px;
+                line-height: 50px;
+                padding: 0 20px;
+                color: $cor-branca;
+                text-decoration: none;
+                display: block;
+
+                &:hover {
+                    color: $cor-preta;
+                    background: $cor-padrao-auxiliar;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    border-bottom: 1px solid rgba($cor-padrao-auxiliar, 0.8);
+                }
+            }
+
+            ul {
+                position: absolute;
+                left: 0;
+                background: $cor-padrao-auxiliar;
+                display: none;
+
+                li {
+                    display: block;
+                    width: 200px;
+
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:hover ul,
+            &:focus ul {
+                display: block;
+
+                @media only screen and (max-width: 600px) {
+                    position: relative;
+                }
+            }
+
+            &.sub-menu::before {
+                content: '\f0d7';
+                font-family: fontAwesome;
+                position: absolute;
+                line-height: 50px;
+                color: $cor-branca;
+                right: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        position: absolute;
+        width: 100%;
+        height: calc(100vb - 50px);
+        background: $cor-padrao;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+}
+
+.menu-toggle {
+    color: $cor-branca;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    background-color: $cor-padrao;
+
+    i{
+        margin-left: 20px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: block;
+        width: 100%;
+        
+    }
+}
+
+.on {
+    left: 0;
+}
+
+

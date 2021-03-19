@@ -1,21 +1,10 @@
-﻿<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="utf-8">
-<title>Documento sem título</title>
-</head>
-
-<body>
-	<main>
-		<img src="img/logo.png" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
-		<h2>Contato</h2>
+﻿			<h2>Sistema de Gerenciamento</h2>
 			<form>
 				<label for="login">Login</label>
 				<input type="login" class="form-control" id="login" name="login" placeholder="Login">
 				<label for="password">Senha</label>
 				<input type="password" class="form-control" id="password" name="password" placeholder="Senha">
-				<button type="submit" class="btn btn-primary">Entrar</button>
+				<button type="submit">Entrar</button>
 			</form>
-	</main>
-</body>
-</html>
+			<a href="">Cadastrar-se</a>
+			<p>Caso tenha esquecido a senha, entre em contato com a equipe do CME para recuperá-la</p>
