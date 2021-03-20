@@ -2,18 +2,24 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+// Sprites dos ícones de tradução
 $icones-traducao-spacing: 2px;
 @import "icones-traducao/*.png";
 
+// Sprites dos ícones de redes sociais UFPR
 $icones-redes-sociais-spacing: 2px;
 @import "icones-redes-sociais/*.png";
 
+// Variáveis e Mixins do Sass
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 
+// Import dos Estilos da Página
 @import "compass/reset-legacy";
 @import 'layout/style';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/slider';
 @import 'layout/footer';
+
+@import 'layout/chefia';

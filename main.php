@@ -78,7 +78,7 @@
                         <!--Início da Divisão de Cabeçalho da Notícia-->
                         <div class="cabecalho-noticias">
                             <!--Título da Notícia-->
-                            <h4>Título da Notícia</h4>
+                            <h3>Título da Notícia</h3>
                             <!--Data da Notícia-->
                             <h4>Data</h4>
                         </div>
@@ -98,7 +98,7 @@
                         <!--Início da Divisão de Cabeçalho da Notícia-->
                         <div class="cabecalho-noticias">
                             <!--Título da Notícia-->
-                            <h4>Título da Notícia</h4>
+                            <h3>Título da Notícia</h3>
                             <!--Data da Notícia-->
                             <h4>Data</h4>
                         </div>
@@ -155,11 +155,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento da Descrição-->
                                 <!--Início da Divisão do Detalhamento da Pessoa que Gerarou a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil da Pessoa que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Perfil_Desconhecido.jpg" alt="Imagem do Pesquisador">
                                     <!--Início da Divisão da Descrição da Pessoa que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição da Pessoa que Gerarou a Imagem-->
                                         <h4>Pesquisador:</h4>
                                         <p>Mariana da Silva</p>
@@ -170,11 +170,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento das Pessoas que Geraram a Imagem-->
                                 <!--Início da Divisão do Detalhamento das Técnico que Geraram a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil do Técnico que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Gustavo_Matos.jpg" alt="Imagem do Técnico">
                                     <!--Início da Divisão da Descrição do Técnico que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição do Técnico que Gerarou a Imagem-->
                                         <h4>Técnico:</h4>
                                         <p>Luis Gustavo de Matos dos Santos</p>
@@ -215,11 +215,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento da Descrição-->
                                 <!--Início da Divisão do Detalhamento da Pessoa que Gerarou a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil da Pessoa que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Perfil_Desconhecido.jpg" alt="Imagem do Pesquisador">
                                     <!--Início da Divisão da Descrição da Pessoa que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição da Pessoa que Gerarou a Imagem-->
                                         <h4>Pesquisador:</h4>
                                         <p>Benedita da Silva</p>
@@ -230,11 +230,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento das Pessoas que Geraram a Imagem-->
                                 <!--Início da Divisão do Detalhamento das Técnico que Geraram a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil do Técnico que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Gustavo_Matos.jpg" alt="Imagem do Técnico">
                                     <!--Início da Divisão da Descrição do Técnico que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição do Técnico que Gerarou a Imagem-->
                                         <h4>Técnico:</h4>
                                         <p>Luis Gustavo de Matos dos Santos</p>
@@ -275,11 +275,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento da Descrição-->
                                 <!--Início da Divisão do Detalhamento da Pessoa que Gerarou a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil da Pessoa que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Perfil_Desconhecido.jpg" alt="Imagem do Pesquisador">
                                     <!--Início da Divisão da Descrição da Pessoa que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição da Pessoa que Gerarou a Imagem-->
                                         <h4>Pesquisador:</h4>
                                         <p>Juquinha da Silva</p>
@@ -290,11 +290,11 @@
                                 </div>
                                 <!--Final da Divisão do Detalhamento das Pessoas que Geraram a Imagem-->
                                 <!--Início da Divisão do Detalhamento das Técnico que Geraram a Imagem-->
-                                <div class="portifolio-descricao-pessoas">
+                                <div class="descricao-pessoas">
                                     <!--Imagem do Perfil do Técnico que Gerarou a Imagem-->
                                     <img src="img/fotos-perfil/Gustavo_Matos.jpg" alt="Imagem do Técnico">
                                     <!--Início da Divisão da Descrição do Técnico que Gerarou a Imagem-->
-                                    <div class="portifolio-descricao-pessoas-container">
+                                    <div class="descricao-pessoas-container">
                                         <!--Descrição do Técnico que Gerarou a Imagem-->
                                         <h4>Técnico:</h4>
                                         <p>Luis Gustavo de Matos dos Santos</p>

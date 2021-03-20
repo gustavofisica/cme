@@ -1,4 +1,4 @@
-/******Estilo dos Elementos do Rodapé******/
+/******Estilo dos Elementos do Corpo Principal da Página******/
 main {
   background: $cor-branca;
   padding-top: 50px;
@@ -8,6 +8,7 @@ main {
   }
 }
 
+/******Ícones de Atalhos Abaixo do Menu******/
 .atalhos {
   @include display-flex;
   @include align-items(center);
@@ -18,37 +19,31 @@ main {
   @media only screen and (max-width: $responsivo) {
     @include flex-direction(column);
   }
-}
 
-.atalhos div {
-  @include display-flex;
-  @include align-items(center);
-  @include flex-direction(column);
-  width: 35%;
-  padding: 0 20px;
+  div {
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(column);
+    width: 35%;
+    padding: 0 20px;
 
-  @media only screen and (max-width: $responsivo) {
-    width: 100%;
+    @media only screen and (max-width: $responsivo) {
+      width: 100%;
+    }
+
+    img {
+      width: 150px;
+      transition: 0.5s;
+
+      &:hover {
+        border-radius: 0;
+        transform: scale(1.1);
+      }
+    }
   }
 }
 
-.atalhos h2 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.atalhos img {
-  width: 150px;
-  transition: 0.5s;
-
-  &:hover {
-    border-radius: 0;
-    transform: scale(1.1);
-  }
-}
-
+/******Separação das Primeiras Sessões******/
 .apresentacao,
 .noticias-estatisticas {
   @include display-flex;
@@ -63,7 +58,7 @@ main {
   }
 }
 
-
+/******Dimensionamento das Divisões******/
 .apresentacao div,
 .apresentacao frame,
 .noticias,
@@ -76,21 +71,30 @@ main {
   }
 }
 
+/******Dimensionamento dos Artigos no Resumo das Notícias******/
 .noticias {
   article {
     margin-top: 30px;
   }
+
+  .cabecalho-noticias {
+    @include display-flex;
+    @include align-items(center);
+    @include justify-content(space-between);
+  }
 }
 
+/******Separação Central nas Primeiras duas Sessões******/
 .estatisticas,
 .apresentacao-descricao {
-  margin-left: 40px;
+  margin-left: 30px;
 
   @media only screen and (max-width: $responsivo) {
     margin-left: 0;
   }
 }
 
+/******Estilos para a Construção dos Gráficos das Estatísticas******/
 .estatisticas {
   #grafico-escondido {
     display: none;
@@ -106,131 +110,88 @@ main {
   }
 }
 
-.cabecalho-noticias {
-  @include display-flex;
-  @include align-items(center);
-  @include justify-content(space-between);
-}
-
+/******Estilos da Sessão de Portifólio******/
 .portifolio {
   @include display-flex;
   @include flex-direction(column);
   background: $cor-padrao;
   padding: 50px 0;
 
-  h2 {
-    margin-bottom: 50px;
-  }
-
-  h4 {
-    font-weight: bold;
-    font-size: 20px;
-    color: $cor-preta;
-    margin-bottom: 10px;
-  }
-
-  p {
-    margin-bottom: 10px;
-  }
-
   @media only screen and (max-width: $responsivo) {
     width: 100%;
     padding: 20px 0;
   }
-}
 
-.portifolio-container {
-  @include display-flex;
-  @include justify-content(center);
-
-  @media only screen and (max-width: $responsivo) {
-    width: 100%;
-    @include flex-direction(column);
-  }
-}
-
-.portifolio-imagem {
-  @include display-flex;
-  @include flex-direction(column);
-
-  img {
-    width: 500px;
-    border: solid $cor-branca 6px;
-    border-bottom: solid $cor-branca 50px;
-    filter: drop-shadow(1px 1px 1px $cor-preta);
-    -moz-filter: drop-shadow(1px 1px 1px $cor-preta);
-    -webkit-filter: drop-shadow(1px 1px 1px $cor-preta);
-
-    @media only screen and (max-width: $responsivo) {
-      width: 90%;
-    }
-  }
-
-  h3 {
-    position: relative;
-    font-weight: bold;
-    font-size: 30px;
-    top: -40px;
-    width: 510px;
-    text-align: center;
+  &-container {
+    @include display-flex;
+    @include justify-content(center);
 
     @media only screen and (max-width: $responsivo) {
       width: 100%;
-      font-size: 25px;
+      @include flex-direction(column);
     }
   }
 
-  @media only screen and (max-width: $responsivo) {
-    width: 100%;
-    @include align-items(center);
+  &-imagem {
+    @include display-flex;
+    @include flex-direction(column);
+
+    img {
+      width: 500px;
+      border: solid $cor-branca 6px;
+      border-bottom: solid $cor-branca 50px;
+      filter: drop-shadow(1px 1px 1px $cor-preta);
+      -moz-filter: drop-shadow(1px 1px 1px $cor-preta);
+      -webkit-filter: drop-shadow(1px 1px 1px $cor-preta);
+
+      @media only screen and (max-width: $responsivo) {
+        width: 90%;
+      }
+    }
+
+    h3 {
+      position: relative;
+      font-weight: bold;
+      font-size: 30px;
+      top: -40px;
+      width: 510px;
+      text-align: center;
+      color: $cor-preta;
+
+      @media only screen and (max-width: $responsivo) {
+        width: 100%;
+        font-size: 25px;
+      }
+    }
+
+    @media only screen and (max-width: $responsivo) {
+      width: 100%;
+      @include align-items(center);
+    }
+  }
+
+  &-descricao {
+    @include display-flex;
+    @include flex-direction(column);
+    padding-left: 30px;
+
+    @media only screen and (max-width: $responsivo) {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    &-aquisicao {
+      width: auto;
+
+      @media only screen and (max-width: $responsivo) {
+        width: 95%;
+      }
+    }
   }
 }
 
-.portifolio-descricao {
-  @include display-flex;
-  @include flex-direction(column);
-  padding-left: 30px;
-
-  @media only screen and (max-width: $responsivo) {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-.portifolio-descricao-aquisicao {
-  width: 500px;
-
-  @media only screen and (max-width: $responsivo) {
-    width: 90%;
-  }
-}
-
-.portifolio-descricao-pessoas {
-  @include display-flex;
-  margin-top: 20px;
-
-  img {
-    @include border-radius(4px);
-    width: 120px;
-  }
-
-  @media only screen and (max-width: $responsivo) {
-    width: 90%;
-  }
-}
-
-.portifolio-descricao-pessoas-container {
-  @include display-flex;
-  @include flex-direction(column);
-  margin-left: 20px;
-
-  @media only screen and (max-width: $responsivo) {
-    margin-left: 10px;
-    @include align-items(flex-start);
-  }
-}
-
+/******Estilos da Última Sessão da Página******/
 .contato-map {
   @include display-flex;
   @include align-items(start);
@@ -244,40 +205,33 @@ main {
     text-align: center;
     margin: 0;
   }
-}
 
-.contato {
-  @include display-flex;
-  @include flex-direction(column);
-  width: 500px;
-  padding-left: 20px;
-
-  @media only screen and (max-width: $responsivo) {
-    width: 100%;
-    padding-left: 0;
-  }
-}
-
-.map {
-  @include display-flex;
-  @include align-items(center);
-  @include flex-direction(column);
-width: 100%;
-  iframe {
-    width: 550px;
-    height: 400px;
-
+  .contato {
+    flex-grow: 1;
     @media only screen and (max-width: $responsivo) {
       width: 100%;
-      height: 300px;
     }
   }
 
-  p {
-    margin: 10px 0;
-    text-align: center;
-  }
-  @media only screen and (max-width: $responsivo) {
-    margin-top: 20px;
+  .map {
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(column);
+    flex-grow: 1;
+
+    @media only screen and (max-width: $responsivo) {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    iframe {
+      width: 550px;
+      height: 400px;
+
+      @media only screen and (max-width: $responsivo) {
+        width: 100%;
+        height: 300px;
+      }
+    }
   }
 }

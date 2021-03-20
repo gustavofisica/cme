@@ -1,9 +1,9 @@
-﻿/******Estilo do Documento******/
-/******Estilo Geral do Corpo do Documento******/
+﻿/******Estilo Geral do Corpo do Documento******/
 body {
 	background: lightgray;
 }
 
+/******Caixa do Conteúdo Total da Página******/
 .caixa {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -13,7 +13,7 @@ body {
 	}
 }
 
-
+/******Estilo de Acessibilidade do Alto Contraste******/
 .contraste {
 
 	nav,
@@ -84,34 +84,50 @@ body {
 	}
 }
 
+/******Estilo Gerais dos Textos******/
 a {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
-}
 
-a:hover {
-	color: #4B4B4B;
+	&:hover {
+		color: #4B4B4B;
+	}
+
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
 }
 
 h4 {
-	font-size: 15px;
+	font-size: 1.2rem;
 	font-weight: bold;
-	color: #878787;
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 1.05rem;
+	font-weight: bold;
 	margin-bottom: 5px;
+	border-bottom: black solid 1px;
 }
 
 p {
 	text-align: justify;
+	margin: 5px;
 }
 
+/******Estilo dos Formulários******/
 form {
 	@include display-flex;
 	@include align-items(center);
@@ -170,3 +186,31 @@ form {
 		border: 2px solid green;
 	}
 }
+
+/******Estilo para Campos de Descrição de Pessoas******/
+.descricao-pessoas {
+	@include display-flex;
+	margin-top: 20px;
+
+	img {
+		@include border-radius(4px);
+		width: 120px;
+		height: 120px;
+	}
+
+	@media only screen and (max-width: $responsivo) {
+		width: 90%;
+	}
+
+	.descricao-pessoas-container {
+		@include display-flex;
+		@include flex-direction(column);
+		margin-left: 20px;
+	
+		@media only screen and (max-width: $responsivo) {
+			margin-left: 10px;
+			@include align-items(flex-start);
+		}
+	}
+}
+

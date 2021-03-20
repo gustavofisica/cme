@@ -12,8 +12,6 @@
     <meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241245">
     <!--Estilos da página-->
     <link href="css/estilos.css" rel="stylesheet">
-    <!--Incorporação da fonte Noto Serif da Google-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" type="text/css">
     <!--Incorporação da fonte awsome para ícones da página-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Inclusão do ícone do CME na aba do Browser-->

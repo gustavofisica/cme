@@ -1,5 +1,5 @@
-/******Estilo dos Elementos do Rodapé******/
-
+/******Estilo dos Elementos do Footer da Página******/
+/******Estilo dos Elementos do Rodapé de Links da UFPR******/
 .rodape-links {
 	background: url("../img/rodape_ufpr.png") no-repeat center top;
 	@include background-size(100%);
@@ -11,42 +11,38 @@
 	@media only screen and (max-width: $responsivo) {
 		display: none;
 	}
-}
 
-.sessao-links {
-	width: 20%;
-	margin: 20px auto;
+	.sessao-links {
+		width: 20%;
+		margin: 20px auto;
 
-	@media only screen and (max-width: $responsivo) {
-		display: none;
-	}
+		@media only screen and (max-width: $responsivo) {
+			display: none;
+		}
 
-	h5 {
-		font-weight: bold;
-		border-bottom: black solid 1px;
-	}
+		ul {
+			margin-top: 10px;
 
-	ul {
-		margin-top: 10px;
+			li {
+				margin: 10px 0 0 5px;
 
-		li {
-			margin: 10px 0 0 5px;
-
-			&:before {
-				content: "";
-				@include inline-block;
-				vertical-align: middle;
-				margin-right: 10px;
-				width: 0;
-				height: 0;
-				border-top: 4px solid transparent;
-				border-bottom: 4px solid transparent;
-				border-left: 4px solid black;
+				&:before {
+					content: "";
+					@include inline-block;
+					vertical-align: middle;
+					margin-right: 10px;
+					width: 0;
+					height: 0;
+					border-top: 4px solid transparent;
+					border-bottom: 4px solid transparent;
+					border-left: 4px solid black;
+				}
 			}
 		}
 	}
 }
 
+/******Estilo do Rodapé de Descrição e Redes Sociais UFPR******/
 .rodape-social {
 	padding: 20px;
 	@include background-image(linear-gradient($cor-padrao, #0042b1 90%));
@@ -58,88 +54,96 @@
 		@include align-items(center);
 		@include flex-wrap(wrap);
 	}
-}
 
-.icones-redes-sociais {
-	float: left;
+	.icones-redes-sociais {
+		float: left;
 
-	@media only screen and (max-width: $responsivo) {
+		@media only screen and (max-width: $responsivo) {
+			text-align: center;
+		}
+
+		h3 {
+			font-weight: bold;
+			color: $cor-branca;
+			font-size: 1.5em;
+			margin-bottom: 10px;
+		}
+
+		&-container {
+			@include display-flex;
+			@include justify-content(space-between);
+			width: 350px;
+		}
+	}
+
+	@include all-icones-redes-sociais-sprites;
+
+	.icones-redes-sociais-facebook,
+	.icones-redes-sociais-twitter,
+	.icones-redes-sociais-flickr,
+	.icones-redes-sociais-RSS,
+	.icones-redes-sociais-youtube,
+	.icones-redes-sociais-instagram {
+		width: 48px;
+		height: 48px;
+		filter: drop-shadow(5px 5px 5px #000000);
+		-moz-filter: drop-shadow(5px 5px 5px #000000);
+		-webkit-filter: drop-shadow(5px 5px 5px #000000);
+	}
+
+	.caracteristica-departamento {
+		@include display-flex;
+		@include flex-direction(column);
+		@include align-items(flex-end);
+	
+		@media only screen and (max-width: $responsivo) {
+			@include align-items(center);
+			margin-top: 20px;
+		}
+	
+		p {
+			color: $cor-branca;
+			margin-bottom: 5px;
+			text-align: center;
+	
+			&:first-child {
+				font-weight: bold;
+				font-size: 1.5em;
+			}
+	
+			&:nth-child(2) {
+				font-weight: bold;
+				font-size: 1.3em;
+			}
+	
+			&:nth-child(3) {
+				font-weight: bold;
+				font-size: 1em;
+				margin-bottom: 20px;
+			}
+		}
+	
+		img {
+			max-width: 170px;
+			margin-top: 20px;
+		}
+	
+	}
+
+	.copyright {
 		text-align: center;
-	}
-
-	h3 {
-		font-weight: bold;
-		color: $cor-branca;
-		font-size: 1.5em;
-		margin-bottom: 10px;
-	}
-}
-
-.icones-redes-sociais-container {
-	@include display-flex;
-	@include justify-content(space-between);
-	width: 350px;
-}
-
-@include all-icones-redes-sociais-sprites;
-
-.icones-redes-sociais-facebook,
-.icones-redes-sociais-twitter,
-.icones-redes-sociais-flickr,
-.icones-redes-sociais-RSS,
-.icones-redes-sociais-youtube,
-.icones-redes-sociais-instagram {
-	width: 48px;
-	height: 48px;
-	filter: drop-shadow(5px 5px 5px #000000);
-	-moz-filter: drop-shadow(5px 5px 5px #000000);
-	-webkit-filter: drop-shadow(5px 5px 5px #000000);
-}
-
-.caracteristica-departamento {
-	@include display-flex;
-	@include flex-direction(column);
-	@include align-items(flex-end);
-
-	@media only screen and (max-width: $responsivo) {
-		@include align-items(center);
-		margin-top: 20px;
+		margin-top: 30px;
+	
+		p {
+			color: $cor-branca;
+			margin-bottom: 5px;
+			text-align: center;
+		}
+	
 	}
 }
 
-.caracteristica-departamento p,
-.copyright p {
-	color: $cor-branca;
-	margin-bottom: 5px;
-	text-align: center;
-}
-
-.caracteristica-departamento p:first-child {
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.caracteristica-departamento p:nth-child(2) {
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
-.caracteristica-departamento p:nth-child(3) {
-	font-weight: bold;
-	font-size: 1em;
-	margin-bottom: 20px;
-}
-
-.caracteristica-departamento img {
-	max-width: 170px;
-	margin-top: 20px;
-}
-
-.copyright {
-	text-align: center;
-	margin-top: 30px;
-}
-
+/******Estilo da Barra Brasil******/
 #footer-brasil {
 	background: none repeat scroll 0% 0% #0042b1;
 	padding: 1em 0px;
