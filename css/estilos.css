@@ -821,6 +821,7 @@ main {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1000px;
 }
 @media only screen and (max-width: 995px) {
   .portifolio-container {

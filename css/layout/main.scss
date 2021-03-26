@@ -125,6 +125,7 @@ main {
   &-container {
     @include display-flex;
     @include justify-content(center);
+    width: 1000px;
 
     @media only screen and (max-width: $responsivo) {
       width: 100%;
