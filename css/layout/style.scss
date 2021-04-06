@@ -26,7 +26,7 @@ body {
 	main,
 	aside,
 	article {
-		background: black !important;
+		background: black;
 		color: white !important;
 	}
 
@@ -60,7 +60,7 @@ body {
 	input[type=button],
 	input[type=reset],
 	input[type=submit] {
-		background: black !important;
+		background: black;
 		color: yellow i !important;
 		border: none !important;
 	}
@@ -81,6 +81,32 @@ body {
 		background: black !important;
 		border: 1px solid white !important;
 		color: white !important;
+	}
+
+	#icones-redes-sociais, 
+	#grafico{
+		div{
+			filter: grayscale(100%);
+		}
+		
+	}
+
+	#barra-pesquisa-botao{
+		filter: invert(100%);
+	}
+
+	#footer-brasil, 
+	#barra-brasil, 
+	header{
+		background: black !important;
+	}
+	
+	.logo-acesso-footer{
+		filter: grayscale(100%);
+	}
+
+	.rodape-links .sessao-links ul li:before {
+		border-left: 4px solid white;
 	}
 }
 

@@ -116,7 +116,7 @@ body {
 .contraste main,
 .contraste aside,
 .contraste article {
-  background: black !important;
+  background: black;
   color: white !important;
 }
 .contraste h1,
@@ -146,7 +146,7 @@ body {
 .contraste input[type=button],
 .contraste input[type=reset],
 .contraste input[type=submit] {
-  background: black !important;
+  background: black;
   color: yellow i !important;
   border: none !important;
 }
@@ -166,6 +166,24 @@ body {
   background: black !important;
   border: 1px solid white !important;
   color: white !important;
+}
+.contraste #icones-redes-sociais div,
+.contraste #grafico div {
+  filter: grayscale(100%);
+}
+.contraste #barra-pesquisa-botao {
+  filter: invert(100%);
+}
+.contraste #footer-brasil,
+.contraste #barra-brasil,
+.contraste header {
+  background: black !important;
+}
+.contraste .logo-acesso-footer {
+  filter: grayscale(100%);
+}
+.contraste .rodape-links .sessao-links ul li:before {
+  border-left: 4px solid white;
 }
 
 /******Estilo Gerais dos Textos******/
@@ -395,9 +413,9 @@ header {
 }
 .content .logo {
   height: 100px;
-  filter: drop-shadow(2px 1px 1px #000000);
-  -moz-filter: drop-shadow(2px 1px 1px #000000);
-  -webkit-filter: drop-shadow(2px 1px 1px #000000);
+  filter: drop-shadow(1px 1px 0 #FFFFFF) drop-shadow(-1px -1px 0 #FFFFFF) drop-shadow(1px -1px 0 #FFFFFF) drop-shadow(-1px 1px 0 #FFFFFF);
+  -moz-filter: drop-shadow(1px 1px 0 #FFFFFF) drop-shadow(-1px -1px 0 #FFFFFF) drop-shadow(1px -1px 0 #FFFFFF) drop-shadow(-1px 1px 0 #FFFFFF);
+  -webkit-filter: drop-shadow(1px 1px 0 #FFFFFF) drop-shadow(-1px -1px 0 #FFFFFF) drop-shadow(1px -1px 0 #FFFFFF) drop-shadow(-1px 1px 0 #FFFFFF);
 }
 .content .menu-ufpr ul {
   display: -webkit-flex;

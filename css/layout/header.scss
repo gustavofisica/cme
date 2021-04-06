@@ -73,9 +73,18 @@ header {
 
     .logo {
         height: 100px;
-        filter: drop-shadow(2px 1px 1px $cor-preta);
-        -moz-filter: drop-shadow(2px 1px 1px $cor-preta);
-        -webkit-filter: drop-shadow(2px 1px 1px $cor-preta);
+        filter: drop-shadow(1px 1px 0 $cor-branca)
+                drop-shadow(-1px -1px 0 $cor-branca)
+                drop-shadow(1px -1px 0 $cor-branca)
+                drop-shadow(-1px 1px 0 $cor-branca);
+        -moz-filter:    drop-shadow(1px 1px 0 $cor-branca)
+                        drop-shadow(-1px -1px 0 $cor-branca)
+                        drop-shadow(1px -1px 0 $cor-branca)
+                        drop-shadow(-1px 1px 0 $cor-branca);
+        -webkit-filter: drop-shadow(1px 1px 0 $cor-branca)
+                        drop-shadow(-1px -1px 0 $cor-branca)
+                        drop-shadow(1px -1px 0 $cor-branca)
+                        drop-shadow(-1px 1px 0 $cor-branca);
     }
 
     .menu-ufpr {
