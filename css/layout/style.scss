@@ -83,25 +83,25 @@ body {
 		color: white !important;
 	}
 
-	#icones-redes-sociais, 
-	#grafico{
-		div{
+	#icones-redes-sociais,
+	#grafico {
+		div {
 			filter: grayscale(100%);
 		}
-		
+
 	}
 
-	#barra-pesquisa-botao{
+	#barra-pesquisa-botao {
 		filter: invert(100%);
 	}
 
-	#footer-brasil, 
-	#barra-brasil, 
-	header{
+	#footer-brasil,
+	#barra-brasil,
+	header {
 		background: black !important;
 	}
-	
-	.logo-acesso-footer{
+
+	.logo-acesso-footer {
 		filter: grayscale(100%);
 	}
 
@@ -132,6 +132,7 @@ h2 {
 h3 {
 	font-weight: bold;
 	font-size: 1.5rem;
+	text-align: center;
 	margin-bottom: 20px;
 }
 
@@ -232,11 +233,10 @@ form {
 		@include display-flex;
 		@include flex-direction(column);
 		margin-left: 20px;
-	
+
 		@media only screen and (max-width: $responsivo) {
 			margin-left: 10px;
 			@include align-items(flex-start);
 		}
 	}
 }
-

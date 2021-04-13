@@ -206,6 +206,7 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1236,7 +1237,18 @@ main {
   max-width: 100%;
 }
 
-.chefia {
+.chefia, .conselho, .equipe-tecnica {
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-around;
+  -webkit-justify-content: start;
+  justify-content: start;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0 50px 0;
+}
+.chefia .descricao-pessoas, .conselho .descricao-pessoas, .equipe-tecnica .descricao-pessoas {
+  width: 40%;
 }
