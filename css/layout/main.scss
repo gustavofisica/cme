@@ -45,7 +45,7 @@ main {
 
 /******Separação das Primeiras Sessões******/
 .apresentacao,
-.noticias-estatisticas {
+.noticias-destaques {
   @include display-flex;
   @include align-items(start);
   @include justify-content(space-between);
@@ -62,7 +62,7 @@ main {
 .apresentacao div,
 .apresentacao frame,
 .noticias,
-.estatisticas {
+.destaques {
   width: 50%;
 
   @media only screen and (max-width: $responsivo) {
@@ -85,7 +85,7 @@ main {
 }
 
 /******Separação Central nas Primeiras duas Sessões******/
-.estatisticas,
+.destaques,
 .apresentacao-descricao {
   margin-left: 30px;
 
@@ -96,17 +96,27 @@ main {
 
 /******Estilos para a Construção dos Gráficos das Estatísticas******/
 .estatisticas {
+  margin: 0 40px;
   #grafico-escondido {
     display: none;
   }
 
   #grafico {
     height: 500px;
+    width: 90%;
   }
 
   @media only screen and (max-width: $responsivo) {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0;
+  }
+}
+
+.destaques{
+  text-align: center;
+  img{
+    width: 500px;
+    margin: 10px;
   }
 }
 
@@ -223,17 +233,18 @@ main {
     margin-left: 30px;
 
     @media only screen and (max-width: $responsivo) {
+      margin-left: 0;
       margin-top: 20px;
       width: 100%;
     }
 
     iframe {
-      width: 550px;
+      width: 100%;
       height: 400px;
       margin-bottom: 5px;
 
       @media only screen and (max-width: $responsivo) {
-        width: 100%;
+        width: 90%;
         height: 300px;
       }
     }

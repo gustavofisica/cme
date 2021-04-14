@@ -746,7 +746,7 @@ main {
 
 /******Separação das Primeiras Sessões******/
 .apresentacao,
-.noticias-estatisticas {
+.noticias-destaques {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: start;
@@ -757,7 +757,7 @@ main {
 }
 @media only screen and (max-width: 995px) {
   .apresentacao,
-  .noticias-estatisticas {
+  .noticias-destaques {
     -webkit-align-items: center;
     align-items: center;
     -webkit-flex-direction: column;
@@ -770,14 +770,14 @@ main {
 .apresentacao div,
 .apresentacao frame,
 .noticias,
-.estatisticas {
+.destaques {
   width: 50%;
 }
 @media only screen and (max-width: 995px) {
   .apresentacao div,
   .apresentacao frame,
   .noticias,
-  .estatisticas {
+  .destaques {
     width: 100%;
     margin-top: 20px;
   }
@@ -797,29 +797,41 @@ main {
 }
 
 /******Separação Central nas Primeiras duas Sessões******/
-.estatisticas,
+.destaques,
 .apresentacao-descricao {
   margin-left: 30px;
 }
 @media only screen and (max-width: 995px) {
-  .estatisticas,
+  .destaques,
   .apresentacao-descricao {
     margin-left: 0;
   }
 }
 
 /******Estilos para a Construção dos Gráficos das Estatísticas******/
+.estatisticas {
+  margin: 0 40px;
+}
 .estatisticas #grafico-escondido {
   display: none;
 }
 .estatisticas #grafico {
   height: 500px;
+  width: 90%;
 }
 @media only screen and (max-width: 995px) {
   .estatisticas {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0;
   }
+}
+
+.destaques {
+  text-align: center;
+}
+.destaques img {
+  width: 500px;
+  margin: 10px;
 }
 
 /******Estilos da Sessão de Portifólio******/
@@ -955,18 +967,19 @@ main {
 }
 @media only screen and (max-width: 995px) {
   .contato-map .map {
+    margin-left: 0;
     margin-top: 20px;
     width: 100%;
   }
 }
 .contato-map .map iframe {
-  width: 550px;
+  width: 100%;
   height: 400px;
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 995px) {
   .contato-map .map iframe {
-    width: 100%;
+    width: 90%;
     height: 300px;
   }
 }
@@ -1260,4 +1273,22 @@ main {
   .equipe-tecnica .descricao-pessoas {
     width: 100%;
   }
+}
+
+.regimento {
+  padding: 0 20px 50px 20px;
+}
+.regimento ol li {
+  margin: 10px 0;
+}
+.regimento p {
+  line-height: 1.3rem;
+}
+
+.funcionamento {
+  padding: 0 20px 50px 20px;
+}
+.funcionamento p {
+  text-align: center;
+  line-height: 1.3rem;
 }
