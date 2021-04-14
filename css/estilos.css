@@ -1292,3 +1292,26 @@ main {
   text-align: center;
   line-height: 1.3rem;
 }
+
+.acessibilidade {
+  padding: 0 50px 50px 50px;
+  text-align: justify;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+.acessibilidade p:first-child {
+  font-weight: bold;
+}
+.acessibilidade p, .acessibilidade ul li {
+  margin-bottom: 10px;
+  list-style: disc;
+}
+.acessibilidade h3 {
+  text-align: initial;
+}
+.acessibilidade div {
+  background-color: #ebebeb;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+}
