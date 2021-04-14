@@ -1237,18 +1237,27 @@ main {
   max-width: 100%;
 }
 
-.chefia, .conselho, .equipe-tecnica {
+.chefia,
+.conselho,
+.equipe-tecnica {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: start;
   justify-content: start;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 20px 0 50px 0;
+  padding: 0 20px 50px 20px;
 }
-.chefia .descricao-pessoas, .conselho .descricao-pessoas, .equipe-tecnica .descricao-pessoas {
+.chefia .descricao-pessoas,
+.conselho .descricao-pessoas,
+.equipe-tecnica .descricao-pessoas {
   width: 40%;
+  margin: 5%;
+}
+@media only screen and (max-width: 995px) {
+  .chefia .descricao-pessoas,
+  .conselho .descricao-pessoas,
+  .equipe-tecnica .descricao-pessoas {
+    width: 100%;
+  }
 }
