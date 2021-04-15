@@ -147,7 +147,7 @@ body {
 .contraste input[type=reset],
 .contraste input[type=submit] {
   background: black;
-  color: yellow i !important;
+  color: yellow !important;
   border: none !important;
 }
 .contraste input[type=text],
@@ -168,6 +168,7 @@ body {
   color: white !important;
 }
 .contraste #icones-redes-sociais div,
+.contraste #icones-traducao div,
 .contraste #grafico div {
   filter: grayscale(100%);
 }
@@ -184,6 +185,9 @@ body {
 }
 .contraste .rodape-links .sessao-links ul li:before {
   border-left: 4px solid white;
+}
+.contraste .menu-ufpr ul li a {
+  background-color: black !important;
 }
 
 /******Estilo Gerais dos Textos******/
@@ -225,7 +229,11 @@ h5 {
 
 p {
   text-align: justify;
-  margin: 5px;
+  line-height: 1.3rem;
+}
+
+strong {
+  font-weight: bold;
 }
 
 /******Estilo dos Formulários******/
@@ -695,7 +703,7 @@ header {
 /******Estilo dos Elementos do Corpo Principal da Página******/
 main {
   background: #FFFFFF;
-  padding-top: 50px;
+  padding: 50px 20px;
 }
 @media only screen and (max-width: 995px) {
   main {
@@ -753,7 +761,7 @@ main {
   align-items: start;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  margin: 50px 20px;
+  margin: 50px 0;
 }
 @media only screen and (max-width: 995px) {
   .apresentacao,
@@ -1250,47 +1258,22 @@ main {
   max-width: 100%;
 }
 
-.chefia,
-.conselho,
-.equipe-tecnica {
+.pessoas {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: start;
   justify-content: start;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 20px 50px 20px;
 }
-.chefia .descricao-pessoas,
-.conselho .descricao-pessoas,
-.equipe-tecnica .descricao-pessoas {
+.pessoas .descricao-pessoas {
   width: 40%;
   margin: 5%;
 }
 @media only screen and (max-width: 995px) {
-  .chefia .descricao-pessoas,
-  .conselho .descricao-pessoas,
-  .equipe-tecnica .descricao-pessoas {
+  .pessoas .descricao-pessoas {
     width: 100%;
   }
-}
-
-.regimento {
-  padding: 0 20px 50px 20px;
-}
-.regimento ol li {
-  margin: 10px 0;
-}
-.regimento p {
-  line-height: 1.3rem;
-}
-
-.funcionamento {
-  padding: 0 20px 50px 20px;
-}
-.funcionamento p {
-  text-align: center;
-  line-height: 1.3rem;
 }
 
 .acessibilidade {
@@ -1302,7 +1285,8 @@ main {
 .acessibilidade p:first-child {
   font-weight: bold;
 }
-.acessibilidade p, .acessibilidade ul li {
+.acessibilidade p,
+.acessibilidade ul li {
   margin-bottom: 10px;
   list-style: disc;
 }
@@ -1314,4 +1298,112 @@ main {
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(10, 10, 10, 0.25);
+}
+
+.texto {
+  text-align: center;
+}
+.texto p,
+.texto img {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 995px) {
+  .texto p,
+  .texto img {
+    width: 100%;
+    height: auto;
+  }
+}
+.texto .legenda {
+  line-height: 1em;
+  font-size: 0.9em;
+}
+.texto .recuo {
+  padding-left: 80px;
+}
+@media only screen and (max-width: 995px) {
+  .texto .recuo {
+    padding-left: 0;
+  }
+}
+.texto ul {
+  list-style: disc;
+  margin: 20px 30px;
+  text-align: initial;
+}
+.texto ol {
+  list-style: decimal;
+  margin: 20px 30px;
+  text-align: initial;
+}
+.texto h4 {
+  text-align: initial;
+}
+.texto span {
+  text-decoration: line-through;
+}
+
+.logotipo img {
+  width: 70%;
+  height: auto;
+}
+.logotipo .fundo-escuro {
+  background-color: #000000;
+}
+
+table {
+  width: 90%;
+}
+
+th {
+  background-color: #6FB7BF;
+  padding: 0.58rem 0;
+  border-color: inherit;
+}
+
+tr {
+  background-color: rgba(10, 10, 10, 0.1);
+  border: solid 2px black;
+  height: 2rem;
+}
+
+th,
+td {
+  border-top: solid 1px rgba(10, 10, 10, 0.1);
+}
+
+.equipamentos {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipamento {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.descricao-equipamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.imagem-equipamento {
+  width: 45%;
+  height: 100%;
+  margin: 10px;
+}
+
+.imagens-exemplo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.imagem-exemplo {
+  width: 30%;
+  height: auto;
+  margin: 10px;
 }

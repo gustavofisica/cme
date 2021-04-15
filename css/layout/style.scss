@@ -61,7 +61,7 @@ body {
 	input[type=reset],
 	input[type=submit] {
 		background: black;
-		color: yellow i !important;
+		color: yellow !important;
 		border: none !important;
 	}
 
@@ -84,6 +84,7 @@ body {
 	}
 
 	#icones-redes-sociais,
+	#icones-traducao,
 	#grafico {
 		div {
 			filter: grayscale(100%);
@@ -107,6 +108,10 @@ body {
 
 	.rodape-links .sessao-links ul li:before {
 		border-left: 4px solid white;
+	}
+
+	.menu-ufpr ul li a{
+		background-color: black !important;
 	}
 }
 
@@ -151,7 +156,11 @@ h5 {
 
 p {
 	text-align: justify;
-	margin: 5px;
+	line-height: 1.3rem;
+}
+
+strong{
+	font-weight: bold;
 }
 
 /******Estilo dos Formulários******/
