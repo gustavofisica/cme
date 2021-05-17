@@ -1,7 +1,7 @@
 /******Estilo dos Elementos do Corpo Principal da Página******/
 main {
   background: $cor-branca;
-  padding: 50px 20px;
+  padding: 50px 0;
 
   @media only screen and (max-width: $responsivo) {
     padding: 20px 10px;
@@ -49,7 +49,7 @@ main {
   @include display-flex;
   @include align-items(start);
   @include justify-content(space-between);
-  margin: 50px 0;
+  margin: 50px 30px;
 
   @media only screen and (max-width: $responsivo) {
     @include align-items(center);
@@ -135,7 +135,7 @@ main {
   &-container {
     @include display-flex;
     @include justify-content(center);
-    width: 1000px;
+    max-width: 1000px;
 
     @media only screen and (max-width: $responsivo) {
       width: 100%;
@@ -207,7 +207,7 @@ main {
   @include display-flex;
   @include align-items(start);
   @include justify-content(space-between);
-  margin: 0 20px;
+  margin: 0 30px;
   padding: 50px 0;
 
   @media only screen and (max-width: $responsivo) {
