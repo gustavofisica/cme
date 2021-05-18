@@ -135,7 +135,7 @@ table {
         align-items: center;
 
         .imagem-equipamento {
-            width: 45%;
+            width: 500px;
             height: 100%;
             margin: 10px;
         }
@@ -148,4 +148,18 @@ table {
         }
 
     }
+}
+
+.login {
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(column);
+}
+
+#mapa_do_site,
+#mapa_do_site ul li,
+#mapa_do_site li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 1.2rem 1.5rem;
 }

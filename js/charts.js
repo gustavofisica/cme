@@ -57,7 +57,7 @@ function desenharGraficoSecundario() {
 
 
 var dadosPrimarios = [
-    ['TEM JEOL JEM 1200EX-II', 1200, 'color: #FF6347'],
+    ['TEM JEOL JEM 1200EX-II', 1000, 'color: #FF6347'],
     ['SEM JEOL JSM 6360-LV', 500, 'color: #2E8B57'],
     ['SEM TESCAN VEGA3 LMU', 230, 'color: #F4A460'],
     ['SEM FEI Quanta 450 FEG', 500, 'color: #708090'],
@@ -92,7 +92,7 @@ function desenharGrafico() {
             isHtml: true
         },
         'chartArea': {
-            left: 110,
+            left: 200,
             top: 0,
             width: '100%',
             height: '75%'

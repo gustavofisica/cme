@@ -72,7 +72,14 @@ if (portifolio != null) {
 
 //Função da galeria de imagens
 let modal = document.querySelector('.modal');
-let imagem = document.querySelectorAll('.galeria img');
+let galeria = document.querySelector('.galeria');
+let galeriaGrande = document.querySelector('.galeria_grande');
+let imagem;
+if (galeria != null) {
+    imagem = document.querySelectorAll('.galeria img');
+} else if (galeriaGrande != null) {
+    imagem = document.querySelectorAll('.galeria_grande img');
+}
 let imagemModal = document.querySelector('.imagem-modal');
 let textoModal = document.querySelector('.descricao-modal');
 let imagemModalGaleria = document.querySelector('.imagem-modal-portifolio');
@@ -120,13 +127,18 @@ if (imagemModal != null) {
     });
 }
 
-modal.addEventListener('click', fecharModal);
+if (modal != null) {
+    modal.addEventListener('click', fecharModal);
+}
+
 if (botaoFecharModal != null) {
     botaoFecharModal.addEventListener('click', removeAbrirModal);
 };
 document.addEventListener('keydown', (e) => {
     if (e.keyCode == 27) {
-        removeAbrirModal();
+        if (modal != null) {
+            removeAbrirModal();
+        }
     }
 });
 

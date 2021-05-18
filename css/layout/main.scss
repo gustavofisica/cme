@@ -47,7 +47,7 @@ main {
 .apresentacao,
 .noticias-destaques {
   @include display-flex;
-  @include align-items(start);
+  @include align-items(center);
   @include justify-content(space-between);
   margin: 50px 30px;
 
@@ -185,6 +185,10 @@ main {
     @include display-flex;
     @include flex-direction(column);
     padding-left: 30px;
+
+    p{
+      margin-bottom: 5px;
+    }
 
     @media only screen and (max-width: $responsivo) {
       width: 100%;
