@@ -41,10 +41,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Meus Apps
-    'contas',
-    'configuracoes',
-    'noticias',
+    'equipamentos',
     'sitio',
+    'noticias',
+    'configuracoes',
+    'contas',
     # Apps do Django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -175,9 +176,56 @@ LOGIN_REDIRECT_URL = "/sistema_de_gerenciamento/dashboard/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Caminho da raiz de apps
+
 PROJECT_ROOT = os.path.dirname(__file__)
+
 sys.path.insert(0, os.path.join(PROJECT_ROOT, '../apps'))
 
 # Confiuração tempus_dominus
 TEMPUS_DOMINUS_LOCALIZE = True
 
+# Configuração de envio de e-mails
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = env('EMAIL_HOST')
+
+EMAIL_PORT = env('EMAIL_PORT')
+
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+EMAIL_USE_TLS = env('EMAIL_USE_TLS')
+
+EMAIL_FROM_USER = env('EMAIL_FROM_USER')
+
+# Configuração Summernote
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+SUMMERNOTE_THEME = 'bs4'
+
+SUMMERNOTE_CONFIG = {
+    # Using SummernoteWidget - iframe mode, default
+    'iframe': True,
+
+    # Or, you can set it to `False` to use SummernoteInplaceWidget by default - no iframe mode
+    # In this case, you have to load Bootstrap/jQuery sources and dependencies manually.
+    # Use this when you're already using Bootstrap/jQuery based themes.
+    'iframe': False,
+
+    # You can put custom Summernote settings
+    'summernote': {
+        # As an example, using Summernote Air-mode
+        'airMode': False,
+
+        # Change editor size
+        'width': '100%',
+        'height': '480',
+
+        # Use proper language setting automatically (default)
+        'lang': 'pt-br',
+
+    },
+}
