@@ -40,6 +40,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Meus Apps
+    'contas',
+    # Apps do Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,7 +66,7 @@ ROOT_URLCONF = 'cme.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,8 +87,12 @@ WSGI_APPLICATION = 'cme.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': env('MYSQL_DB_NAME'),
+        'USER': env('MYSQL_DB_USER'),
+        'PASSWORD': env('MYSQL_DB_PASSWORD'),
+        'HOST': env('MYSQL_DB_HOST'),
+        'PORT': env('MYSQL_DB_PORT'),
     }
 }
 
@@ -126,9 +133,39 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'cme/static')
+]
+
+# Media files
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+THUMB_SIZE = (250, 250)
+
+# Configurações de Usuários
+
+AUTH_USER_MODEL = 'contas.Usuario'
+
+# Autentificação de login
+
+LOGIN_URL = "/sistema_de_gerenciamento/login/"
+
+LOGOUT_URL = "/sistema_de_gerenciamento/logout/"
+
+LOGIN_REDIRECT_URL = "/sistema_de_gerenciamento/dashboard/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Caminho da raiz de apps
+PROJECT_ROOT = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(PROJECT_ROOT, '../apps'))

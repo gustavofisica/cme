@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Configuração de Codificação de Caracteres-->
+    <meta charset="utf-8">
+    <!--Configuração de Compatibilidade de Browsers-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Configuração de Escalonamento para Device Mobile-->
+    <meta name="viewport" content="width=device-width">
+    <!--Configuração da Unidade Organizacional do CME da Barra Brasil-->
+    <meta property="creator.productor"
+        content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/241245">
+    <!--Estilos da página-->
+    <link href="{% static 'assets/css/estilos.css' %}" rel="stylesheet">
+    <!--Carregando as Bibliotecas do Google Charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Incorporação da fonte awsome para ícones da página-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Inclusão do ícone do CME na aba do Browser-->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+    <!--Título da Página na aba do Browser-->
+    <title>Centro de Microscopia Eletrônica</title>
+</head>
+
+<body>
+    <header>
+        {% include 'partials/header_barra_brasil.html' %}
+        {% include 'partials/barra_acessibilidade.html' %}
+        <!--Cabeçalho-->
+        <div class="cabecalho">
+            <!--Logo do Centro de Microscopia Eletrônica-->
+            <a href={% url 'index' %}>
+                <img class="cabecalho__logo" id="logo" src="{% static 'assets/img/logo.svg' %}" alt="Logo do Centro de Microscopia Eletrônica da Universidade Federal do Paraná.">
+            </a>
+            {% include 'partials/menu_ufpr.html' %}
+            <!--Título e Formulário de Pesquisa no Site-->
+            <div class="cabecalho__titulo">
+                <!--Título do Departamento-->
+                <h1>Centro de Microscopia Eletrônica</h1>
+                <!--Início do Formulário de Pesquisa do Site-->
+                <form action="" id="searchform" method="GET">
+                    <!--Título do Ítem do Formulário-->
+                    <label for="search">Pesquisar</label>
+                    <!--Campo de Digitação para Pesquisa-->
+                    <input type="search" id="search" name="search" placeholder="Pesquisar...">
+                    <!--Botão de Pesquisar-->
+                    <button class="fa fa-search" aria-hidden="true"></button>
+                </form>
+            </div>
+        </div>
+        {% include 'partials/menu.html' %}
+        <!--Link de direcionamento da barra de acessibilidade para conteúdo-->
+        <a name="conteudo-principal" id="conteudo-principal"></a>
+    </header>
+        {% block content %}{% endblock  %}
+    <footer>
+        <!--Link de direcionamento da barra de acessibilidade para rodapé-->
+        <a name="footer" id="footer"></a>
+        {% include 'partials/footer_links.html' %}
+        {% include 'partials/footer_social.html' %}
+        <!--Incorporação do Rodapé da Barra Brasil-->
+        <div id="footer-brasil"></div>
+    </footer>
+    <!--Código JavaScript dos Elementos da Barra Brasil-->
+    <script type="text/javascript" defer="defer" src="http://barra.brasil.gov.br/barra.js"></script>
+    <!--Funções de Estilos da Página-->
+    <script type="text/javascript" src="{% static 'assets/js/estilo.js' %}"></script>
+</body>
+
+</html>

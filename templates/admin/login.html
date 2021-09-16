@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main class="conteudo--formularios">
+        <img class="conteudo__sistema__logo imagem__atalho" id="Icone-Sistema-CME" src="{% static 'assets/img/Icone-Sistema-CME.svg' %} " alt="Formulários">
+        <h2>Sistema de Gerenciamento</h2>
+        <h3>Login</h3>
+        <section>
+            <form class="formulario--login" action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="mensagem__{{message.tags}} mensagens">
+                        <span id="{{message.tags}}"><i class="fa fa-info-circle" aria-hidden="true"></i> {{message}}</span>
+                    </div>
+                    {% endfor %}
+                {% endif %}
+                <label class="formulario__email" for="email"><b>E-mail</b></label>
+                <input class="formulario__email__input" type="email" name="email" id="email" required placeholder="Digite seu e-mail de login">
+                <i class="fa fa-envelope formulario__email__icone"></i>
+                <span id="sugestao"></span>
+
+                <label class="formulario__senha" for="senha"><b>Senha</b></label>
+                <input class="formulario__senha__input" type="password" name="senha" id="senha" required  placeholder="Digite aqui sua senha">
+                <i class="fa fa-key formulario__senha__icone"></i>
+                <i class="fa fa-eye formulario__senha__icone__revela" aria-hidden="true" id="icone-senha"
+                        onclick="revelarCodigo('senha', 'icone-senha');"></i>
+
+                <button class="formulario__botao" type="submit">Acessar sua conta</button>
+                <a href="{% url 'cadastro' %}">Registrar novo usuário</a>
+            </form>
+            <p style="text-align: center;">Se você esqueceu sua senha, entre em contato com a equpe do CME pelo telefone (41) 3361-3075 ou (41) 3361-3493</p>
+        </section>
+    </main>
+{% endblock  %}
