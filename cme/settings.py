@@ -42,6 +42,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # Meus Apps
     'contas',
+    'configuracoes',
+    'noticias',
+    'sitio',
     # Apps do Django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -49,6 +52,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Apps de Terceiros
+    'tempus_dominus',
+    'widget_tweaks',
+    'django_summernote',
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [
@@ -169,3 +177,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Caminho da raiz de apps
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, '../apps'))
+
+# Confiuração tempus_dominus
+TEMPUS_DOMINUS_LOCALIZE = True
+
