@@ -1,3 +1,5 @@
+from django.db.models import Q
+from django.db.models.query_utils import Q
 from django_summernote.models import Attachment
 from bs4 import BeautifulSoup
 from django.shortcuts import get_object_or_404, redirect, render
@@ -90,6 +92,14 @@ def noticias(request, username):
     usuario = get_object_or_404(Usuario, username=username)
 
     noticias = Noticia.objects.order_by('-edicao').all()
+
+    if request.method == 'POST':
+
+        noticias = Noticia.objects.filter(
+            Q(titulo__icontains=request.POST['table_search']) |
+            Q(texto__icontains=request.POST['table_search']) |
+            Q(categoria__icontains=request.POST['table_search'])
+        )
 
     configuracoes = Configuracoes.objects.last()
 

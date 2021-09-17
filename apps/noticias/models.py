@@ -34,5 +34,4 @@ class Noticia(models.Model):
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.titulo)
-        self.edicao = tz.now()
         super(Noticia, self).save(*args, **kwargs)
