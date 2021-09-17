@@ -33,24 +33,32 @@
                 <div class="card-body">
                 {% for field in form.visible_fields %}
                   {% if field.field.widget.input_type == "checkbox" %}
-                    <div class="form-check form-check-inline">
+                    <div class="form-check form-check-inline" style="margin-top: 1rem;">
                         {{field|add_class:'form-check-input'}}
                         <label class="col" for="{{ field.id_for_label }}">{{field.label}}</label>
                     </div>
-                  {% elif field.id_for_label == "id_edicao" or field.id_for_label == "id_categoria"  %}
-                    <div class="form-group row">
-                      <label for="{{ field.id_for_label }}" class="col-sm-2 col-form-label">{{field.label}}</label>
-                      <div class="col-sm-3">
-                        {{field|add_class:'form-control'}}
-                      </div>
-                  </div>
+                  {% elif field.id_for_label == "id_edicao" %}
+                    <div class="form-row">
+                        {{ field.errors }}
+                        <label for="{{ field.id_for_label }}" class="col-auto col-form-label">{{field.label}}</label>
+                        <div class="col-auto">
+                          {{field|add_class:'form-control text-center'}}
+                        </div>
+                  {% elif field.id_for_label == "id_categoria" %}   
+                      {{ field.errors }}                     
+                      <label for="{{ field.id_for_label }}" class="col-auto col-form-label">{{field.label}}</label>
+                      <div class="col-auto">
+                        {{field|add_class:'form-control text-center'}}
+                      </div>                    
+                    </div>
                   {% else %}
-                  <div class="form-group row">
+                    <div class="form-group row">
+                      {{ field.errors }}
                       <label for="{{ field.id_for_label }}" class="col-sm-2 col-form-label">{{field.label}}</label>
                       <div class="col-sm-10">
                         {{field|add_class:'form-control'}}
                       </div>
-                  </div>
+                    </div>
                   {% endif %}                    
                 {% endfor %}
                 </div>
