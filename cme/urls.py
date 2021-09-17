@@ -19,10 +19,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    # URLs do sitio www.cme.ufpr.br
     path('', include('sitio.urls')),
     path('equipamentos/', include('equipamentos.urls')),
     path('noticias/', include('noticias.urls')),
+    # URLs do Sistema de Gerenciamento
     path('sistema_de_gerenciamento/', include('contas.urls')),
+    path('sistema_de_gerenciamento/', include('noticias.urls_dashboard')),
+    # URLs de Terceiros
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
