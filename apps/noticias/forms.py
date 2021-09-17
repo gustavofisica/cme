@@ -1,5 +1,6 @@
 from noticias.models import Noticia
 from django import forms
+from django.forms.widgets import CheckboxInput
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 from tempus_dominus.widgets import DateTimePicker
 

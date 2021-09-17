@@ -91,7 +91,7 @@ def noticias(request, username):
 
     usuario = get_object_or_404(Usuario, username=username)
 
-    noticias = Noticia.objects.order_by('-edicao').all()
+    noticias = Noticia.objects.order_by('edicao').all()
 
     if request.method == 'POST':
 

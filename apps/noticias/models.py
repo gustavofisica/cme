@@ -16,8 +16,6 @@ class Noticia(models.Model):
     texto = models.TextField()
     criacao = models.DateTimeField(auto_now_add=True)
     edicao = models.DateTimeField(default=tz.now, blank=True, null=True)
-    status = models.BooleanField(default=False)
-    destaque = models.BooleanField(default=False)
     ESCOLHAS_CATEGORIA = (
         ('comunicados', 'Comunicados'),
         ('equipamentos', 'Equipamentos'),
@@ -28,6 +26,8 @@ class Noticia(models.Model):
     )
     categoria = models.CharField(
         max_length=15, choices=ESCOLHAS_CATEGORIA, default='comunicados')
+    status = models.BooleanField(default=False)
+    destaque = models.BooleanField(default=False)
 
     def __str__(self):
         return self.titulo

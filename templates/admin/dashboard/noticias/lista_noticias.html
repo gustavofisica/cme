@@ -20,109 +20,136 @@
             </div>
         </div><!-- /.container-fluid -->
     </section>
-    <section class="content">
-        
-            <div class="row">
+    <section class="content">        
+        <div class="row">
             <div class="col-12">
                 <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">Todas as Notícias</h3>
-
-                    <div class="card-tools">
-                        <form role="form" action="{% url 'noticias' usuario.username %}" method="POST" enctype="multipart/form-data">
-                        {% csrf_token %}
-                    <div class="input-group input-group-sm" style="width: 400px;">
-                            <input type="text" name="table_search" class="form-control float-right" placeholder="Pesquisar título">
-
-                            <div class="input-group-append">
-                            <button type="submit" class="btn btn-default">
-                                <i class="fas fa-search"></i>
-                            </button>
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <a href="{% url 'nova_noticia' usuario.username %}" class="card-link btn btn-success" style="width: 33%;">Nova Notícia</a>
                             </div>
+                            <div class="col">
+                                <h3 class="card-title">Todas as Notícias</h3>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="card-tools">
+                                    <form role="form" action="{% url 'noticias' usuario.username %}" method="POST" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <div class="input-group input-group-sm" style="width: 100%;">
+                                            <input type="text" name="table_search" class="form-control float-right" placeholder="Pesquisar">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-default">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- /.card-header -->
-                <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Autor</th>
-                                <th>Criado em</th>
-                                <th>Publicada</th>
-                                <th>Destaque</th>
-                                <th>Categoria</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        {% if noticias %}
-                            {% for noticia in noticias %}
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap">
+                            <thead>
                                 <tr>
-                                    <td>{{noticia.titulo}}</td>
-                                    <td>{{noticia.autor}}</td>
-                                    <td>{{noticia.criacao}}</td>
-                                    {% if noticia.status %}
-                                        <td>Sim</td>
-                                    {% else %}
-                                        <td>Não</td>
-                                    {% endif %}
-                                    {% if noticia.destaque %}
-                                        <td>Sim</td>
-                                    {% else %}
-                                        <td>Não</td>
-                                    {% endif %}
-                                    <td>{{noticia.categoria}}</td>
-                                    <td><a href="{% url 'editar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-primary">Editar</button></a></td>
-                                    <td><a href="{% url 'deletar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-danger">Deletar</button></a></td>
-                                </tr>                        
-                            {% endfor %}
-                        {% endif %}
-                        </tbody>
-                    </table>                    
-                </div>
-                <!-- /.card-body -->
+                                    <th>Título</th>
+                                    <th>Autor</th>
+                                    <th>Criado em</th>
+                                    <th>Publicada</th>
+                                    <th>Destaque</th>
+                                    <th>Categoria</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% if noticias %}
+                                {% for noticia in noticias %}
+                                    <tr>
+                                        <td>{{noticia.titulo}}</td>
+                                        <td>{{noticia.autor}}</td>
+                                        <td>{{noticia.criacao}}</td>
+                                        {% if noticia.status %}
+                                            <td>Sim</td>
+                                        {% else %}
+                                            <td>Não</td>
+                                        {% endif %}
+                                        {% if noticia.destaque %}
+                                            <td>Sim</td>
+                                        {% else %}
+                                            <td>Não</td>
+                                        {% endif %}
+                                        <td>{{noticia.categoria}}</td>
+                                        <td><a href="{% url 'editar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-primary">Editar</button></a></td>
+                                        <td>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#{{noticia.slug}}">Deletar</button>
+                                        <!-- Modal -->
+                                            <div class="modal fade" id="{{noticia.slug}}" tabindex="-1" role="dialog" aria-labelledby="{{noticia.slug}}Label" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="{{noticia.slug}}Label">{{noticia.titulo}}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    {{usuario.first_name}}, deseja realmente deletar essa notícia?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="{% url 'deletar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-danger">Deletar</button></a>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </td>
+                                    </tr>                        
+                                {% endfor %}
+                            {% endif %}
+                            </tbody>
+                        </table>                    
+                    </div>
+                    <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
-                    <nav aria-label="...">
-                        {% if noticias.has_other_pages %}
-                            <ul class="pagination">
-                                {% if noticias.has_previous %}
-                                    <li class="page-item">
-                                        <a class="page-link" href="?page={{ noticias.previous_page_number }}" tabindex="-1">Anterior</a>
+                <nav class="nav justify-content-center">
+                    {% if noticias.has_other_pages %}
+                        <ul class="pagination">
+                            {% if noticias.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ noticias.previous_page_number }}" tabindex="-1">Anterior</a>
+                                </li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                                </li>
+                            {% endif %}
+                            {% for pagina in noticias.paginator.page_range  %}
+                                {% if noticias.number == pagina %}
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">{{ pagina }} <span class="sr-only">(current)</span></a>
                                     </li>
                                 {% else %}
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                                    </li>
-                                {% endif %}
-                                {% for pagina in noticias.paginator.page_range  %}
-                                    {% if noticias.number == pagina %}
-                                        <li class="page-item active">
-                                            <a class="page-link" href="#">{{ pagina }} <span class="sr-only">(current)</span></a>
-                                        </li>
-                                    {% else %}
-                                        <li class="page-item">
-                                            <a class="page-link" href="?page={{ pagina }}">{{ pagina }}</a>
-                                        </li>
-                                    {% endif %}                                
-                                {% endfor %}
-                                {% if noticias.has_next %}
                                     <li class="page-item">
-                                        <a class="page-link" href="?page={{ noticias.next_page_number }}" tabindex="-1">Próxima</a>
+                                        <a class="page-link" href="?page={{ pagina }}">{{ pagina }}</a>
                                     </li>
-                                {% else %}
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1">Próxima</a>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                        {% endif %}
-                    </nav>
+                                {% endif %}                                
+                            {% endfor %}
+                            {% if noticias.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{ noticias.next_page_number }}" tabindex="-1">Próxima</a>
+                                </li>
+                            {% else %}
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Próxima</a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    {% endif %}
+                </nav>
             </div>
-            </div>
-        
+        </div>        
     </section>
 
 {% endblock %}
