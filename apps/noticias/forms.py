@@ -1,8 +1,8 @@
 from noticias.models import Noticia
 from django import forms
-from django.forms import models
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
-from tempus_dominus.widgets import DatePicker
+from tempus_dominus.widgets import DateTimePicker
+
 
 class FormularioNoticia(forms.ModelForm):
     class Meta:
@@ -19,7 +19,25 @@ class FormularioNoticia(forms.ModelForm):
             'categoria': 'Categoria',
         }
         widgets = {
-            'criacao': DatePicker(),
-            'edicao': DatePicker(),
-            'texto': SummernoteWidget (),
+            'criacao': DateTimePicker(
+                options={
+                    'useCurrent': True,
+                    'collapse': False,
+                },
+                attrs={
+                    'append': 'fa fa-calendar',
+                    'icon_toggle': True,
+                }
+            ),
+            'edicao': DateTimePicker(
+                options={
+                    'useCurrent': True,
+                    'collapse': False,
+                },
+                attrs={
+                    'append': 'fa fa-calendar',
+                    'icon_toggle': True,
+                }
+            ),
+            'texto': SummernoteWidget(),
         }

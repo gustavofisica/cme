@@ -182,6 +182,7 @@ PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, '../apps'))
 
 # Confiuração tempus_dominus
+
 TEMPUS_DOMINUS_LOCALIZE = True
 
 # Configuração de envio de e-mails
@@ -228,4 +229,6 @@ SUMMERNOTE_CONFIG = {
         'lang': 'pt-br',
 
     },
+
+    'attachment_require_authentication' : True,
 }

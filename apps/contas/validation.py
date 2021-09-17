@@ -2,3 +2,6 @@ def conferir_igualdade_e_nulidade_do_campo(campo1, campo2, nome_do_campo, tipo_d
     if campo1 and campo2 and campo1 != campo2:
         lista_de_erros[nome_do_campo] = f'O campo {tipo_de_campo} não encontrou correspondência'
 
+
+def conferir_campo_vazio(campo):
+    return not campo.strip()

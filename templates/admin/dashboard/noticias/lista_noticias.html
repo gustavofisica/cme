@@ -1,0 +1,124 @@
+{% extends 'admin/dashboard/base.html' %}
+{% load static %}
+{% block content %}
+{% load widget_tweaks %}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Lista de Notícias</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="{% url 'dashboard' usuario.username %}">Home</a></li>
+                    <li class="breadcrumb-item active">Lista de Notícias</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+        {% if noticias %}
+
+            <div class="row">
+            <div class="col-12">
+                <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Todas as Notícias</h3>
+
+                    <div class="card-tools">
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                        <div class="input-group-append">
+                        <button type="submit" class="btn btn-default">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Criado em</th>
+                                <th>Publicada</th>
+                                <th>Destaque</th>
+                                <th>Categoria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for noticia in noticias %}
+                                <tr>
+                                    <td>{{noticia.titulo}}</td>
+                                    <td>{{noticia.autor}}</td>
+                                    <td>{{noticia.criacao}}</td>
+                                    {% if noticia.status %}
+                                        <td>Sim</td>
+                                    {% else %}
+                                        <td>Não</td>
+                                    {% endif %}
+                                    {% if noticia.destaque %}
+                                        <td>Sim</td>
+                                    {% else %}
+                                        <td>Não</td>
+                                    {% endif %}
+                                    <td>{{noticia.categoria}}</td>
+                                    <td><a href="{% url 'editar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-primary">Editar</button></a></td>
+                                    <td><a href="{% url 'deletar_noticia' usuario.username noticia.slug %}"><button type="button" class="btn btn-danger">Deletar</button></a></td>
+                                </tr>                        
+                            {% endfor %}
+                        </tbody>
+                    </table>                    
+                </div>
+                <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+                    <nav aria-label="...">
+                        {% if noticias.has_other_pages %}
+                            <ul class="pagination">
+                                {% if noticias.has_previous %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ noticias.previous_page_number }}" tabindex="-1">Anterior</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                                    </li>
+                                {% endif %}
+                                {% for pagina in noticias.paginator.page_range  %}
+                                    {% if noticias.number == pagina %}
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">{{ pagina }} <span class="sr-only">(current)</span></a>
+                                        </li>
+                                    {% else %}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{ pagina }}">{{ pagina }}</a>
+                                        </li>
+                                    {% endif %}                                
+                                {% endfor %}
+                                {% if noticias.has_next %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ noticias.next_page_number }}" tabindex="-1">Próxima</a>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Próxima</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        {% endif %}
+                    </nav>
+            </div>
+            </div>
+        {% endif %}
+    </section>
+
+{% endblock %}
