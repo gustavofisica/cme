@@ -366,7 +366,7 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <form action="{% url 'alterar_senha' usuario.username %}" method="POST">
+                        <form action="{% url 'alterar_senha' usuario.username %}" method="POST" enctype="multipart/form-data">
                           {% csrf_token %}
                           {% for field in form_password %}
                             <div class="form-group">

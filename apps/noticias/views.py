@@ -1,4 +1,3 @@
-from django.db.models import Q
 from django.db.models.query_utils import Q
 from django_summernote.models import Attachment
 from bs4 import BeautifulSoup

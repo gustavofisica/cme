@@ -2,38 +2,54 @@
 {% load static %}
 {% block content %}
 
-    <main class="conteudo--imagens">
-        <h2>Equipamentos</h2>
-        {% if equipamentos %}
-            {% for equipamento in equipamentos %}
-                <section class="conteudo__equipamento">
-                    <h3 class="conteudo__equipamento__titulo">{{equipamento.nome_do_equipamento}}</h3>
-                    {% for imagem in equipamento.imagens.all  %}
-                            {% if imagem.foto_de_perfil %}
-                                <img class="conteudo__equipamento__foto imagem__equipamento" src="{{ imagem.imagem.url }}" alt="{{ imagem.descricao_da_imagem }}">                            
-                            {% endif %}                                                   
-                        {% endfor %}
-                    <p class="conteudo__equipamento__descricao">
-                        {{equipamento.descricao}}
-                    </p>
-                    <div class="conteudo__equipamento__galeria equipamento__galeria">
-                        {% for imagem in equipamento.imagens.all  %}
-                            {% if not imagem.foto_de_perfil %}
-                                <figure class="conteudo__equipamento__galeria__foto">
-                                    <img class="imagem__galeria" src="{{ imagem.miniatura.url }}"
-                                        alt="{{ imagem.descricao_da_imagem }}"
-                                        data-original="{{ imagem.imagem.url }}">
-                                </figure>                             
-                            {% endif %}                                                   
-                        {% endfor %}                        
-                        <figure class="conteudo__equipamento__modal">
-                            <i class="fa fa-window-close" aria-hidden="true"></i>
-                            <img class="conteudo__equipamento__modal__imagem imagem__modal" src="" alt="">
-                            <figcaption class="conteudo__equipamento__modal__descricao"></figcaption>
-                        </figure>
-                    </div>
-                </section>
-            {% endfor %}
+<main class="conteudo--imagens">
+    <h2>Equipamentos</h2>
+    {% if equipamentos %}
+    {% for equipamento in equipamentos %}
+    <section class="conteudo__equipamento">
+        <h3 class="conteudo__equipamento__titulo">{{equipamento.nome_do_equipamento}}</h3>
+        {% for imagem in equipamento.imagens.all  %}
+        {% if imagem.foto_de_perfil %}
+        <img class="conteudo__equipamento__foto imagem__equipamento" src="{{ imagem.imagem.url }}"
+            alt="{{ imagem.descricao_da_imagem }}">
         {% endif %}
-    </main>
+        {% endfor %}
+        <div class="conteudo__equipamento__descricao">
+            <p style="margin: 1rem 0;">{{equipamento.descricao}}</p>
+            <p style="margin: 1rem 0;"><strong>Fabricante:</strong>
+                {% if equipamento.url_fabricante %} <a href="{{equipamento.url_fabricante}}" target="_blank"
+                    rel="noopener noreferrer">{{equipamento.fabricante}}</a>
+                {% endif %}
+            </p>
+            <p style="margin: 1rem 0;"><strong>Modelo:</strong> {{equipamento.modelo}}</p>
+            <h5>Acessórios</h5>
+            {% for acessorio in equipamento.acessorios.all  %}
+                <ul style="list-style-type: disc; margin: 1rem;">
+                    <li><strong>Acessório:</strong> {{acessorio.nome_do_acessorio}}</li>
+                    <li style="margin: 1rem;"><strong>Fabricante:</strong> {{acessorio.fabricante}}</li>
+                    <li style="margin: 1rem;"><strong>Modelo:</strong> {{acessorio.modelo}}</li>
+                    <li style="margin: 1rem;"><strong>Descrição:</strong> {{acessorio.descricao}}</li>
+                </ul>
+            {% endfor %}
+            <h5>Galeria de Imagens</h5>
+        </div>
+        <div class="conteudo__equipamento__galeria equipamento__galeria">
+            {% for imagem in equipamento.imagens.all  %}
+            {% if not imagem.foto_de_perfil %}
+            <figure class="conteudo__equipamento__galeria__foto">
+                <img class="imagem__galeria" src="{{ imagem.miniatura.url }}" alt="{{ imagem.descricao_da_imagem }}"
+                    data-original="{{ imagem.imagem.url }}">
+            </figure>
+            {% endif %}
+            {% endfor %}
+            <figure class="conteudo__equipamento__modal">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+                <img class="conteudo__equipamento__modal__imagem imagem__modal" src="" alt="">
+                <figcaption class="conteudo__equipamento__modal__descricao"></figcaption>
+            </figure>
+        </div>
+    </section>
+    {% endfor %}
+    {% endif %}
+</main>
 {% endblock  %}

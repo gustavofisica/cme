@@ -4,3 +4,4 @@ from django.db import models
 class Configuracoes(models.Model):
     """Entidade de configurações"""
     noticias_index = models.PositiveSmallIntegerField(unique=True, default=5)
+    tecnicas = models.JSONField(default=dict, null=True, blank=True)

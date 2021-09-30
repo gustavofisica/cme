@@ -6,7 +6,7 @@ from .models import Configuracoes
 
 class ConfiguracoesAdmin(admin.ModelAdmin):
     """Parâmetros de administração de configurações"""
-    list_display = ('noticias_index',)
+    list_display = ('noticias_index', 'tecnicas')
     list_display_links = ('noticias_index',)
 
 

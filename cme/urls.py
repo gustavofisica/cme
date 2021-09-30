@@ -23,9 +23,11 @@ urlpatterns = [
     path('', include('sitio.urls')),
     path('equipamentos/', include('equipamentos.urls')),
     path('noticias/', include('noticias.urls')),
+    path('configuracoes/', include('configuracoes.urls')),
     # URLs do Sistema de Gerenciamento
     path('sistema_de_gerenciamento/', include('contas.urls')),
     path('sistema_de_gerenciamento/', include('noticias.urls_dashboard')),
+    path('sistema_de_gerenciamento/', include('equipamentos.urls_dashboard')),
     # URLs de Terceiros
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
